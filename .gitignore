@@ -78,6 +78,10 @@ outputs/
 *.jpeg
 *.pdf
 !README.md
+# 允许docs目录下的图片
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.jpeg
 
 # 临时文件
 *.tmp
