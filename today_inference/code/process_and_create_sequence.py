@@ -130,8 +130,10 @@ def create_today_sequence(processed_df, window_size=60):
     # 提取最后window_size个有效数据点作为序列（用于预测今天）
     # 注意：实测发现能爬到今天的数据，所以序列要减去1，取昨天之前的数据预测今天
     # 序列包含从索引 num_valid - window_size - 1 到 num_valid - 1 的数据
-    close_seq = close_prices_all[num_valid - window_size - 1 : num_valid - 1]
-    volume_seq = volumes_all[num_valid - window_size - 1 : num_valid - 1]
+    # close_seq = close_prices_all[num_valid - window_size - 1 : num_valid - 1]
+    # volume_seq = volumes_all[num_valid - window_size - 1 : num_valid - 1]
+    close_seq = close_prices_all[num_valid - window_size : num_valid]
+    volume_seq = volumes_all[num_valid - window_size : num_valid]
     
     # 预测目标的日期：processed_df的最后一行日期（即"今天"）
     last_date = dates_all[-1]

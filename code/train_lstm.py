@@ -2,6 +2,39 @@
 LSTM模型训练模块
 模拟 train_lstm.py 实现训练任务函数
 """
+# 重要：在导入torch之前，确保标准库的code模块可用
+# 解决code目录与Python标准库code模块的冲突
+import os
+import sys
+import importlib
+
+# 如果code模块还没有被导入，或者不是标准库的code模块，则导入标准库的code
+if 'code' not in sys.modules or not hasattr(sys.modules.get('code', None), 'InteractiveConsole'):
+    # 临时从sys.path中移除当前目录，确保可以导入标准库的code
+    _current_dir = os.path.dirname(os.path.abspath(__file__))
+    _parent_dir = os.path.dirname(_current_dir)
+    _code_dir_in_path = None
+    _parent_dir_in_path = None
+    if _current_dir in sys.path:
+        _code_dir_in_path = _current_dir
+        sys.path.remove(_current_dir)
+    if _parent_dir in sys.path:
+        _parent_dir_in_path = _parent_dir
+        sys.path.remove(_parent_dir)
+    
+    try:
+        # 导入标准库的code模块
+        import code
+        sys.modules['code'] = code
+    except ImportError:
+        pass
+    finally:
+        # 恢复sys.path
+        if _code_dir_in_path:
+            sys.path.insert(0, _code_dir_in_path)
+        if _parent_dir_in_path:
+            sys.path.insert(0, _parent_dir_in_path)
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -250,17 +283,22 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     logger.info(f"模型参数总数: {sum(p.numel() for p in model.parameters()):,}")
     
     # 损失函数和优化器
+    logger.info("创建损失函数和优化器...")
     criterion = nn.CrossEntropyLoss()
     learning_rate = config.get('learning_rate', 0.001)
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    logger.info(f"优化器创建完成，学习率: {learning_rate}")
     
     # 学习率调度器
+    logger.info("创建学习率调度器...")
+    # 注意：新版本PyTorch移除了verbose参数，需要手动记录学习率变化
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(
         optimizer, mode='min', factor=0.0005, patience=3,
-        min_lr=0.00001, verbose=True
+        min_lr=0.00001
     )
     
     # 早停机制
+    logger.info("创建早停机制...")
     early_stopping = EarlyStopping(
         patience=config.get('early_stopping_patience', 30),
         monitor='val_accuracy',
@@ -275,7 +313,12 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     val_losses = []
     val_accuracies = []
     
+    logger.info(f"准备开始训练，总epoch数: {num_epochs}")
     logger.info("开始训练...")
+    # 确保日志立即刷新
+    import sys
+    sys.stdout.flush()
+    sys.stderr.flush()
     best_val_acc = 0.0
     best_model_path = None
     
@@ -333,7 +376,12 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
         val_accuracies.append(val_accuracy)
         
         # 学习率调度
+        old_lr = optimizer.param_groups[0]['lr']
         scheduler.step(avg_val_loss)
+        new_lr = optimizer.param_groups[0]['lr']
+        # 如果学习率发生变化，记录日志（替代verbose参数）
+        if old_lr != new_lr:
+            logger.info(f"学习率已调整: {old_lr:.6f} -> {new_lr:.6f}")
         
         # 早停检查
         early_stopping(val_accuracy, epoch)

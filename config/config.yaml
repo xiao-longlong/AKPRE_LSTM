@@ -1,64 +1,28 @@
-# 股票LSTM预测模型配置文件
-
-# 模式选择: 'train' 或 'inference'
-mode: 'train'  # 'train' 或 'inference'
-
-# 股票相关配置
+mode: train
 stock:
-  # 股票代码，如 "518880" (ETF) 或 "000001" (股票)
-  stock_code: "518880"
-  # 截止日期，格式 "YYYYMMDD"，如果为None则使用当前日期
-  end_date: null  # null表示使用当前日期
-
-# 数据相关配置
+  stock_code: '300905'
+  end_date: null
 data:
-  # 原始数据保存目录
-  raw_data_dir: "data/raw"
-  # 处理后数据保存目录
-  processed_data_dir: "data/processed"
-  # 序列长度（默认60）
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
   sequence_length: 60
-  # 训练集比例
   train_ratio: 0.8
-  # 验证集比例
   val_ratio: 0.2
-  # 是否自动获取数据（如果数据不存在）
   auto_fetch_data: true
-
-# 训练相关配置
 training:
-  # 批次大小
-  batch_size: 32
-  # 训练周期数
+  batch_size: 512
   num_epochs: 3000
-  # 学习率
   learning_rate: 0.001
-  # LSTM隐藏层大小
   hidden_size: 128
-  # 早停耐心值（多少个epoch没有改善就停止）
   early_stopping_patience: 10000
-  # 随机种子
   random_seed: 42
-  # 是否使用GPU
   use_gpu: true
-
-# 推理相关配置
 inference:
-  # 模型checkpoint路径（用于推理）
-  checkpoint_path: null  # 例如: "logs/20251201_120000_train_518880_20251201/best_model.pth"
-  # 推理数据路径（CSV格式）
-  data_path: null  # 例如: "data/processed/518880_20251201/val.csv"
-  # 批次大小
+  checkpoint_path: null
+  data_path: null
   batch_size: 64
-  # 是否使用GPU
   use_gpu: true
-
-# 日志和输出配置
 logging:
-  # 日志保存目录
-  log_dir: "logs"
-  # 是否保存训练曲线
+  log_dir: logs
   save_training_curves: true
-  # 是否保存推理可视化
   save_inference_visualization: true
-

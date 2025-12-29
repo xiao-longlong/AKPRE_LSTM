@@ -7,10 +7,16 @@ import yaml
 from datetime import datetime
 from pathlib import Path
 
-# 添加code目录到路径
-code_dir = os.path.join(os.path.dirname(__file__), 'code')
-sys.path.insert(0, code_dir)
+# 警告：code目录与Python标准库的code模块冲突
+# 临时解决方案：在导入torch之前，先确保标准库的code模块可用
+# 最佳解决方案：重命名code目录为其他名称（如src、modules等）
 
+# 添加code目录到路径
+code_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'code')
+if code_dir not in sys.path:
+    sys.path.insert(0, code_dir)
+
+# 直接导入项目模块（因为code目录已在sys.path中）
 from data_fetcher import fetch_stock_data
 from data_processor import process_stock_data
 from train_lstm import train_lstm_model
@@ -36,7 +42,7 @@ def main():
     print("=" * 60)
     print("股票LSTM预测模型")
     print("=" * 60)
-    
+
     # 加载配置
     config = load_config()
     print(f"\n配置已加载")

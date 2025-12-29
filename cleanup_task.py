@@ -293,11 +293,31 @@ def cleanup_task(log_folder_path: str, base_dir: str = None,
 
 
 def cleanup_multiple_tasks(log_folder_paths: List[str], base_dir: str = None,
-                           dry_run: bool = False, confirm: bool = True):
-    """批量清理多个任务"""
+                           dry_run: bool = False, confirm: bool = True, 
+                           already_confirmed: bool = False):
+    """
+    批量清理多个任务
+    
+    Args:
+        log_folder_paths: 日志文件夹路径列表
+        base_dir: 项目根目录
+        dry_run: 预览模式
+        confirm: 是否需要确认（如果already_confirmed=True则忽略此参数）
+        already_confirmed: 是否已经确认过（用于--all模式，只需确认一次）
+    """
     print("\n" + "=" * 60)
     print(f"批量清理 {len(log_folder_paths)} 个任务")
     print("=" * 60)
+    
+    # 如果已经确认过（比如使用--all），就不需要每个任务都确认
+    # 否则，如果是批量删除多个任务，先统一确认一次
+    if confirm and not dry_run and not already_confirmed:
+        print(f"\n将要删除 {len(log_folder_paths)} 个任务的所有相关数据")
+        response = input("确认删除以上所有任务? (yes/no): ").strip().lower()
+        if response not in ['yes', 'y']:
+            print("取消删除")
+            return
+        already_confirmed = True
     
     success_count = 0
     fail_count = 0
@@ -305,7 +325,9 @@ def cleanup_multiple_tasks(log_folder_paths: List[str], base_dir: str = None,
     for i, log_folder_path in enumerate(log_folder_paths, 1):
         print(f"\n[{i}/{len(log_folder_paths)}] 处理: {log_folder_path}")
         try:
-            if cleanup_task(log_folder_path, base_dir, dry_run=dry_run, confirm=confirm):
+            # 如果已经确认过，就不需要每个任务都确认
+            if cleanup_task(log_folder_path, base_dir, dry_run=dry_run, 
+                          confirm=False if already_confirmed else confirm):
                 success_count += 1
             else:
                 fail_count += 1
@@ -361,16 +383,18 @@ def main():
         return
     
     # 获取要删除的日志文件夹列表
+    already_confirmed = False
     if args.all:
         log_folders = find_all_log_folders(os.path.join(base_dir, 'logs'))
         if not log_folders:
             print("没有找到任何日志文件夹")
             return
         if not args.no_confirm:
-            response = input(f"\n确认删除所有 {len(log_folders)} 个日志文件夹? (yes/no): ").strip().lower()
+            response = input(f"\n确认删除所有 {len(log_folders)} 个日志文件夹及其相关数据? (yes/no): ").strip().lower()
             if response not in ['yes', 'y']:
                 print("取消删除")
                 return
+            already_confirmed = True  # 标记已经确认过
     else:
         log_folders = args.log_folders
         # 转换为绝对路径
@@ -380,7 +404,8 @@ def main():
     if len(log_folders) == 1:
         cleanup_task(log_folders[0], base_dir, dry_run=args.dry_run, confirm=not args.no_confirm)
     else:
-        cleanup_multiple_tasks(log_folders, base_dir, dry_run=args.dry_run, confirm=not args.no_confirm)
+        cleanup_multiple_tasks(log_folders, base_dir, dry_run=args.dry_run, 
+                              confirm=not args.no_confirm, already_confirmed=already_confirmed)
 
 
 if __name__ == "__main__":
