@@ -83,7 +83,8 @@ def load_model(model_path):
         raise FileNotFoundError(f"Model file '{model_path}' not found. Please check the path.")
     
     print("Loading model...")
-    checkpoint = torch.load(model_path, map_location=device)
+    # PyTorch 2.6+ requires weights_only=False when loading models with sklearn scalers
+    checkpoint = torch.load(model_path, map_location=device, weights_only=False)
     model_config = checkpoint['model_config']
     
     # 创建模型

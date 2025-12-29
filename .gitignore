@@ -119,3 +119,6 @@ dmypy.json
 *.tar.gz
 *.rar
 
+# 临时/垃圾文件夹
+trash/
+
