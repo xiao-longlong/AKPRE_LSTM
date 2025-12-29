@@ -122,3 +122,11 @@ dmypy.json
 # 临时/垃圾文件夹
 trash/
 
+# 训练记录文件
+training_failed.txt
+training_success.txt
+training.log
+
+# 期货列表文件（可能包含个人配置）
+futures_list.txt
+

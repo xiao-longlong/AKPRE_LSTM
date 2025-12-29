@@ -322,6 +322,10 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     best_val_acc = 0.0
     best_model_path = None
     
+    # 计算前20%的epoch数（不保存模型的阶段）
+    no_save_epochs = int(num_epochs * 0.2)
+    logger.info(f"前 {no_save_epochs} 个epoch ({no_save_epochs/num_epochs*100:.1f}%) 不保存模型，不参考准确率")
+    
     for epoch in range(num_epochs):
         # 训练阶段
         model.train()
@@ -386,27 +390,53 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
         # 早停检查
         early_stopping(val_accuracy, epoch)
         
-        # 保存最佳模型
-        if val_accuracy > best_val_acc:
-            best_val_acc = val_accuracy
-            best_model_path = os.path.join(log_folder, 'best_model.pth')
-            torch.save({
-                'model_state_dict': model.state_dict(),
-                'price_scaler': price_scaler,
-                'volume_scaler': volume_scaler,
-                'model_config': {
-                    'input_size': 2,
-                    'hidden_size': hidden_size,
-                    'num_classes': 2,
-                    'architecture': '3xLSTM(128) + Dense(32) + Dense(2)',
-                    'dropout_rates': [0.2, 0.1, 0.2, 0.2],
-                    'features': ['price', 'volume']
-                },
-                'stock_code': stock_code,
-                'end_date': end_date,
-                'epoch': epoch + 1,
-                'val_accuracy': val_accuracy
-            }, best_model_path)
+        # 保存最佳模型（仅在前20%轮之后）
+        if epoch >= no_save_epochs:
+            # 如果是20%轮之后的第一轮，无条件保存作为初始最佳模型
+            if epoch == no_save_epochs:
+                best_val_acc = val_accuracy
+                best_model_path = os.path.join(log_folder, 'best_model.pth')
+                torch.save({
+                    'model_state_dict': model.state_dict(),
+                    'price_scaler': price_scaler,
+                    'volume_scaler': volume_scaler,
+                    'model_config': {
+                        'input_size': 2,
+                        'hidden_size': hidden_size,
+                        'num_classes': 2,
+                        'architecture': '3xLSTM(128) + Dense(32) + Dense(2)',
+                        'dropout_rates': [0.2, 0.1, 0.2, 0.2],
+                        'features': ['price', 'volume']
+                    },
+                    'stock_code': stock_code,
+                    'end_date': end_date,
+                    'epoch': epoch + 1,
+                    'val_accuracy': val_accuracy
+                }, best_model_path)
+                logger.info(f"保存初始最佳模型 (epoch {epoch+1}, val_acc: {val_accuracy:.2f}%)")
+            # 之后如果验证准确率更好，更新最佳模型
+            elif val_accuracy > best_val_acc:
+                best_val_acc = val_accuracy
+                best_model_path = os.path.join(log_folder, 'best_model.pth')
+                torch.save({
+                    'model_state_dict': model.state_dict(),
+                    'price_scaler': price_scaler,
+                    'volume_scaler': volume_scaler,
+                    'model_config': {
+                        'input_size': 2,
+                        'hidden_size': hidden_size,
+                        'num_classes': 2,
+                        'architecture': '3xLSTM(128) + Dense(32) + Dense(2)',
+                        'dropout_rates': [0.2, 0.1, 0.2, 0.2],
+                        'features': ['price', 'volume']
+                    },
+                    'stock_code': stock_code,
+                    'end_date': end_date,
+                    'epoch': epoch + 1,
+                    'val_accuracy': val_accuracy
+                }, best_model_path)
+                logger.info(f"更新最佳模型 (epoch {epoch+1}, val_acc: {val_accuracy:.2f}%)")
+        # 前20%轮不做任何参考，不保存也不跟踪
         
         # 打印信息
         if (epoch + 1) % 5 == 0 or epoch == 0:
@@ -423,6 +453,50 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     
     logger.info("训练完成!")
     logger.info(f"最佳验证准确率: {best_val_acc:.2f}%")
+    
+    # 保存最后一个模型
+    last_model_path = os.path.join(log_folder, 'last_model.pth')
+    torch.save({
+        'model_state_dict': model.state_dict(),
+        'price_scaler': price_scaler,
+        'volume_scaler': volume_scaler,
+        'model_config': {
+            'input_size': 2,
+            'hidden_size': hidden_size,
+            'num_classes': 2,
+            'architecture': '3xLSTM(128) + Dense(32) + Dense(2)',
+            'dropout_rates': [0.2, 0.1, 0.2, 0.2],
+            'features': ['price', 'volume']
+        },
+        'stock_code': stock_code,
+        'end_date': end_date,
+        'epoch': epoch + 1,
+        'val_accuracy': val_accuracies[-1] if val_accuracies else 0.0
+    }, last_model_path)
+    logger.info(f"最后一个模型已保存到: {last_model_path} (epoch {epoch+1}, val_acc: {val_accuracies[-1]:.2f}%)")
+    
+    # 如果训练在20%轮之前就结束了（理论上不应该发生），保存当前模型作为最佳模型
+    if best_model_path is None:
+        logger.warning("训练在20%轮之前结束，保存当前模型作为最佳模型")
+        best_model_path = os.path.join(log_folder, 'best_model.pth')
+        torch.save({
+            'model_state_dict': model.state_dict(),
+            'price_scaler': price_scaler,
+            'volume_scaler': volume_scaler,
+            'model_config': {
+                'input_size': 2,
+                'hidden_size': hidden_size,
+                'num_classes': 2,
+                'architecture': '3xLSTM(128) + Dense(32) + Dense(2)',
+                'dropout_rates': [0.2, 0.1, 0.2, 0.2],
+                'features': ['price', 'volume']
+            },
+            'stock_code': stock_code,
+            'end_date': end_date,
+            'epoch': epoch + 1,
+            'val_accuracy': best_val_acc
+        }, best_model_path)
+        logger.info(f"最佳模型已保存到: {best_model_path} (val_acc: {best_val_acc:.2f}%)")
     
     # 绘制训练曲线
     plt.figure(figsize=(12, 4))
