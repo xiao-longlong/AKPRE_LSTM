@@ -31,7 +31,7 @@
 
 下图展示了所有训练模型的验证集准确率分布情况：
 
-![验证集准确率分布](infer_res/analyze_all_acc/results/accuracy_histogram.png)
+![验证集准确率分布](docs/images/accuracy_histogram.png)
 
 **图片说明**：
 
