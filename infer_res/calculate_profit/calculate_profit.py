@@ -364,6 +364,23 @@ def calculate_profit(log_folder_path, num_trading_days=30, start_date=None, init
     try:
         stock_df = get_stock_data(train_info['stock_code'])
         print(f"成功获取 {len(stock_df)} 条历史数据")
+        
+        # 滤除成交量小于平均值30%的天数
+        # 找到成交量列
+        volume_col = None
+        for col in stock_df.columns:
+            if '成交量' in col or 'volume' in col.lower():
+                volume_col = col
+                break
+        
+        if volume_col is not None:
+            volumes_raw = stock_df[volume_col].astype(float)
+            volume_mean = volumes_raw.mean()
+            volume_threshold = volume_mean * 0.3
+            stock_df = stock_df[volumes_raw >= volume_threshold].copy()
+            print(f"过滤成交量小于平均值30%的数据后: {len(stock_df)} 条记录 (平均值: {volume_mean:.2f}, 阈值: {volume_threshold:.2f})")
+        else:
+            print("警告: 未找到成交量列，跳过成交量过滤")
     except Exception as e:
         print(f"获取数据失败: {e}")
         import traceback

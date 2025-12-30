@@ -130,3 +130,7 @@ training.log
 # 期货列表文件（可能包含个人配置）
 futures_list.txt
 
+# 推理结果文件
+infer_res/calculate_profit/*/profit_result_*.json
+infer_res/calculate_profit/*/trade_records_*.csv
+

@@ -34,6 +34,13 @@ def process_stock_data(df):
     if date_col is None or close_col is None or volume_col is None:
         raise ValueError(f"数据文件缺少必要列。可用列: {df.columns.tolist()}")
     
+    # 滤除成交量小于平均值30%的天数
+    volumes_raw = df[volume_col].astype(float)
+    volume_mean = volumes_raw.mean()
+    volume_threshold = volume_mean * 0.3
+    df = df[volumes_raw >= volume_threshold].copy()
+    print(f"过滤成交量小于平均值30%的数据后: {len(df)} 条记录 (平均值: {volume_mean:.2f}, 阈值: {volume_threshold:.2f})")
+    
     dates = df[date_col].values
     close_prices = df[close_col].values.astype(float)
     volumes = df[volume_col].values.astype(float)
