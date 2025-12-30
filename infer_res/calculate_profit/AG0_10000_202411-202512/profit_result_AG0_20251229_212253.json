@@ -1,0 +1,7405 @@
+{
+  "stock_code": "AG0",
+  "log_folder": "/home/ayaka/wxl/stock/AKPRE_LSTM/logs/20251229_181454_train_AG0_20251229",
+  "num_trading_days": 60,
+  "start_date": "2024-11-01",
+  "trading_period": {
+    "start": "2024-11-01 00:00:00",
+    "end": "2025-12-29 00:00:00"
+  },
+  "initial_capital": 10000.0,
+  "final_value": 7686.664089996826,
+  "profit": -2313.335910003174,
+  "profit_rate": -23.13335910003174,
+  "total_trades": 32,
+  "predictions": [
+    {
+      "date": "2024-11-01",
+      "prediction": 1,
+      "probability_up": 0.5254237651824951,
+      "probability_down": 0.4745762348175049,
+      "actual_change": null,
+      "close_price": 7964.0,
+      "price_change_pct": null
+    },
+    {
+      "date": "2024-11-04",
+      "prediction": 1,
+      "probability_up": 0.5212557911872864,
+      "probability_down": 0.4787442088127136,
+      "actual_change": 1,
+      "close_price": 8006.0,
+      "price_change_pct": 0.527373179306881
+    },
+    {
+      "date": "2024-11-05",
+      "prediction": 1,
+      "probability_up": 0.5143435001373291,
+      "probability_down": 0.4856564700603485,
+      "actual_change": 0,
+      "close_price": 7993.0,
+      "price_change_pct": -0.1623782163377467
+    },
+    {
+      "date": "2024-11-06",
+      "prediction": 1,
+      "probability_up": 0.5384939908981323,
+      "probability_down": 0.4615059494972229,
+      "actual_change": 0,
+      "close_price": 7780.0,
+      "price_change_pct": -2.6648317277617917
+    },
+    {
+      "date": "2024-11-07",
+      "prediction": 1,
+      "probability_up": 0.5521959662437439,
+      "probability_down": 0.4478040337562561,
+      "actual_change": 0,
+      "close_price": 7699.0,
+      "price_change_pct": -1.0411311053984575
+    },
+    {
+      "date": "2024-11-08",
+      "prediction": 1,
+      "probability_up": 0.5468214750289917,
+      "probability_down": 0.4531785547733307,
+      "actual_change": 1,
+      "close_price": 7760.0,
+      "price_change_pct": 0.7923106896999611
+    },
+    {
+      "date": "2024-11-11",
+      "prediction": 1,
+      "probability_up": 0.5382078289985657,
+      "probability_down": 0.4617922306060791,
+      "actual_change": 1,
+      "close_price": 7800.0,
+      "price_change_pct": 0.5154639175257731
+    },
+    {
+      "date": "2024-11-12",
+      "prediction": 1,
+      "probability_up": 0.5570456385612488,
+      "probability_down": 0.442954421043396,
+      "actual_change": 0,
+      "close_price": 7581.0,
+      "price_change_pct": -2.8076923076923075
+    },
+    {
+      "date": "2024-11-13",
+      "prediction": 1,
+      "probability_up": 0.5456611514091492,
+      "probability_down": 0.45433881878852844,
+      "actual_change": 1,
+      "close_price": 7707.0,
+      "price_change_pct": 1.662049861495845
+    },
+    {
+      "date": "2024-11-14",
+      "prediction": 1,
+      "probability_up": 0.5605486631393433,
+      "probability_down": 0.43945133686065674,
+      "actual_change": 0,
+      "close_price": 7504.0,
+      "price_change_pct": -2.633969118982743
+    },
+    {
+      "date": "2024-11-15",
+      "prediction": 1,
+      "probability_up": 0.5505488514900208,
+      "probability_down": 0.449451208114624,
+      "actual_change": 1,
+      "close_price": 7591.0,
+      "price_change_pct": 1.1593816631130065
+    },
+    {
+      "date": "2024-11-18",
+      "prediction": 1,
+      "probability_up": 0.5349820852279663,
+      "probability_down": 0.4650179445743561,
+      "actual_change": 1,
+      "close_price": 7688.0,
+      "price_change_pct": 1.2778290080358319
+    },
+    {
+      "date": "2024-11-19",
+      "prediction": 1,
+      "probability_up": 0.5210680365562439,
+      "probability_down": 0.4789319336414337,
+      "actual_change": 1,
+      "close_price": 7817.0,
+      "price_change_pct": 1.6779396462018732
+    },
+    {
+      "date": "2024-11-20",
+      "prediction": 1,
+      "probability_up": 0.5208821892738342,
+      "probability_down": 0.47911781072616577,
+      "actual_change": 0,
+      "close_price": 7761.0,
+      "price_change_pct": -0.7163873608801331
+    },
+    {
+      "date": "2024-11-21",
+      "prediction": 1,
+      "probability_up": 0.5116260051727295,
+      "probability_down": 0.4883739650249481,
+      "actual_change": 1,
+      "close_price": 7840.0,
+      "price_change_pct": 1.017910063136194
+    },
+    {
+      "date": "2024-11-22",
+      "prediction": 1,
+      "probability_up": 0.5119555592536926,
+      "probability_down": 0.4880444407463074,
+      "actual_change": 0,
+      "close_price": 7804.0,
+      "price_change_pct": -0.4591836734693878
+    },
+    {
+      "date": "2024-11-25",
+      "prediction": 1,
+      "probability_up": 0.5334979295730591,
+      "probability_down": 0.4665020704269409,
+      "actual_change": 0,
+      "close_price": 7657.0,
+      "price_change_pct": -1.8836494105586878
+    },
+    {
+      "date": "2024-11-26",
+      "prediction": 1,
+      "probability_up": 0.5395171046257019,
+      "probability_down": 0.4604829251766205,
+      "actual_change": 0,
+      "close_price": 7602.0,
+      "price_change_pct": -0.7182969831526708
+    },
+    {
+      "date": "2024-11-27",
+      "prediction": 1,
+      "probability_up": 0.5166265964508057,
+      "probability_down": 0.48337340354919434,
+      "actual_change": 1,
+      "close_price": 7674.0,
+      "price_change_pct": 0.9471191791633782
+    },
+    {
+      "date": "2024-11-28",
+      "prediction": 1,
+      "probability_up": 0.5251976251602173,
+      "probability_down": 0.4748024046421051,
+      "actual_change": 0,
+      "close_price": 7532.0,
+      "price_change_pct": -1.850403961428199
+    },
+    {
+      "date": "2024-11-29",
+      "prediction": 1,
+      "probability_up": 0.5017102956771851,
+      "probability_down": 0.49828967452049255,
+      "actual_change": 1,
+      "close_price": 7697.0,
+      "price_change_pct": 2.1906532129580456
+    },
+    {
+      "date": "2024-12-02",
+      "prediction": 1,
+      "probability_up": 0.5032300353050232,
+      "probability_down": 0.4967699646949768,
+      "actual_change": 0,
+      "close_price": 7596.0,
+      "price_change_pct": -1.3121995582694557
+    },
+    {
+      "date": "2024-12-03",
+      "prediction": 0,
+      "probability_up": 0.489518404006958,
+      "probability_down": 0.510481595993042,
+      "actual_change": 1,
+      "close_price": 7804.0,
+      "price_change_pct": 2.738283307003686
+    },
+    {
+      "date": "2024-12-04",
+      "prediction": 0,
+      "probability_up": 0.486471027135849,
+      "probability_down": 0.5135289430618286,
+      "actual_change": 1,
+      "close_price": 7814.0,
+      "price_change_pct": 0.12813941568426446
+    },
+    {
+      "date": "2024-12-05",
+      "prediction": 0,
+      "probability_up": 0.482017457485199,
+      "probability_down": 0.517982542514801,
+      "actual_change": 1,
+      "close_price": 7832.0,
+      "price_change_pct": 0.2303557716918352
+    },
+    {
+      "date": "2024-12-06",
+      "prediction": 0,
+      "probability_up": 0.4843239486217499,
+      "probability_down": 0.5156760811805725,
+      "actual_change": 0,
+      "close_price": 7823.0,
+      "price_change_pct": -0.11491317671092952
+    },
+    {
+      "date": "2024-12-09",
+      "prediction": 0,
+      "probability_up": 0.4935527741909027,
+      "probability_down": 0.5064471960067749,
+      "actual_change": 0,
+      "close_price": 7795.0,
+      "price_change_pct": -0.35791895692189696
+    },
+    {
+      "date": "2024-12-10",
+      "prediction": 0,
+      "probability_up": 0.4794442355632782,
+      "probability_down": 0.5205557942390442,
+      "actual_change": 1,
+      "close_price": 7924.0,
+      "price_change_pct": 1.6549069916613213
+    },
+    {
+      "date": "2024-12-11",
+      "prediction": 0,
+      "probability_up": 0.475625604391098,
+      "probability_down": 0.5243743658065796,
+      "actual_change": 0,
+      "close_price": 7914.0,
+      "price_change_pct": -0.12619888944977284
+    },
+    {
+      "date": "2024-12-12",
+      "prediction": 0,
+      "probability_up": 0.4681006073951721,
+      "probability_down": 0.5318993330001831,
+      "actual_change": 1,
+      "close_price": 8014.0,
+      "price_change_pct": 1.2635835228708618
+    },
+    {
+      "date": "2024-12-13",
+      "prediction": 0,
+      "probability_up": 0.49878692626953125,
+      "probability_down": 0.5012130737304688,
+      "actual_change": 0,
+      "close_price": 7795.0,
+      "price_change_pct": -2.7327177439480907
+    },
+    {
+      "date": "2024-12-16",
+      "prediction": 1,
+      "probability_up": 0.5175665616989136,
+      "probability_down": 0.48243340849876404,
+      "actual_change": 0,
+      "close_price": 7736.0,
+      "price_change_pct": -0.7568954457985888
+    },
+    {
+      "date": "2024-12-17",
+      "prediction": 1,
+      "probability_up": 0.5171356797218323,
+      "probability_down": 0.4828643202781677,
+      "actual_change": 0,
+      "close_price": 7717.0,
+      "price_change_pct": -0.24560496380558428
+    },
+    {
+      "date": "2024-12-18",
+      "prediction": 1,
+      "probability_up": 0.5110874772071838,
+      "probability_down": 0.48891252279281616,
+      "actual_change": 0,
+      "close_price": 7701.0,
+      "price_change_pct": -0.20733445639497217
+    },
+    {
+      "date": "2024-12-19",
+      "prediction": 1,
+      "probability_up": 0.5347050428390503,
+      "probability_down": 0.4652949869632721,
+      "actual_change": 0,
+      "close_price": 7505.0,
+      "price_change_pct": -2.545124009868848
+    },
+    {
+      "date": "2024-12-20",
+      "prediction": 1,
+      "probability_up": 0.5461684465408325,
+      "probability_down": 0.4538314938545227,
+      "actual_change": 0,
+      "close_price": 7444.0,
+      "price_change_pct": -0.8127914723517655
+    },
+    {
+      "date": "2024-12-23",
+      "prediction": 1,
+      "probability_up": 0.5295955538749695,
+      "probability_down": 0.4704044461250305,
+      "actual_change": 1,
+      "close_price": 7583.0,
+      "price_change_pct": 1.8672756582482537
+    },
+    {
+      "date": "2024-12-24",
+      "prediction": 1,
+      "probability_up": 0.5204490423202515,
+      "probability_down": 0.47955092787742615,
+      "actual_change": 0,
+      "close_price": 7580.0,
+      "price_change_pct": -0.039562178557299224
+    },
+    {
+      "date": "2024-12-25",
+      "prediction": 1,
+      "probability_up": 0.5151200294494629,
+      "probability_down": 0.4848799407482147,
+      "actual_change": 1,
+      "close_price": 7582.0,
+      "price_change_pct": 0.02638522427440633
+    },
+    {
+      "date": "2024-12-26",
+      "prediction": 1,
+      "probability_up": 0.5117013454437256,
+      "probability_down": 0.4882986545562744,
+      "actual_change": 1,
+      "close_price": 7583.0,
+      "price_change_pct": 0.013189132155104196
+    },
+    {
+      "date": "2024-12-27",
+      "prediction": 1,
+      "probability_up": 0.5066352486610413,
+      "probability_down": 0.49336472153663635,
+      "actual_change": 1,
+      "close_price": 7601.0,
+      "price_change_pct": 0.23737307134379534
+    },
+    {
+      "date": "2024-12-30",
+      "prediction": 1,
+      "probability_up": 0.5083483457565308,
+      "probability_down": 0.4916516840457916,
+      "actual_change": 0,
+      "close_price": 7560.0,
+      "price_change_pct": -0.5394027101697145
+    },
+    {
+      "date": "2024-12-31",
+      "prediction": 1,
+      "probability_up": 0.5196128487586975,
+      "probability_down": 0.4803871214389801,
+      "actual_change": 0,
+      "close_price": 7470.0,
+      "price_change_pct": -1.1904761904761905
+    },
+    {
+      "date": "2025-01-02",
+      "prediction": 1,
+      "probability_up": 0.500495970249176,
+      "probability_down": 0.49950405955314636,
+      "actual_change": 1,
+      "close_price": 7614.0,
+      "price_change_pct": 1.9277108433734942
+    },
+    {
+      "date": "2025-01-03",
+      "prediction": 0,
+      "probability_up": 0.490046888589859,
+      "probability_down": 0.5099531412124634,
+      "actual_change": 1,
+      "close_price": 7637.0,
+      "price_change_pct": 0.30207512477016024
+    },
+    {
+      "date": "2025-01-06",
+      "prediction": 0,
+      "probability_up": 0.48887118697166443,
+      "probability_down": 0.5111287832260132,
+      "actual_change": 0,
+      "close_price": 7611.0,
+      "price_change_pct": -0.3404478198245384
+    },
+    {
+      "date": "2025-01-07",
+      "prediction": 0,
+      "probability_up": 0.4836820960044861,
+      "probability_down": 0.5163179039955139,
+      "actual_change": 1,
+      "close_price": 7733.0,
+      "price_change_pct": 1.6029431086585204
+    },
+    {
+      "date": "2025-01-08",
+      "prediction": 0,
+      "probability_up": 0.47665277123451233,
+      "probability_down": 0.5233471989631653,
+      "actual_change": 1,
+      "close_price": 7759.0,
+      "price_change_pct": 0.3362213888529678
+    },
+    {
+      "date": "2025-01-09",
+      "prediction": 0,
+      "probability_up": 0.4742948114871979,
+      "probability_down": 0.5257051587104797,
+      "actual_change": 1,
+      "close_price": 7774.0,
+      "price_change_pct": 0.1933238819435494
+    },
+    {
+      "date": "2025-01-10",
+      "prediction": 0,
+      "probability_up": 0.4710804224014282,
+      "probability_down": 0.5289196372032166,
+      "actual_change": 1,
+      "close_price": 7824.0,
+      "price_change_pct": 0.6431695394906097
+    },
+    {
+      "date": "2025-01-13",
+      "prediction": 0,
+      "probability_up": 0.47659456729888916,
+      "probability_down": 0.5234054327011108,
+      "actual_change": 0,
+      "close_price": 7788.0,
+      "price_change_pct": -0.4601226993865031
+    },
+    {
+      "date": "2025-01-14",
+      "prediction": 1,
+      "probability_up": 0.5138100385665894,
+      "probability_down": 0.48618990182876587,
+      "actual_change": 0,
+      "close_price": 7608.0,
+      "price_change_pct": -2.311248073959938
+    },
+    {
+      "date": "2025-01-15",
+      "prediction": 1,
+      "probability_up": 0.5001598000526428,
+      "probability_down": 0.4998401701450348,
+      "actual_change": 1,
+      "close_price": 7689.0,
+      "price_change_pct": 1.0646687697160884
+    },
+    {
+      "date": "2025-01-16",
+      "prediction": 0,
+      "probability_up": 0.48005956411361694,
+      "probability_down": 0.5199404358863831,
+      "actual_change": 1,
+      "close_price": 7872.0,
+      "price_change_pct": 2.380023410066329
+    },
+    {
+      "date": "2025-01-17",
+      "prediction": 0,
+      "probability_up": 0.4773864150047302,
+      "probability_down": 0.5226135849952698,
+      "actual_change": 0,
+      "close_price": 7833.0,
+      "price_change_pct": -0.4954268292682927
+    },
+    {
+      "date": "2025-01-20",
+      "prediction": 0,
+      "probability_up": 0.48363569378852844,
+      "probability_down": 0.516364336013794,
+      "actual_change": 0,
+      "close_price": 7770.0,
+      "price_change_pct": -0.8042895442359249
+    },
+    {
+      "date": "2025-01-21",
+      "prediction": 0,
+      "probability_up": 0.4841338098049164,
+      "probability_down": 0.5158661603927612,
+      "actual_change": 1,
+      "close_price": 7783.0,
+      "price_change_pct": 0.16731016731016732
+    },
+    {
+      "date": "2025-01-22",
+      "prediction": 0,
+      "probability_up": 0.4797433614730835,
+      "probability_down": 0.5202565789222717,
+      "actual_change": 1,
+      "close_price": 7812.0,
+      "price_change_pct": 0.37260696389567005
+    },
+    {
+      "date": "2025-01-23",
+      "prediction": 0,
+      "probability_up": 0.4887509047985077,
+      "probability_down": 0.5112491250038147,
+      "actual_change": 0,
+      "close_price": 7720.0,
+      "price_change_pct": -1.1776753712237584
+    },
+    {
+      "date": "2025-01-24",
+      "prediction": 0,
+      "probability_up": 0.4813012182712555,
+      "probability_down": 0.5186988115310669,
+      "actual_change": 1,
+      "close_price": 7778.0,
+      "price_change_pct": 0.7512953367875648
+    },
+    {
+      "date": "2025-01-27",
+      "prediction": 0,
+      "probability_up": 0.48962822556495667,
+      "probability_down": 0.5103718042373657,
+      "actual_change": 0,
+      "close_price": 7687.0,
+      "price_change_pct": -1.169966572383646
+    },
+    {
+      "date": "2025-02-05",
+      "prediction": 0,
+      "probability_up": 0.4817436933517456,
+      "probability_down": 0.5182563066482544,
+      "actual_change": 1,
+      "close_price": 8107.0,
+      "price_change_pct": 5.463770001300897
+    },
+    {
+      "date": "2025-02-06",
+      "prediction": 0,
+      "probability_up": 0.47793829441070557,
+      "probability_down": 0.5220616459846497,
+      "actual_change": 0,
+      "close_price": 8042.0,
+      "price_change_pct": -0.8017762427531763
+    },
+    {
+      "date": "2025-02-07",
+      "prediction": 0,
+      "probability_up": 0.47676727175712585,
+      "probability_down": 0.5232326984405518,
+      "actual_change": 1,
+      "close_price": 8055.0,
+      "price_change_pct": 0.1616513305147973
+    },
+    {
+      "date": "2025-02-10",
+      "prediction": 0,
+      "probability_up": 0.4824272692203522,
+      "probability_down": 0.5175727605819702,
+      "actual_change": 1,
+      "close_price": 8062.0,
+      "price_change_pct": 0.08690254500310365
+    },
+    {
+      "date": "2025-02-11",
+      "prediction": 1,
+      "probability_up": 0.5065513849258423,
+      "probability_down": 0.4934486746788025,
+      "actual_change": 0,
+      "close_price": 7972.0,
+      "price_change_pct": -1.116348300669809
+    },
+    {
+      "date": "2025-02-12",
+      "prediction": 1,
+      "probability_up": 0.5059458017349243,
+      "probability_down": 0.4940541982650757,
+      "actual_change": 0,
+      "close_price": 7967.0,
+      "price_change_pct": -0.06271951831409935
+    },
+    {
+      "date": "2025-02-13",
+      "prediction": 0,
+      "probability_up": 0.4871821403503418,
+      "probability_down": 0.5128178596496582,
+      "actual_change": 1,
+      "close_price": 8028.0,
+      "price_change_pct": 0.7656583406552027
+    },
+    {
+      "date": "2025-02-14",
+      "prediction": 0,
+      "probability_up": 0.4736928343772888,
+      "probability_down": 0.5263071656227112,
+      "actual_change": 1,
+      "close_price": 8254.0,
+      "price_change_pct": 2.815146985550573
+    },
+    {
+      "date": "2025-02-17",
+      "prediction": 0,
+      "probability_up": 0.4917103350162506,
+      "probability_down": 0.5082896947860718,
+      "actual_change": 0,
+      "close_price": 8016.0,
+      "price_change_pct": -2.8834504482675065
+    },
+    {
+      "date": "2025-02-18",
+      "prediction": 0,
+      "probability_up": 0.48851925134658813,
+      "probability_down": 0.5114806890487671,
+      "actual_change": 1,
+      "close_price": 8077.0,
+      "price_change_pct": 0.7609780439121756
+    },
+    {
+      "date": "2025-02-19",
+      "prediction": 0,
+      "probability_up": 0.4787968397140503,
+      "probability_down": 0.5212031006813049,
+      "actual_change": 1,
+      "close_price": 8132.0,
+      "price_change_pct": 0.6809458957533738
+    },
+    {
+      "date": "2025-02-20",
+      "prediction": 0,
+      "probability_up": 0.47577664256095886,
+      "probability_down": 0.5242233872413635,
+      "actual_change": 1,
+      "close_price": 8147.0,
+      "price_change_pct": 0.18445646827348747
+    },
+    {
+      "date": "2025-02-21",
+      "prediction": 0,
+      "probability_up": 0.47859707474708557,
+      "probability_down": 0.521402895450592,
+      "actual_change": 0,
+      "close_price": 8102.0,
+      "price_change_pct": -0.5523505584877869
+    },
+    {
+      "date": "2025-02-24",
+      "prediction": 0,
+      "probability_up": 0.4803414046764374,
+      "probability_down": 0.519658625125885,
+      "actual_change": 0,
+      "close_price": 8087.0,
+      "price_change_pct": -0.18513947173537398
+    },
+    {
+      "date": "2025-02-25",
+      "prediction": 0,
+      "probability_up": 0.4902956485748291,
+      "probability_down": 0.5097043514251709,
+      "actual_change": 0,
+      "close_price": 8017.0,
+      "price_change_pct": -0.8655867441572894
+    },
+    {
+      "date": "2025-02-26",
+      "prediction": 1,
+      "probability_up": 0.5095765590667725,
+      "probability_down": 0.49042344093322754,
+      "actual_change": 0,
+      "close_price": 7904.0,
+      "price_change_pct": -1.4095048022951229
+    },
+    {
+      "date": "2025-02-27",
+      "prediction": 1,
+      "probability_up": 0.5106561183929443,
+      "probability_down": 0.48934391140937805,
+      "actual_change": 0,
+      "close_price": 7900.0,
+      "price_change_pct": -0.05060728744939271
+    },
+    {
+      "date": "2025-02-28",
+      "prediction": 1,
+      "probability_up": 0.509878933429718,
+      "probability_down": 0.49012109637260437,
+      "actual_change": 0,
+      "close_price": 7869.0,
+      "price_change_pct": -0.3924050632911393
+    },
+    {
+      "date": "2025-03-03",
+      "prediction": 1,
+      "probability_up": 0.5000396966934204,
+      "probability_down": 0.4999602735042572,
+      "actual_change": 1,
+      "close_price": 7907.0,
+      "price_change_pct": 0.48290761214893885
+    },
+    {
+      "date": "2025-03-04",
+      "prediction": 0,
+      "probability_up": 0.49096858501434326,
+      "probability_down": 0.5090314149856567,
+      "actual_change": 1,
+      "close_price": 7956.0,
+      "price_change_pct": 0.619704059693942
+    },
+    {
+      "date": "2025-03-05",
+      "prediction": 0,
+      "probability_up": 0.48683997988700867,
+      "probability_down": 0.5131600499153137,
+      "actual_change": 1,
+      "close_price": 8006.0,
+      "price_change_pct": 0.628456510809452
+    },
+    {
+      "date": "2025-03-06",
+      "prediction": 0,
+      "probability_up": 0.4848274886608124,
+      "probability_down": 0.51517254114151,
+      "actual_change": 1,
+      "close_price": 8076.0,
+      "price_change_pct": 0.8743442418186359
+    },
+    {
+      "date": "2025-03-07",
+      "prediction": 0,
+      "probability_up": 0.4837401211261749,
+      "probability_down": 0.5162599086761475,
+      "actual_change": 0,
+      "close_price": 8069.0,
+      "price_change_pct": -0.0866765725606736
+    },
+    {
+      "date": "2025-03-10",
+      "prediction": 0,
+      "probability_up": 0.48405784368515015,
+      "probability_down": 0.5159421563148499,
+      "actual_change": 1,
+      "close_price": 8076.0,
+      "price_change_pct": 0.08675176601809394
+    },
+    {
+      "date": "2025-03-11",
+      "prediction": 0,
+      "probability_up": 0.495492547750473,
+      "probability_down": 0.5045074820518494,
+      "actual_change": 0,
+      "close_price": 8012.0,
+      "price_change_pct": -0.79247152055473
+    },
+    {
+      "date": "2025-03-12",
+      "prediction": 0,
+      "probability_up": 0.4850740432739258,
+      "probability_down": 0.5149259567260742,
+      "actual_change": 1,
+      "close_price": 8087.0,
+      "price_change_pct": 0.9360958562156765
+    },
+    {
+      "date": "2025-03-13",
+      "prediction": 0,
+      "probability_up": 0.4794624447822571,
+      "probability_down": 0.5205375552177429,
+      "actual_change": 1,
+      "close_price": 8152.0,
+      "price_change_pct": 0.803759119574626
+    },
+    {
+      "date": "2025-03-14",
+      "prediction": 0,
+      "probability_up": 0.4672599732875824,
+      "probability_down": 0.53274005651474,
+      "actual_change": 1,
+      "close_price": 8380.0,
+      "price_change_pct": 2.7968596663395484
+    },
+    {
+      "date": "2025-03-17",
+      "prediction": 0,
+      "probability_up": 0.4619743525981903,
+      "probability_down": 0.5380256175994873,
+      "actual_change": 0,
+      "close_price": 8355.0,
+      "price_change_pct": -0.29832935560859186
+    },
+    {
+      "date": "2025-03-18",
+      "prediction": 0,
+      "probability_up": 0.46411439776420593,
+      "probability_down": 0.5358855724334717,
+      "actual_change": 1,
+      "close_price": 8369.0,
+      "price_change_pct": 0.1675643327348893
+    },
+    {
+      "date": "2025-03-19",
+      "prediction": 0,
+      "probability_up": 0.46974071860313416,
+      "probability_down": 0.5302593111991882,
+      "actual_change": 1,
+      "close_price": 8378.0,
+      "price_change_pct": 0.10753972995578923
+    },
+    {
+      "date": "2025-03-20",
+      "prediction": 0,
+      "probability_up": 0.4810669422149658,
+      "probability_down": 0.5189330577850342,
+      "actual_change": 0,
+      "close_price": 8356.0,
+      "price_change_pct": -0.26259250417760804
+    },
+    {
+      "date": "2025-03-21",
+      "prediction": 1,
+      "probability_up": 0.5115224123001099,
+      "probability_down": 0.48847758769989014,
+      "actual_change": 0,
+      "close_price": 8207.0,
+      "price_change_pct": -1.7831498324557205
+    },
+    {
+      "date": "2025-03-24",
+      "prediction": 1,
+      "probability_up": 0.5014087557792664,
+      "probability_down": 0.49859124422073364,
+      "actual_change": 1,
+      "close_price": 8248.0,
+      "price_change_pct": 0.49957353478737665
+    },
+    {
+      "date": "2025-03-25",
+      "prediction": 0,
+      "probability_up": 0.4889317750930786,
+      "probability_down": 0.5110682249069214,
+      "actual_change": 1,
+      "close_price": 8249.0,
+      "price_change_pct": 0.012124151309408342
+    },
+    {
+      "date": "2025-03-26",
+      "prediction": 0,
+      "probability_up": 0.4758458137512207,
+      "probability_down": 0.5241541862487793,
+      "actual_change": 1,
+      "close_price": 8366.0,
+      "price_change_pct": 1.4183537398472543
+    },
+    {
+      "date": "2025-03-27",
+      "prediction": 0,
+      "probability_up": 0.4733264744281769,
+      "probability_down": 0.5266734957695007,
+      "actual_change": 1,
+      "close_price": 8372.0,
+      "price_change_pct": 0.07171886206072196
+    },
+    {
+      "date": "2025-03-28",
+      "prediction": 0,
+      "probability_up": 0.46707573533058167,
+      "probability_down": 0.5329242944717407,
+      "actual_change": 1,
+      "close_price": 8512.0,
+      "price_change_pct": 1.6722408026755853
+    },
+    {
+      "date": "2025-03-31",
+      "prediction": 0,
+      "probability_up": 0.4652283787727356,
+      "probability_down": 0.5347716212272644,
+      "actual_change": 0,
+      "close_price": 8506.0,
+      "price_change_pct": -0.07048872180451127
+    },
+    {
+      "date": "2025-04-01",
+      "prediction": 0,
+      "probability_up": 0.47793668508529663,
+      "probability_down": 0.5220633149147034,
+      "actual_change": 0,
+      "close_price": 8432.0,
+      "price_change_pct": -0.8699741359040678
+    },
+    {
+      "date": "2025-04-02",
+      "prediction": 0,
+      "probability_up": 0.4914534091949463,
+      "probability_down": 0.5085465908050537,
+      "actual_change": 0,
+      "close_price": 8401.0,
+      "price_change_pct": -0.3676470588235294
+    },
+    {
+      "date": "2025-04-03",
+      "prediction": 1,
+      "probability_up": 0.5098457932472229,
+      "probability_down": 0.4901541769504547,
+      "actual_change": 0,
+      "close_price": 8286.0,
+      "price_change_pct": -1.3688846565885013
+    },
+    {
+      "date": "2025-04-07",
+      "prediction": 1,
+      "probability_up": 0.5549130439758301,
+      "probability_down": 0.4450870156288147,
+      "actual_change": 0,
+      "close_price": 7617.0,
+      "price_change_pct": -8.073859522085446
+    },
+    {
+      "date": "2025-04-08",
+      "prediction": 1,
+      "probability_up": 0.5638909935951233,
+      "probability_down": 0.4361090660095215,
+      "actual_change": 1,
+      "close_price": 7683.0,
+      "price_change_pct": 0.866482867270579
+    },
+    {
+      "date": "2025-04-09",
+      "prediction": 1,
+      "probability_up": 0.566564679145813,
+      "probability_down": 0.433435320854187,
+      "actual_change": 1,
+      "close_price": 7755.0,
+      "price_change_pct": 0.9371339320577898
+    },
+    {
+      "date": "2025-04-10",
+      "prediction": 1,
+      "probability_up": 0.5598857998847961,
+      "probability_down": 0.44011420011520386,
+      "actual_change": 1,
+      "close_price": 7974.0,
+      "price_change_pct": 2.8239845261121856
+    },
+    {
+      "date": "2025-04-11",
+      "prediction": 1,
+      "probability_up": 0.5576651096343994,
+      "probability_down": 0.4423348605632782,
+      "actual_change": 0,
+      "close_price": 7970.0,
+      "price_change_pct": -0.05016302984700275
+    },
+    {
+      "date": "2025-04-14",
+      "prediction": 1,
+      "probability_up": 0.5500522255897522,
+      "probability_down": 0.449947714805603,
+      "actual_change": 1,
+      "close_price": 8091.0,
+      "price_change_pct": 1.518193224592221
+    },
+    {
+      "date": "2025-04-15",
+      "prediction": 1,
+      "probability_up": 0.5414660573005676,
+      "probability_down": 0.4585339426994324,
+      "actual_change": 1,
+      "close_price": 8158.0,
+      "price_change_pct": 0.8280805833642318
+    },
+    {
+      "date": "2025-04-16",
+      "prediction": 1,
+      "probability_up": 0.5238128304481506,
+      "probability_down": 0.47618719935417175,
+      "actual_change": 1,
+      "close_price": 8233.0,
+      "price_change_pct": 0.9193429762196617
+    },
+    {
+      "date": "2025-04-17",
+      "prediction": 1,
+      "probability_up": 0.531520426273346,
+      "probability_down": 0.46847957372665405,
+      "actual_change": 0,
+      "close_price": 8161.0,
+      "price_change_pct": -0.8745293331713835
+    },
+    {
+      "date": "2025-04-18",
+      "prediction": 1,
+      "probability_up": 0.5340743660926819,
+      "probability_down": 0.4659256637096405,
+      "actual_change": 0,
+      "close_price": 8160.0,
+      "price_change_pct": -0.012253400318588408
+    },
+    {
+      "date": "2025-04-21",
+      "prediction": 1,
+      "probability_up": 0.5131012201309204,
+      "probability_down": 0.4868987798690796,
+      "actual_change": 1,
+      "close_price": 8247.0,
+      "price_change_pct": 1.0661764705882353
+    },
+    {
+      "date": "2025-04-22",
+      "prediction": 1,
+      "probability_up": 0.5121503472328186,
+      "probability_down": 0.487849622964859,
+      "actual_change": 0,
+      "close_price": 8174.0,
+      "price_change_pct": -0.8851703649812052
+    },
+    {
+      "date": "2025-04-23",
+      "prediction": 0,
+      "probability_up": 0.4999484121799469,
+      "probability_down": 0.5000516176223755,
+      "actual_change": 1,
+      "close_price": 8199.0,
+      "price_change_pct": 0.3058478101296795
+    },
+    {
+      "date": "2025-04-24",
+      "prediction": 0,
+      "probability_up": 0.48236948251724243,
+      "probability_down": 0.5176305770874023,
+      "actual_change": 1,
+      "close_price": 8296.0,
+      "price_change_pct": 1.1830711062324675
+    },
+    {
+      "date": "2025-04-25",
+      "prediction": 0,
+      "probability_up": 0.4786565601825714,
+      "probability_down": 0.521343469619751,
+      "actual_change": 0,
+      "close_price": 8280.0,
+      "price_change_pct": -0.19286403085824494
+    },
+    {
+      "date": "2025-04-28",
+      "prediction": 0,
+      "probability_up": 0.49134060740470886,
+      "probability_down": 0.5086593627929688,
+      "actual_change": 0,
+      "close_price": 8168.0,
+      "price_change_pct": -1.3526570048309179
+    },
+    {
+      "date": "2025-04-29",
+      "prediction": 0,
+      "probability_up": 0.4848020076751709,
+      "probability_down": 0.5151979923248291,
+      "actual_change": 1,
+      "close_price": 8215.0,
+      "price_change_pct": 0.5754162585700294
+    },
+    {
+      "date": "2025-04-30",
+      "prediction": 0,
+      "probability_up": 0.4834033250808716,
+      "probability_down": 0.5165966749191284,
+      "actual_change": 0,
+      "close_price": 8182.0,
+      "price_change_pct": -0.40170419963481435
+    },
+    {
+      "date": "2025-05-06",
+      "prediction": 0,
+      "probability_up": 0.47792717814445496,
+      "probability_down": 0.5220727920532227,
+      "actual_change": 1,
+      "close_price": 8235.0,
+      "price_change_pct": 0.6477633830359325
+    },
+    {
+      "date": "2025-05-07",
+      "prediction": 0,
+      "probability_up": 0.47591525316238403,
+      "probability_down": 0.524084746837616,
+      "actual_change": 1,
+      "close_price": 8252.0,
+      "price_change_pct": 0.2064359441408622
+    },
+    {
+      "date": "2025-05-08",
+      "prediction": 0,
+      "probability_up": 0.4916563034057617,
+      "probability_down": 0.5083436965942383,
+      "actual_change": 0,
+      "close_price": 8094.0,
+      "price_change_pct": -1.9146873485215705
+    },
+    {
+      "date": "2025-05-09",
+      "prediction": 0,
+      "probability_up": 0.4835019111633301,
+      "probability_down": 0.5164980888366699,
+      "actual_change": 1,
+      "close_price": 8190.0,
+      "price_change_pct": 1.1860637509266123
+    },
+    {
+      "date": "2025-05-12",
+      "prediction": 0,
+      "probability_up": 0.47861847281455994,
+      "probability_down": 0.5213815569877625,
+      "actual_change": 1,
+      "close_price": 8255.0,
+      "price_change_pct": 0.7936507936507936
+    },
+    {
+      "date": "2025-05-13",
+      "prediction": 0,
+      "probability_up": 0.4783707559108734,
+      "probability_down": 0.521629273891449,
+      "actual_change": 0,
+      "close_price": 8245.0,
+      "price_change_pct": -0.12113870381586916
+    },
+    {
+      "date": "2025-05-14",
+      "prediction": 0,
+      "probability_up": 0.48246681690216064,
+      "probability_down": 0.5175331830978394,
+      "actual_change": 0,
+      "close_price": 8195.0,
+      "price_change_pct": -0.6064281382656156
+    },
+    {
+      "date": "2025-05-15",
+      "prediction": 1,
+      "probability_up": 0.51284259557724,
+      "probability_down": 0.4871574640274048,
+      "actual_change": 0,
+      "close_price": 8008.0,
+      "price_change_pct": -2.2818791946308723
+    },
+    {
+      "date": "2025-05-16",
+      "prediction": 1,
+      "probability_up": 0.5025043487548828,
+      "probability_down": 0.4974956512451172,
+      "actual_change": 1,
+      "close_price": 8101.0,
+      "price_change_pct": 1.1613386613386614
+    },
+    {
+      "date": "2025-05-19",
+      "prediction": 0,
+      "probability_up": 0.49023810029029846,
+      "probability_down": 0.5097618699073792,
+      "actual_change": 1,
+      "close_price": 8133.0,
+      "price_change_pct": 0.39501296136279473
+    },
+    {
+      "date": "2025-05-20",
+      "prediction": 0,
+      "probability_up": 0.4923141896724701,
+      "probability_down": 0.5076857805252075,
+      "actual_change": 0,
+      "close_price": 8074.0,
+      "price_change_pct": -0.7254395671953769
+    },
+    {
+      "date": "2025-05-21",
+      "prediction": 0,
+      "probability_up": 0.48434680700302124,
+      "probability_down": 0.5156531929969788,
+      "actual_change": 1,
+      "close_price": 8272.0,
+      "price_change_pct": 2.452316076294278
+    },
+    {
+      "date": "2025-05-22",
+      "prediction": 0,
+      "probability_up": 0.48184651136398315,
+      "probability_down": 0.5181534886360168,
+      "actual_change": 1,
+      "close_price": 8301.0,
+      "price_change_pct": 0.3505802707930368
+    },
+    {
+      "date": "2025-05-23",
+      "prediction": 0,
+      "probability_up": 0.4832003712654114,
+      "probability_down": 0.5167996287345886,
+      "actual_change": 0,
+      "close_price": 8263.0,
+      "price_change_pct": -0.4577761715455969
+    },
+    {
+      "date": "2025-05-26",
+      "prediction": 0,
+      "probability_up": 0.4843795597553253,
+      "probability_down": 0.5156204700469971,
+      "actual_change": 1,
+      "close_price": 8280.0,
+      "price_change_pct": 0.20573641534551618
+    },
+    {
+      "date": "2025-05-27",
+      "prediction": 0,
+      "probability_up": 0.4951353669166565,
+      "probability_down": 0.5048646330833435,
+      "actual_change": 0,
+      "close_price": 8217.0,
+      "price_change_pct": -0.7608695652173914
+    },
+    {
+      "date": "2025-05-28",
+      "prediction": 0,
+      "probability_up": 0.4922105073928833,
+      "probability_down": 0.5077895522117615,
+      "actual_change": 1,
+      "close_price": 8225.0,
+      "price_change_pct": 0.09735913350371182
+    },
+    {
+      "date": "2025-05-29",
+      "prediction": 0,
+      "probability_up": 0.48638659715652466,
+      "probability_down": 0.5136134028434753,
+      "actual_change": 0,
+      "close_price": 8224.0,
+      "price_change_pct": -0.0121580547112462
+    },
+    {
+      "date": "2025-05-30",
+      "prediction": 0,
+      "probability_up": 0.48229438066482544,
+      "probability_down": 0.5177056193351746,
+      "actual_change": 0,
+      "close_price": 8218.0,
+      "price_change_pct": -0.07295719844357977
+    },
+    {
+      "date": "2025-06-03",
+      "prediction": 0,
+      "probability_up": 0.47645944356918335,
+      "probability_down": 0.5235404968261719,
+      "actual_change": 1,
+      "close_price": 8456.0,
+      "price_change_pct": 2.8960817717206133
+    },
+    {
+      "date": "2025-06-04",
+      "prediction": 0,
+      "probability_up": 0.4698254466056824,
+      "probability_down": 0.5301745533943176,
+      "actual_change": 1,
+      "close_price": 8463.0,
+      "price_change_pct": 0.08278145695364239
+    },
+    {
+      "date": "2025-06-05",
+      "prediction": 0,
+      "probability_up": 0.46877050399780273,
+      "probability_down": 0.5312294960021973,
+      "actual_change": 1,
+      "close_price": 8473.0,
+      "price_change_pct": 0.11816140848398912
+    },
+    {
+      "date": "2025-06-06",
+      "prediction": 0,
+      "probability_up": 0.45557674765586853,
+      "probability_down": 0.5444232821464539,
+      "actual_change": 1,
+      "close_price": 8850.0,
+      "price_change_pct": 4.4494275935323975
+    },
+    {
+      "date": "2025-06-09",
+      "prediction": 0,
+      "probability_up": 0.44349151849746704,
+      "probability_down": 0.5565084218978882,
+      "actual_change": 1,
+      "close_price": 8909.0,
+      "price_change_pct": 0.6666666666666667
+    },
+    {
+      "date": "2025-06-10",
+      "prediction": 0,
+      "probability_up": 0.44587209820747375,
+      "probability_down": 0.5541279315948486,
+      "actual_change": 0,
+      "close_price": 8887.0,
+      "price_change_pct": -0.24694129531934
+    },
+    {
+      "date": "2025-06-11",
+      "prediction": 0,
+      "probability_up": 0.46255749464035034,
+      "probability_down": 0.5374425053596497,
+      "actual_change": 1,
+      "close_price": 8902.0,
+      "price_change_pct": 0.1687858669967368
+    },
+    {
+      "date": "2025-06-12",
+      "prediction": 0,
+      "probability_up": 0.49946486949920654,
+      "probability_down": 0.5005351305007935,
+      "actual_change": 0,
+      "close_price": 8819.0,
+      "price_change_pct": -0.9323747472478096
+    },
+    {
+      "date": "2025-06-13",
+      "prediction": 1,
+      "probability_up": 0.5138269662857056,
+      "probability_down": 0.48617303371429443,
+      "actual_change": 0,
+      "close_price": 8791.0,
+      "price_change_pct": -0.3174963147749178
+    },
+    {
+      "date": "2025-06-16",
+      "prediction": 0,
+      "probability_up": 0.4935854971408844,
+      "probability_down": 0.506414532661438,
+      "actual_change": 1,
+      "close_price": 8858.0,
+      "price_change_pct": 0.7621431008986463
+    },
+    {
+      "date": "2025-06-17",
+      "prediction": 0,
+      "probability_up": 0.478931188583374,
+      "probability_down": 0.521068811416626,
+      "actual_change": 1,
+      "close_price": 8864.0,
+      "price_change_pct": 0.06773538044705352
+    },
+    {
+      "date": "2025-06-18",
+      "prediction": 0,
+      "probability_up": 0.46804749965667725,
+      "probability_down": 0.5319525003433228,
+      "actual_change": 1,
+      "close_price": 9045.0,
+      "price_change_pct": 2.0419675090252705
+    },
+    {
+      "date": "2025-06-19",
+      "prediction": 0,
+      "probability_up": 0.48375213146209717,
+      "probability_down": 0.5162478685379028,
+      "actual_change": 0,
+      "close_price": 8819.0,
+      "price_change_pct": -2.4986180210060804
+    },
+    {
+      "date": "2025-06-20",
+      "prediction": 1,
+      "probability_up": 0.5154727101325989,
+      "probability_down": 0.4845272898674011,
+      "actual_change": 0,
+      "close_price": 8664.0,
+      "price_change_pct": -1.757568885361152
+    },
+    {
+      "date": "2025-06-23",
+      "prediction": 0,
+      "probability_up": 0.4999541938304901,
+      "probability_down": 0.5000457763671875,
+      "actual_change": 1,
+      "close_price": 8770.0,
+      "price_change_pct": 1.2234533702677746
+    },
+    {
+      "date": "2025-06-24",
+      "prediction": 0,
+      "probability_up": 0.4928818345069885,
+      "probability_down": 0.5071181654930115,
+      "actual_change": 0,
+      "close_price": 8739.0,
+      "price_change_pct": -0.35347776510832385
+    },
+    {
+      "date": "2025-06-25",
+      "prediction": 0,
+      "probability_up": 0.48937246203422546,
+      "probability_down": 0.5106275081634521,
+      "actual_change": 0,
+      "close_price": 8726.0,
+      "price_change_pct": -0.1487584391806843
+    },
+    {
+      "date": "2025-06-26",
+      "prediction": 0,
+      "probability_up": 0.4823312759399414,
+      "probability_down": 0.5176687240600586,
+      "actual_change": 1,
+      "close_price": 8796.0,
+      "price_change_pct": 0.8022003208801284
+    },
+    {
+      "date": "2025-06-27",
+      "prediction": 0,
+      "probability_up": 0.48136070370674133,
+      "probability_down": 0.518639326095581,
+      "actual_change": 0,
+      "close_price": 8792.0,
+      "price_change_pct": -0.04547521600727603
+    },
+    {
+      "date": "2025-06-30",
+      "prediction": 0,
+      "probability_up": 0.48348861932754517,
+      "probability_down": 0.5165113210678101,
+      "actual_change": 0,
+      "close_price": 8762.0,
+      "price_change_pct": -0.34121929026387626
+    },
+    {
+      "date": "2025-07-01",
+      "prediction": 0,
+      "probability_up": 0.48187559843063354,
+      "probability_down": 0.5181244015693665,
+      "actual_change": 1,
+      "close_price": 8810.0,
+      "price_change_pct": 0.5478201323898653
+    },
+    {
+      "date": "2025-07-02",
+      "prediction": 0,
+      "probability_up": 0.48517143726348877,
+      "probability_down": 0.5148285627365112,
+      "actual_change": 0,
+      "close_price": 8747.0,
+      "price_change_pct": -0.7150964812712826
+    },
+    {
+      "date": "2025-07-03",
+      "prediction": 0,
+      "probability_up": 0.4803638756275177,
+      "probability_down": 0.5196360945701599,
+      "actual_change": 1,
+      "close_price": 8944.0,
+      "price_change_pct": 2.252200754544415
+    },
+    {
+      "date": "2025-07-04",
+      "prediction": 0,
+      "probability_up": 0.4770638942718506,
+      "probability_down": 0.5229361653327942,
+      "actual_change": 1,
+      "close_price": 8948.0,
+      "price_change_pct": 0.044722719141323794
+    },
+    {
+      "date": "2025-07-07",
+      "prediction": 0,
+      "probability_up": 0.4817185699939728,
+      "probability_down": 0.5182814598083496,
+      "actual_change": 0,
+      "close_price": 8897.0,
+      "price_change_pct": -0.5699597675458203
+    },
+    {
+      "date": "2025-07-08",
+      "prediction": 0,
+      "probability_up": 0.4800030291080475,
+      "probability_down": 0.5199970006942749,
+      "actual_change": 1,
+      "close_price": 8953.0,
+      "price_change_pct": 0.6294256490952006
+    },
+    {
+      "date": "2025-07-09",
+      "prediction": 0,
+      "probability_up": 0.48393678665161133,
+      "probability_down": 0.5160632133483887,
+      "actual_change": 0,
+      "close_price": 8899.0,
+      "price_change_pct": -0.603149782195912
+    },
+    {
+      "date": "2025-07-10",
+      "prediction": 0,
+      "probability_up": 0.4814252555370331,
+      "probability_down": 0.5185747146606445,
+      "actual_change": 1,
+      "close_price": 8919.0,
+      "price_change_pct": 0.22474435329812337
+    },
+    {
+      "date": "2025-07-11",
+      "prediction": 0,
+      "probability_up": 0.4759587347507477,
+      "probability_down": 0.5240412354469299,
+      "actual_change": 1,
+      "close_price": 9040.0,
+      "price_change_pct": 1.3566543334454535
+    },
+    {
+      "date": "2025-07-14",
+      "prediction": 0,
+      "probability_up": 0.465634286403656,
+      "probability_down": 0.534365713596344,
+      "actual_change": 1,
+      "close_price": 9207.0,
+      "price_change_pct": 1.8473451327433628
+    },
+    {
+      "date": "2025-07-15",
+      "prediction": 0,
+      "probability_up": 0.46005353331565857,
+      "probability_down": 0.539946436882019,
+      "actual_change": 1,
+      "close_price": 9225.0,
+      "price_change_pct": 0.19550342130987292
+    },
+    {
+      "date": "2025-07-16",
+      "prediction": 0,
+      "probability_up": 0.4712878167629242,
+      "probability_down": 0.5287122130393982,
+      "actual_change": 0,
+      "close_price": 9152.0,
+      "price_change_pct": -0.7913279132791329
+    },
+    {
+      "date": "2025-07-17",
+      "prediction": 0,
+      "probability_up": 0.4793524742126465,
+      "probability_down": 0.5206475853919983,
+      "actual_change": 1,
+      "close_price": 9166.0,
+      "price_change_pct": 0.15297202797202797
+    },
+    {
+      "date": "2025-07-18",
+      "prediction": 0,
+      "probability_up": 0.47186940908432007,
+      "probability_down": 0.5281305909156799,
+      "actual_change": 1,
+      "close_price": 9273.0,
+      "price_change_pct": 1.1673576260091643
+    },
+    {
+      "date": "2025-07-21",
+      "prediction": 0,
+      "probability_up": 0.4708212614059448,
+      "probability_down": 0.5291787385940552,
+      "actual_change": 0,
+      "close_price": 9271.0,
+      "price_change_pct": -0.021567993098242207
+    },
+    {
+      "date": "2025-07-22",
+      "prediction": 0,
+      "probability_up": 0.4648939073085785,
+      "probability_down": 0.5351061224937439,
+      "actual_change": 1,
+      "close_price": 9393.0,
+      "price_change_pct": 1.3159313989860857
+    },
+    {
+      "date": "2025-07-23",
+      "prediction": 0,
+      "probability_up": 0.4581635892391205,
+      "probability_down": 0.5418364405632019,
+      "actual_change": 1,
+      "close_price": 9492.0,
+      "price_change_pct": 1.0539763653784733
+    },
+    {
+      "date": "2025-07-24",
+      "prediction": 0,
+      "probability_up": 0.4683491885662079,
+      "probability_down": 0.5316507816314697,
+      "actual_change": 0,
+      "close_price": 9386.0,
+      "price_change_pct": -1.1167298777918246
+    },
+    {
+      "date": "2025-07-25",
+      "prediction": 0,
+      "probability_up": 0.47686541080474854,
+      "probability_down": 0.5231345295906067,
+      "actual_change": 1,
+      "close_price": 9392.0,
+      "price_change_pct": 0.06392499467291711
+    },
+    {
+      "date": "2025-07-28",
+      "prediction": 1,
+      "probability_up": 0.5062507390975952,
+      "probability_down": 0.4937492311000824,
+      "actual_change": 0,
+      "close_price": 9212.0,
+      "price_change_pct": -1.9165247018739353
+    },
+    {
+      "date": "2025-07-29",
+      "prediction": 1,
+      "probability_up": 0.5097407698631287,
+      "probability_down": 0.4902592599391937,
+      "actual_change": 0,
+      "close_price": 9195.0,
+      "price_change_pct": -0.18454190186712982
+    },
+    {
+      "date": "2025-07-30",
+      "prediction": 1,
+      "probability_up": 0.5015949010848999,
+      "probability_down": 0.4984050989151001,
+      "actual_change": 0,
+      "close_price": 9192.0,
+      "price_change_pct": -0.03262642740619902
+    },
+    {
+      "date": "2025-07-31",
+      "prediction": 1,
+      "probability_up": 0.5208283066749573,
+      "probability_down": 0.4791716933250427,
+      "actual_change": 0,
+      "close_price": 9008.0,
+      "price_change_pct": -2.0017406440382945
+    },
+    {
+      "date": "2025-08-01",
+      "prediction": 1,
+      "probability_up": 0.5341703295707703,
+      "probability_down": 0.46582961082458496,
+      "actual_change": 0,
+      "close_price": 8918.0,
+      "price_change_pct": -0.9991119005328597
+    },
+    {
+      "date": "2025-08-04",
+      "prediction": 1,
+      "probability_up": 0.5188277959823608,
+      "probability_down": 0.4811721742153168,
+      "actual_change": 1,
+      "close_price": 9039.0,
+      "price_change_pct": 1.356806458847275
+    },
+    {
+      "date": "2025-08-05",
+      "prediction": 1,
+      "probability_up": 0.5067499279975891,
+      "probability_down": 0.4932500720024109,
+      "actual_change": 1,
+      "close_price": 9075.0,
+      "price_change_pct": 0.39827414537006306
+    },
+    {
+      "date": "2025-08-06",
+      "prediction": 0,
+      "probability_up": 0.4952636659145355,
+      "probability_down": 0.5047363638877869,
+      "actual_change": 1,
+      "close_price": 9182.0,
+      "price_change_pct": 1.1790633608815426
+    },
+    {
+      "date": "2025-08-07",
+      "prediction": 0,
+      "probability_up": 0.49166351556777954,
+      "probability_down": 0.5083365440368652,
+      "actual_change": 1,
+      "close_price": 9258.0,
+      "price_change_pct": 0.8277063820518407
+    },
+    {
+      "date": "2025-08-08",
+      "prediction": 0,
+      "probability_up": 0.4873424768447876,
+      "probability_down": 0.5126575231552124,
+      "actual_change": 1,
+      "close_price": 9278.0,
+      "price_change_pct": 0.21602937999567942
+    },
+    {
+      "date": "2025-08-11",
+      "prediction": 0,
+      "probability_up": 0.4998635947704315,
+      "probability_down": 0.5001364350318909,
+      "actual_change": 0,
+      "close_price": 9210.0,
+      "price_change_pct": -0.7329165768484587
+    },
+    {
+      "date": "2025-08-12",
+      "prediction": 1,
+      "probability_up": 0.5057265758514404,
+      "probability_down": 0.49427345395088196,
+      "actual_change": 0,
+      "close_price": 9187.0,
+      "price_change_pct": -0.249728555917481
+    },
+    {
+      "date": "2025-08-13",
+      "prediction": 0,
+      "probability_up": 0.4894297122955322,
+      "probability_down": 0.5105702877044678,
+      "actual_change": 1,
+      "close_price": 9300.0,
+      "price_change_pct": 1.229998911505388
+    },
+    {
+      "date": "2025-08-14",
+      "prediction": 0,
+      "probability_up": 0.4839951694011688,
+      "probability_down": 0.5160048604011536,
+      "actual_change": 0,
+      "close_price": 9286.0,
+      "price_change_pct": -0.15053763440860216
+    },
+    {
+      "date": "2025-08-15",
+      "prediction": 0,
+      "probability_up": 0.49090299010276794,
+      "probability_down": 0.5090970396995544,
+      "actual_change": 0,
+      "close_price": 9204.0,
+      "price_change_pct": -0.8830497523153134
+    },
+    {
+      "date": "2025-08-18",
+      "prediction": 0,
+      "probability_up": 0.48315638303756714,
+      "probability_down": 0.5168435573577881,
+      "actual_change": 1,
+      "close_price": 9258.0,
+      "price_change_pct": 0.5867014341590613
+    },
+    {
+      "date": "2025-08-19",
+      "prediction": 0,
+      "probability_up": 0.48685571551322937,
+      "probability_down": 0.5131442546844482,
+      "actual_change": 0,
+      "close_price": 9187.0,
+      "price_change_pct": -0.7669042989846618
+    },
+    {
+      "date": "2025-08-20",
+      "prediction": 1,
+      "probability_up": 0.5068185329437256,
+      "probability_down": 0.4931814968585968,
+      "actual_change": 0,
+      "close_price": 9042.0,
+      "price_change_pct": -1.5783171873299227
+    },
+    {
+      "date": "2025-08-21",
+      "prediction": 0,
+      "probability_up": 0.4916006326675415,
+      "probability_down": 0.5083993673324585,
+      "actual_change": 1,
+      "close_price": 9162.0,
+      "price_change_pct": 1.3271400132714002
+    },
+    {
+      "date": "2025-08-22",
+      "prediction": 0,
+      "probability_up": 0.48285505175590515,
+      "probability_down": 0.5171449184417725,
+      "actual_change": 1,
+      "close_price": 9192.0,
+      "price_change_pct": 0.3274394237066143
+    },
+    {
+      "date": "2025-08-25",
+      "prediction": 0,
+      "probability_up": 0.4788125455379486,
+      "probability_down": 0.5211874842643738,
+      "actual_change": 1,
+      "close_price": 9394.0,
+      "price_change_pct": 2.197563098346388
+    },
+    {
+      "date": "2025-08-26",
+      "prediction": 0,
+      "probability_up": 0.4774291217327118,
+      "probability_down": 0.5225708484649658,
+      "actual_change": 0,
+      "close_price": 9354.0,
+      "price_change_pct": -0.4258037044922291
+    },
+    {
+      "date": "2025-08-27",
+      "prediction": 0,
+      "probability_up": 0.4843169152736664,
+      "probability_down": 0.515683114528656,
+      "actual_change": 0,
+      "close_price": 9305.0,
+      "price_change_pct": -0.5238400684199274
+    },
+    {
+      "date": "2025-08-28",
+      "prediction": 0,
+      "probability_up": 0.4817141890525818,
+      "probability_down": 0.5182858109474182,
+      "actual_change": 1,
+      "close_price": 9377.0,
+      "price_change_pct": 0.7737775389575497
+    },
+    {
+      "date": "2025-08-29",
+      "prediction": 0,
+      "probability_up": 0.4800068438053131,
+      "probability_down": 0.5199931263923645,
+      "actual_change": 1,
+      "close_price": 9386.0,
+      "price_change_pct": 0.0959795243681348
+    },
+    {
+      "date": "2025-09-01",
+      "prediction": 0,
+      "probability_up": 0.4682060480117798,
+      "probability_down": 0.5317939519882202,
+      "actual_change": 1,
+      "close_price": 9798.0,
+      "price_change_pct": 4.389516300873641
+    },
+    {
+      "date": "2025-09-02",
+      "prediction": 0,
+      "probability_up": 0.45444416999816895,
+      "probability_down": 0.545555830001831,
+      "actual_change": 1,
+      "close_price": 9845.0,
+      "price_change_pct": 0.4796897325984895
+    },
+    {
+      "date": "2025-09-03",
+      "prediction": 0,
+      "probability_up": 0.4533955454826355,
+      "probability_down": 0.5466045141220093,
+      "actual_change": 0,
+      "close_price": 9844.0,
+      "price_change_pct": -0.01015744032503809
+    },
+    {
+      "date": "2025-09-04",
+      "prediction": 0,
+      "probability_up": 0.4758898913860321,
+      "probability_down": 0.5241100788116455,
+      "actual_change": 0,
+      "close_price": 9793.0,
+      "price_change_pct": -0.5180820804550995
+    },
+    {
+      "date": "2025-09-05",
+      "prediction": 0,
+      "probability_up": 0.48366478085517883,
+      "probability_down": 0.5163351893424988,
+      "actual_change": 1,
+      "close_price": 9834.0,
+      "price_change_pct": 0.41866639436332076
+    },
+    {
+      "date": "2025-09-08",
+      "prediction": 0,
+      "probability_up": 0.48550260066986084,
+      "probability_down": 0.5144973993301392,
+      "actual_change": 1,
+      "close_price": 9835.0,
+      "price_change_pct": 0.01016880211511084
+    },
+    {
+      "date": "2025-09-09",
+      "prediction": 0,
+      "probability_up": 0.4790879189968109,
+      "probability_down": 0.5209120512008667,
+      "actual_change": 1,
+      "close_price": 9867.0,
+      "price_change_pct": 0.3253685815963396
+    },
+    {
+      "date": "2025-09-10",
+      "prediction": 0,
+      "probability_up": 0.48216715455055237,
+      "probability_down": 0.5178328156471252,
+      "actual_change": 0,
+      "close_price": 9816.0,
+      "price_change_pct": -0.5168744299179082
+    },
+    {
+      "date": "2025-09-11",
+      "prediction": 0,
+      "probability_up": 0.4781842529773712,
+      "probability_down": 0.5218157172203064,
+      "actual_change": 1,
+      "close_price": 9821.0,
+      "price_change_pct": 0.05093724531377343
+    },
+    {
+      "date": "2025-09-12",
+      "prediction": 0,
+      "probability_up": 0.47017136216163635,
+      "probability_down": 0.529828667640686,
+      "actual_change": 1,
+      "close_price": 10061.0,
+      "price_change_pct": 2.4437429996945323
+    },
+    {
+      "date": "2025-09-15",
+      "prediction": 0,
+      "probability_up": 0.4657963514328003,
+      "probability_down": 0.5342037081718445,
+      "actual_change": 0,
+      "close_price": 10045.0,
+      "price_change_pct": -0.1590299175032303
+    },
+    {
+      "date": "2025-09-16",
+      "prediction": 0,
+      "probability_up": 0.4616614580154419,
+      "probability_down": 0.5383385419845581,
+      "actual_change": 1,
+      "close_price": 10134.0,
+      "price_change_pct": 0.8860129417620707
+    },
+    {
+      "date": "2025-09-17",
+      "prediction": 0,
+      "probability_up": 0.4852302074432373,
+      "probability_down": 0.5147697925567627,
+      "actual_change": 0,
+      "close_price": 9933.0,
+      "price_change_pct": -1.9834221432800474
+    },
+    {
+      "date": "2025-09-18",
+      "prediction": 1,
+      "probability_up": 0.5088464617729187,
+      "probability_down": 0.4911535382270813,
+      "actual_change": 0,
+      "close_price": 9835.0,
+      "price_change_pct": -0.9866102889358703
+    },
+    {
+      "date": "2025-09-19",
+      "prediction": 0,
+      "probability_up": 0.4884548783302307,
+      "probability_down": 0.5115451812744141,
+      "actual_change": 1,
+      "close_price": 9971.0,
+      "price_change_pct": 1.3828164717844433
+    },
+    {
+      "date": "2025-09-22",
+      "prediction": 0,
+      "probability_up": 0.47565293312072754,
+      "probability_down": 0.5243470668792725,
+      "actual_change": 1,
+      "close_price": 10317.0,
+      "price_change_pct": 3.4700631832313706
+    },
+    {
+      "date": "2025-09-23",
+      "prediction": 0,
+      "probability_up": 0.46483084559440613,
+      "probability_down": 0.5351691842079163,
+      "actual_change": 1,
+      "close_price": 10349.0,
+      "price_change_pct": 0.31016768440438114
+    },
+    {
+      "date": "2025-09-24",
+      "prediction": 0,
+      "probability_up": 0.4590471684932709,
+      "probability_down": 0.5409528017044067,
+      "actual_change": 1,
+      "close_price": 10397.0,
+      "price_change_pct": 0.46381292878538993
+    },
+    {
+      "date": "2025-09-25",
+      "prediction": 0,
+      "probability_up": 0.4619379937648773,
+      "probability_down": 0.5380620360374451,
+      "actual_change": 1,
+      "close_price": 10411.0,
+      "price_change_pct": 0.13465422718091757
+    },
+    {
+      "date": "2025-09-26",
+      "prediction": 0,
+      "probability_up": 0.4536260664463043,
+      "probability_down": 0.5463739633560181,
+      "actual_change": 1,
+      "close_price": 10632.0,
+      "price_change_pct": 2.122754778599558
+    },
+    {
+      "date": "2025-09-29",
+      "prediction": 0,
+      "probability_up": 0.4406355321407318,
+      "probability_down": 0.5593644976615906,
+      "actual_change": 1,
+      "close_price": 10939.0,
+      "price_change_pct": 2.8875094055680965
+    },
+    {
+      "date": "2025-09-30",
+      "prediction": 0,
+      "probability_up": 0.43733811378479004,
+      "probability_down": 0.56266188621521,
+      "actual_change": 0,
+      "close_price": 10918.0,
+      "price_change_pct": -0.19197367218210076
+    },
+    {
+      "date": "2025-10-09",
+      "prediction": 0,
+      "probability_up": 0.4308116137981415,
+      "probability_down": 0.5691884160041809,
+      "actual_change": 1,
+      "close_price": 11169.0,
+      "price_change_pct": 2.2989558527202787
+    },
+    {
+      "date": "2025-10-10",
+      "prediction": 0,
+      "probability_up": 0.4447665810585022,
+      "probability_down": 0.5552334189414978,
+      "actual_change": 0,
+      "close_price": 11082.0,
+      "price_change_pct": -0.77894171367177
+    },
+    {
+      "date": "2025-10-13",
+      "prediction": 0,
+      "probability_up": 0.43469271063804626,
+      "probability_down": 0.5653073191642761,
+      "actual_change": 1,
+      "close_price": 11531.0,
+      "price_change_pct": 4.051615231907598
+    },
+    {
+      "date": "2025-10-14",
+      "prediction": 0,
+      "probability_up": 0.4329730272293091,
+      "probability_down": 0.5670269727706909,
+      "actual_change": 1,
+      "close_price": 11533.0,
+      "price_change_pct": 0.01734454947532738
+    },
+    {
+      "date": "2025-10-15",
+      "prediction": 0,
+      "probability_up": 0.42464447021484375,
+      "probability_down": 0.5753555297851562,
+      "actual_change": 1,
+      "close_price": 11966.0,
+      "price_change_pct": 3.7544437700511573
+    },
+    {
+      "date": "2025-10-16",
+      "prediction": 0,
+      "probability_up": 0.4214688241481781,
+      "probability_down": 0.5785311460494995,
+      "actual_change": 1,
+      "close_price": 12017.0,
+      "price_change_pct": 0.42620758816647164
+    },
+    {
+      "date": "2025-10-17",
+      "prediction": 0,
+      "probability_up": 0.41845983266830444,
+      "probability_down": 0.5815401673316956,
+      "actual_change": 1,
+      "close_price": 12249.0,
+      "price_change_pct": 1.9305983190480154
+    },
+    {
+      "date": "2025-10-20",
+      "prediction": 1,
+      "probability_up": 0.503535807132721,
+      "probability_down": 0.49646419286727905,
+      "actual_change": 0,
+      "close_price": 11742.0,
+      "price_change_pct": -4.139113397012001
+    },
+    {
+      "date": "2025-10-21",
+      "prediction": 1,
+      "probability_up": 0.532142162322998,
+      "probability_down": 0.46785780787467957,
+      "actual_change": 1,
+      "close_price": 11805.0,
+      "price_change_pct": 0.5365355135411344
+    },
+    {
+      "date": "2025-10-22",
+      "prediction": 1,
+      "probability_up": 0.5689692497253418,
+      "probability_down": 0.431030809879303,
+      "actual_change": 0,
+      "close_price": 11404.0,
+      "price_change_pct": -3.396865734858111
+    },
+    {
+      "date": "2025-10-23",
+      "prediction": 1,
+      "probability_up": 0.5550545454025269,
+      "probability_down": 0.44494548439979553,
+      "actual_change": 1,
+      "close_price": 11467.0,
+      "price_change_pct": 0.5524377411434584
+    },
+    {
+      "date": "2025-10-24",
+      "prediction": 1,
+      "probability_up": 0.5518644452095032,
+      "probability_down": 0.44813549518585205,
+      "actual_change": 0,
+      "close_price": 11332.0,
+      "price_change_pct": -1.177291357809366
+    },
+    {
+      "date": "2025-10-27",
+      "prediction": 1,
+      "probability_up": 0.5335111618041992,
+      "probability_down": 0.46648889780044556,
+      "actual_change": 1,
+      "close_price": 11394.0,
+      "price_change_pct": 0.5471231909636428
+    },
+    {
+      "date": "2025-10-28",
+      "prediction": 1,
+      "probability_up": 0.5544601082801819,
+      "probability_down": 0.4455398619174957,
+      "actual_change": 0,
+      "close_price": 11049.0,
+      "price_change_pct": -3.0279094260136916
+    },
+    {
+      "date": "2025-10-29",
+      "prediction": 1,
+      "probability_up": 0.532702624797821,
+      "probability_down": 0.46729734539985657,
+      "actual_change": 1,
+      "close_price": 11338.0,
+      "price_change_pct": 2.6156213231966694
+    },
+    {
+      "date": "2025-10-30",
+      "prediction": 1,
+      "probability_up": 0.5281723737716675,
+      "probability_down": 0.4718276560306549,
+      "actual_change": 0,
+      "close_price": 11253.0,
+      "price_change_pct": -0.7496913035808784
+    },
+    {
+      "date": "2025-10-31",
+      "prediction": 1,
+      "probability_up": 0.513253390789032,
+      "probability_down": 0.486746609210968,
+      "actual_change": 1,
+      "close_price": 11441.0,
+      "price_change_pct": 1.6706656002843687
+    },
+    {
+      "date": "2025-11-03",
+      "prediction": 1,
+      "probability_up": 0.5072357058525085,
+      "probability_down": 0.49276429414749146,
+      "actual_change": 1,
+      "close_price": 11455.0,
+      "price_change_pct": 0.12236692596800978
+    },
+    {
+      "date": "2025-11-04",
+      "prediction": 1,
+      "probability_up": 0.5257599949836731,
+      "probability_down": 0.4742399752140045,
+      "actual_change": 0,
+      "close_price": 11238.0,
+      "price_change_pct": -1.894369271060672
+    },
+    {
+      "date": "2025-11-05",
+      "prediction": 1,
+      "probability_up": 0.5217303037643433,
+      "probability_down": 0.4782697260379791,
+      "actual_change": 1,
+      "close_price": 11276.0,
+      "price_change_pct": 0.3381384588004983
+    },
+    {
+      "date": "2025-11-06",
+      "prediction": 1,
+      "probability_up": 0.5027258992195129,
+      "probability_down": 0.49727410078048706,
+      "actual_change": 1,
+      "close_price": 11427.0,
+      "price_change_pct": 1.3391273501241574
+    },
+    {
+      "date": "2025-11-07",
+      "prediction": 0,
+      "probability_up": 0.49059027433395386,
+      "probability_down": 0.5094097256660461,
+      "actual_change": 1,
+      "close_price": 11484.0,
+      "price_change_pct": 0.4988185875557889
+    },
+    {
+      "date": "2025-11-10",
+      "prediction": 0,
+      "probability_up": 0.4803689420223236,
+      "probability_down": 0.5196310877799988,
+      "actual_change": 1,
+      "close_price": 11719.0,
+      "price_change_pct": 2.0463253221873914
+    },
+    {
+      "date": "2025-11-11",
+      "prediction": 0,
+      "probability_up": 0.4644949734210968,
+      "probability_down": 0.5355049967765808,
+      "actual_change": 1,
+      "close_price": 11907.0,
+      "price_change_pct": 1.6042324430412152
+    },
+    {
+      "date": "2025-11-12",
+      "prediction": 0,
+      "probability_up": 0.4496622085571289,
+      "probability_down": 0.5503377318382263,
+      "actual_change": 1,
+      "close_price": 12098.0,
+      "price_change_pct": 1.604098429495255
+    },
+    {
+      "date": "2025-11-13",
+      "prediction": 0,
+      "probability_up": 0.4340522289276123,
+      "probability_down": 0.5659477710723877,
+      "actual_change": 1,
+      "close_price": 12610.0,
+      "price_change_pct": 4.232104480079352
+    },
+    {
+      "date": "2025-11-14",
+      "prediction": 0,
+      "probability_up": 0.44165652990341187,
+      "probability_down": 0.5583434700965881,
+      "actual_change": 0,
+      "close_price": 12375.0,
+      "price_change_pct": -1.8636003172085647
+    },
+    {
+      "date": "2025-11-17",
+      "prediction": 1,
+      "probability_up": 0.5349576473236084,
+      "probability_down": 0.4650422930717468,
+      "actual_change": 0,
+      "close_price": 11933.0,
+      "price_change_pct": -3.5717171717171716
+    },
+    {
+      "date": "2025-11-18",
+      "prediction": 1,
+      "probability_up": 0.5786095857620239,
+      "probability_down": 0.42139044404029846,
+      "actual_change": 0,
+      "close_price": 11699.0,
+      "price_change_pct": -1.960948629849996
+    },
+    {
+      "date": "2025-11-19",
+      "prediction": 1,
+      "probability_up": 0.5312765836715698,
+      "probability_down": 0.4687233567237854,
+      "actual_change": 1,
+      "close_price": 12148.0,
+      "price_change_pct": 3.837934866227883
+    },
+    {
+      "date": "2025-11-20",
+      "prediction": 1,
+      "probability_up": 0.510456919670105,
+      "probability_down": 0.489543080329895,
+      "actual_change": 0,
+      "close_price": 12050.0,
+      "price_change_pct": -0.8067171550872572
+    },
+    {
+      "date": "2025-11-21",
+      "prediction": 1,
+      "probability_up": 0.5356113314628601,
+      "probability_down": 0.4643886089324951,
+      "actual_change": 0,
+      "close_price": 11680.0,
+      "price_change_pct": -3.0705394190871367
+    },
+    {
+      "date": "2025-11-24",
+      "prediction": 1,
+      "probability_up": 0.5220088958740234,
+      "probability_down": 0.4779910743236542,
+      "actual_change": 1,
+      "close_price": 11808.0,
+      "price_change_pct": 1.095890410958904
+    },
+    {
+      "date": "2025-11-25",
+      "prediction": 0,
+      "probability_up": 0.49686577916145325,
+      "probability_down": 0.5031342506408691,
+      "actual_change": 1,
+      "close_price": 12127.0,
+      "price_change_pct": 2.7015582655826558
+    },
+    {
+      "date": "2025-11-26",
+      "prediction": 0,
+      "probability_up": 0.4859637916088104,
+      "probability_down": 0.5140361785888672,
+      "actual_change": 1,
+      "close_price": 12227.0,
+      "price_change_pct": 0.8246062505153788
+    },
+    {
+      "date": "2025-11-27",
+      "prediction": 0,
+      "probability_up": 0.47049465775489807,
+      "probability_down": 0.5295053720474243,
+      "actual_change": 1,
+      "close_price": 12525.0,
+      "price_change_pct": 2.4372290831765766
+    },
+    {
+      "date": "2025-11-28",
+      "prediction": 0,
+      "probability_up": 0.4535708725452423,
+      "probability_down": 0.5464290976524353,
+      "actual_change": 1,
+      "close_price": 12727.0,
+      "price_change_pct": 1.6127744510978044
+    },
+    {
+      "date": "2025-12-01",
+      "prediction": 0,
+      "probability_up": 0.43674424290657043,
+      "probability_down": 0.563255786895752,
+      "actual_change": 1,
+      "close_price": 13278.0,
+      "price_change_pct": 4.329378486681858
+    },
+    {
+      "date": "2025-12-02",
+      "prediction": 0,
+      "probability_up": 0.42424944043159485,
+      "probability_down": 0.5757505893707275,
+      "actual_change": 1,
+      "close_price": 13423.0,
+      "price_change_pct": 1.092031932519958
+    },
+    {
+      "date": "2025-12-03",
+      "prediction": 0,
+      "probability_up": 0.418485164642334,
+      "probability_down": 0.5815147757530212,
+      "actual_change": 1,
+      "close_price": 13582.0,
+      "price_change_pct": 1.1845340087908813
+    },
+    {
+      "date": "2025-12-04",
+      "prediction": 0,
+      "probability_up": 0.4490198791027069,
+      "probability_down": 0.5509801506996155,
+      "actual_change": 0,
+      "close_price": 13424.0,
+      "price_change_pct": -1.1633043734354291
+    },
+    {
+      "date": "2025-12-05",
+      "prediction": 0,
+      "probability_up": 0.45106932520866394,
+      "probability_down": 0.5489306449890137,
+      "actual_change": 1,
+      "close_price": 13687.0,
+      "price_change_pct": 1.959177592371871
+    },
+    {
+      "date": "2025-12-08",
+      "prediction": 0,
+      "probability_up": 0.46162959933280945,
+      "probability_down": 0.5383703708648682,
+      "actual_change": 1,
+      "close_price": 13706.0,
+      "price_change_pct": 0.1388178563600497
+    },
+    {
+      "date": "2025-12-09",
+      "prediction": 0,
+      "probability_up": 0.4920652508735657,
+      "probability_down": 0.5079347491264343,
+      "actual_change": 0,
+      "close_price": 13607.0,
+      "price_change_pct": -0.7223113964686998
+    },
+    {
+      "date": "2025-12-10",
+      "prediction": 0,
+      "probability_up": 0.4663124978542328,
+      "probability_down": 0.5336875319480896,
+      "actual_change": 1,
+      "close_price": 14373.0,
+      "price_change_pct": 5.629455427353568
+    },
+    {
+      "date": "2025-12-11",
+      "prediction": 0,
+      "probability_up": 0.44478854537010193,
+      "probability_down": 0.5552114844322205,
+      "actual_change": 1,
+      "close_price": 14488.0,
+      "price_change_pct": 0.8001113198358032
+    },
+    {
+      "date": "2025-12-12",
+      "prediction": 0,
+      "probability_up": 0.43082568049430847,
+      "probability_down": 0.5691742897033691,
+      "actual_change": 1,
+      "close_price": 14892.0,
+      "price_change_pct": 2.7885146327995582
+    },
+    {
+      "date": "2025-12-15",
+      "prediction": 0,
+      "probability_up": 0.4344136416912079,
+      "probability_down": 0.5655863285064697,
+      "actual_change": 0,
+      "close_price": 14793.0,
+      "price_change_pct": -0.6647864625302176
+    },
+    {
+      "date": "2025-12-16",
+      "prediction": 0,
+      "probability_up": 0.47947296500205994,
+      "probability_down": 0.5205270648002625,
+      "actual_change": 0,
+      "close_price": 14666.0,
+      "price_change_pct": -0.8585141621036976
+    },
+    {
+      "date": "2025-12-17",
+      "prediction": 0,
+      "probability_up": 0.4579363167285919,
+      "probability_down": 0.5420637130737305,
+      "actual_change": 1,
+      "close_price": 15512.0,
+      "price_change_pct": 5.768444020182736
+    },
+    {
+      "date": "2025-12-18",
+      "prediction": 0,
+      "probability_up": 0.4453473687171936,
+      "probability_down": 0.5546526908874512,
+      "actual_change": 1,
+      "close_price": 15521.0,
+      "price_change_pct": 0.05801959773078907
+    },
+    {
+      "date": "2025-12-19",
+      "prediction": 0,
+      "probability_up": 0.4725905656814575,
+      "probability_down": 0.5274094939231873,
+      "actual_change": 0,
+      "close_price": 15376.0,
+      "price_change_pct": -0.9342181560466465
+    },
+    {
+      "date": "2025-12-22",
+      "prediction": 0,
+      "probability_up": 0.451467365026474,
+      "probability_down": 0.5485326051712036,
+      "actual_change": 1,
+      "close_price": 16210.0,
+      "price_change_pct": 5.424037460978147
+    },
+    {
+      "date": "2025-12-23",
+      "prediction": 0,
+      "probability_up": 0.4331299364566803,
+      "probability_down": 0.5668700933456421,
+      "actual_change": 1,
+      "close_price": 16441.0,
+      "price_change_pct": 1.4250462677359654
+    },
+    {
+      "date": "2025-12-24",
+      "prediction": 0,
+      "probability_up": 0.42001160979270935,
+      "probability_down": 0.5799883604049683,
+      "actual_change": 1,
+      "close_price": 17609.0,
+      "price_change_pct": 7.104190742655556
+    },
+    {
+      "date": "2025-12-25",
+      "prediction": 0,
+      "probability_up": 0.41627755761146545,
+      "probability_down": 0.5837224125862122,
+      "actual_change": 0,
+      "close_price": 17397.0,
+      "price_change_pct": -1.2039298086205918
+    },
+    {
+      "date": "2025-12-26",
+      "prediction": 0,
+      "probability_up": 0.4090252220630646,
+      "probability_down": 0.590974748134613,
+      "actual_change": 1,
+      "close_price": 18319.0,
+      "price_change_pct": 5.299764327182848
+    },
+    {
+      "date": "2025-12-29",
+      "prediction": 0,
+      "probability_up": 0.4114810824394226,
+      "probability_down": 0.5885189175605774,
+      "actual_change": 0,
+      "close_price": 18205.0,
+      "price_change_pct": -0.6223047109558382
+    }
+  ],
+  "trade_records": [
+    {
+      "date": "2024-11-01",
+      "action": "买入",
+      "price": 8100.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9832.098765432098,
+      "total_value": 9832.098765432098,
+      "prediction": "涨",
+      "probability_up": 0.5254237651824951
+    },
+    {
+      "date": "2024-11-04",
+      "action": "持有",
+      "price": 8006.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9883.95061728395,
+      "total_value": 9883.95061728395,
+      "prediction": "涨",
+      "probability_up": 0.5212557911872864
+    },
+    {
+      "date": "2024-11-05",
+      "action": "持有",
+      "price": 7993.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9867.9012345679,
+      "total_value": 9867.9012345679,
+      "prediction": "涨",
+      "probability_up": 0.5143435001373291
+    },
+    {
+      "date": "2024-11-06",
+      "action": "持有",
+      "price": 7780.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9604.938271604939,
+      "total_value": 9604.938271604939,
+      "prediction": "涨",
+      "probability_up": 0.5384939908981323
+    },
+    {
+      "date": "2024-11-07",
+      "action": "持有",
+      "price": 7699.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9504.938271604939,
+      "total_value": 9504.938271604939,
+      "prediction": "涨",
+      "probability_up": 0.5521959662437439
+    },
+    {
+      "date": "2024-11-08",
+      "action": "持有",
+      "price": 7760.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9580.246913580246,
+      "total_value": 9580.246913580246,
+      "prediction": "涨",
+      "probability_up": 0.5468214750289917
+    },
+    {
+      "date": "2024-11-11",
+      "action": "持有",
+      "price": 7800.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9629.62962962963,
+      "total_value": 9629.62962962963,
+      "prediction": "涨",
+      "probability_up": 0.5382078289985657
+    },
+    {
+      "date": "2024-11-12",
+      "action": "持有",
+      "price": 7581.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9359.25925925926,
+      "total_value": 9359.25925925926,
+      "prediction": "涨",
+      "probability_up": 0.5570456385612488
+    },
+    {
+      "date": "2024-11-13",
+      "action": "持有",
+      "price": 7707.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9514.814814814814,
+      "total_value": 9514.814814814814,
+      "prediction": "涨",
+      "probability_up": 0.5456611514091492
+    },
+    {
+      "date": "2024-11-14",
+      "action": "持有",
+      "price": 7504.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9264.197530864198,
+      "total_value": 9264.197530864198,
+      "prediction": "涨",
+      "probability_up": 0.5605486631393433
+    },
+    {
+      "date": "2024-11-15",
+      "action": "持有",
+      "price": 7591.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9371.604938271605,
+      "total_value": 9371.604938271605,
+      "prediction": "涨",
+      "probability_up": 0.5505488514900208
+    },
+    {
+      "date": "2024-11-18",
+      "action": "持有",
+      "price": 7688.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9491.358024691357,
+      "total_value": 9491.358024691357,
+      "prediction": "涨",
+      "probability_up": 0.5349820852279663
+    },
+    {
+      "date": "2024-11-19",
+      "action": "持有",
+      "price": 7817.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9650.617283950616,
+      "total_value": 9650.617283950616,
+      "prediction": "涨",
+      "probability_up": 0.5210680365562439
+    },
+    {
+      "date": "2024-11-20",
+      "action": "持有",
+      "price": 7761.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9581.481481481482,
+      "total_value": 9581.481481481482,
+      "prediction": "涨",
+      "probability_up": 0.5208821892738342
+    },
+    {
+      "date": "2024-11-21",
+      "action": "持有",
+      "price": 7840.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9679.012345679012,
+      "total_value": 9679.012345679012,
+      "prediction": "涨",
+      "probability_up": 0.5116260051727295
+    },
+    {
+      "date": "2024-11-22",
+      "action": "持有",
+      "price": 7804.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9634.567901234568,
+      "total_value": 9634.567901234568,
+      "prediction": "涨",
+      "probability_up": 0.5119555592536926
+    },
+    {
+      "date": "2024-11-25",
+      "action": "持有",
+      "price": 7657.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9453.086419753086,
+      "total_value": 9453.086419753086,
+      "prediction": "涨",
+      "probability_up": 0.5334979295730591
+    },
+    {
+      "date": "2024-11-26",
+      "action": "持有",
+      "price": 7602.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9385.185185185184,
+      "total_value": 9385.185185185184,
+      "prediction": "涨",
+      "probability_up": 0.5395171046257019
+    },
+    {
+      "date": "2024-11-27",
+      "action": "持有",
+      "price": 7674.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9474.074074074073,
+      "total_value": 9474.074074074073,
+      "prediction": "涨",
+      "probability_up": 0.5166265964508057
+    },
+    {
+      "date": "2024-11-28",
+      "action": "持有",
+      "price": 7532.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9298.765432098766,
+      "total_value": 9298.765432098766,
+      "prediction": "涨",
+      "probability_up": 0.5251976251602173
+    },
+    {
+      "date": "2024-11-29",
+      "action": "持有",
+      "price": 7697.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9502.469135802468,
+      "total_value": 9502.469135802468,
+      "prediction": "涨",
+      "probability_up": 0.5017102956771851
+    },
+    {
+      "date": "2024-12-02",
+      "action": "持有",
+      "price": 7596.0,
+      "shares": 1.2345679012345678,
+      "cash": 0,
+      "position_value": 9377.777777777777,
+      "total_value": 9377.777777777777,
+      "prediction": "涨",
+      "probability_up": 0.5032300353050232
+    },
+    {
+      "date": "2024-12-03",
+      "action": "卖出",
+      "price": 7633.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.489518404006958
+    },
+    {
+      "date": "2024-12-04",
+      "action": "空仓",
+      "price": 7814.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.486471027135849
+    },
+    {
+      "date": "2024-12-05",
+      "action": "空仓",
+      "price": 7832.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.482017457485199
+    },
+    {
+      "date": "2024-12-06",
+      "action": "空仓",
+      "price": 7823.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.4843239486217499
+    },
+    {
+      "date": "2024-12-09",
+      "action": "空仓",
+      "price": 7795.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.4935527741909027
+    },
+    {
+      "date": "2024-12-10",
+      "action": "空仓",
+      "price": 7924.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.4794442355632782
+    },
+    {
+      "date": "2024-12-11",
+      "action": "空仓",
+      "price": 7914.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.475625604391098
+    },
+    {
+      "date": "2024-12-12",
+      "action": "空仓",
+      "price": 8014.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.4681006073951721
+    },
+    {
+      "date": "2024-12-13",
+      "action": "空仓",
+      "price": 7795.0,
+      "shares": 0,
+      "cash": 9423.456790123457,
+      "position_value": 0,
+      "total_value": 9423.456790123457,
+      "prediction": "跌",
+      "probability_up": 0.49878692626953125
+    },
+    {
+      "date": "2024-12-16",
+      "action": "买入",
+      "price": 7773.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9378.600505389819,
+      "total_value": 9378.600505389819,
+      "prediction": "涨",
+      "probability_up": 0.5175665616989136
+    },
+    {
+      "date": "2024-12-17",
+      "action": "持有",
+      "price": 7717.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9355.566197013086,
+      "total_value": 9355.566197013086,
+      "prediction": "涨",
+      "probability_up": 0.5171356797218323
+    },
+    {
+      "date": "2024-12-18",
+      "action": "持有",
+      "price": 7701.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9336.168884695837,
+      "total_value": 9336.168884695837,
+      "prediction": "涨",
+      "probability_up": 0.5110874772071838
+    },
+    {
+      "date": "2024-12-19",
+      "action": "持有",
+      "price": 7505.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9098.55180880954,
+      "total_value": 9098.55180880954,
+      "prediction": "涨",
+      "probability_up": 0.5347050428390503
+    },
+    {
+      "date": "2024-12-20",
+      "action": "持有",
+      "price": 7444.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9024.599555600027,
+      "total_value": 9024.599555600027,
+      "prediction": "涨",
+      "probability_up": 0.5461684465408325
+    },
+    {
+      "date": "2024-12-23",
+      "action": "持有",
+      "price": 7583.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9193.113706356127,
+      "total_value": 9193.113706356127,
+      "prediction": "涨",
+      "probability_up": 0.5295955538749695
+    },
+    {
+      "date": "2024-12-24",
+      "action": "持有",
+      "price": 7580.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9189.476710296643,
+      "total_value": 9189.476710296643,
+      "prediction": "涨",
+      "probability_up": 0.5204490423202515
+    },
+    {
+      "date": "2024-12-25",
+      "action": "持有",
+      "price": 7582.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9191.9013743363,
+      "total_value": 9191.9013743363,
+      "prediction": "涨",
+      "probability_up": 0.5151200294494629
+    },
+    {
+      "date": "2024-12-26",
+      "action": "持有",
+      "price": 7583.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9193.113706356127,
+      "total_value": 9193.113706356127,
+      "prediction": "涨",
+      "probability_up": 0.5117013454437256
+    },
+    {
+      "date": "2024-12-27",
+      "action": "持有",
+      "price": 7601.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9214.935682713032,
+      "total_value": 9214.935682713032,
+      "prediction": "涨",
+      "probability_up": 0.5066352486610413
+    },
+    {
+      "date": "2024-12-30",
+      "action": "持有",
+      "price": 7560.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9165.230069900083,
+      "total_value": 9165.230069900083,
+      "prediction": "涨",
+      "probability_up": 0.5083483457565308
+    },
+    {
+      "date": "2024-12-31",
+      "action": "持有",
+      "price": 7470.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9056.120188115558,
+      "total_value": 9056.120188115558,
+      "prediction": "涨",
+      "probability_up": 0.5196128487586975
+    },
+    {
+      "date": "2025-01-02",
+      "action": "持有",
+      "price": 7614.0,
+      "shares": 1.2123320198280532,
+      "cash": 0,
+      "position_value": 9230.695998970798,
+      "total_value": 9230.695998970798,
+      "prediction": "涨",
+      "probability_up": 0.500495970249176
+    },
+    {
+      "date": "2025-01-03",
+      "action": "卖出",
+      "price": 7631.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.490046888589859
+    },
+    {
+      "date": "2025-01-06",
+      "action": "空仓",
+      "price": 7611.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.48887118697166443
+    },
+    {
+      "date": "2025-01-07",
+      "action": "空仓",
+      "price": 7733.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.4836820960044861
+    },
+    {
+      "date": "2025-01-08",
+      "action": "空仓",
+      "price": 7759.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.47665277123451233
+    },
+    {
+      "date": "2025-01-09",
+      "action": "空仓",
+      "price": 7774.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.4742948114871979
+    },
+    {
+      "date": "2025-01-10",
+      "action": "空仓",
+      "price": 7824.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.4710804224014282
+    },
+    {
+      "date": "2025-01-13",
+      "action": "空仓",
+      "price": 7788.0,
+      "shares": 0,
+      "cash": 9251.305643307875,
+      "position_value": 0,
+      "total_value": 9251.305643307875,
+      "prediction": "跌",
+      "probability_up": 0.47659456729888916
+    },
+    {
+      "date": "2025-01-14",
+      "action": "买入",
+      "price": 7670.0,
+      "shares": 1.2061676197272326,
+      "cash": 0,
+      "position_value": 9176.523250884786,
+      "total_value": 9176.523250884786,
+      "prediction": "涨",
+      "probability_up": 0.5138100385665894
+    },
+    {
+      "date": "2025-01-15",
+      "action": "持有",
+      "price": 7689.0,
+      "shares": 1.2061676197272326,
+      "cash": 0,
+      "position_value": 9274.222828082691,
+      "total_value": 9274.222828082691,
+      "prediction": "涨",
+      "probability_up": 0.5001598000526428
+    },
+    {
+      "date": "2025-01-16",
+      "action": "卖出",
+      "price": 7699.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.48005956411361694
+    },
+    {
+      "date": "2025-01-17",
+      "action": "空仓",
+      "price": 7833.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4773864150047302
+    },
+    {
+      "date": "2025-01-20",
+      "action": "空仓",
+      "price": 7770.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.48363569378852844
+    },
+    {
+      "date": "2025-01-21",
+      "action": "空仓",
+      "price": 7783.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4841338098049164
+    },
+    {
+      "date": "2025-01-22",
+      "action": "空仓",
+      "price": 7812.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4797433614730835
+    },
+    {
+      "date": "2025-01-23",
+      "action": "空仓",
+      "price": 7720.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4887509047985077
+    },
+    {
+      "date": "2025-01-24",
+      "action": "空仓",
+      "price": 7778.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4813012182712555
+    },
+    {
+      "date": "2025-01-27",
+      "action": "空仓",
+      "price": 7687.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.48962822556495667
+    },
+    {
+      "date": "2025-02-05",
+      "action": "空仓",
+      "price": 8107.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4817436933517456
+    },
+    {
+      "date": "2025-02-06",
+      "action": "空仓",
+      "price": 8042.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.47793829441070557
+    },
+    {
+      "date": "2025-02-07",
+      "action": "空仓",
+      "price": 8055.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.47676727175712585
+    },
+    {
+      "date": "2025-02-10",
+      "action": "空仓",
+      "price": 8062.0,
+      "shares": 0,
+      "cash": 9286.284504279964,
+      "position_value": 0,
+      "total_value": 9286.284504279964,
+      "prediction": "跌",
+      "probability_up": 0.4824272692203522
+    },
+    {
+      "date": "2025-02-11",
+      "action": "买入",
+      "price": 8085.0,
+      "shares": 1.1485818805541081,
+      "cash": 0,
+      "position_value": 9156.49475177735,
+      "total_value": 9156.49475177735,
+      "prediction": "涨",
+      "probability_up": 0.5065513849258423
+    },
+    {
+      "date": "2025-02-12",
+      "action": "持有",
+      "price": 7967.0,
+      "shares": 1.1485818805541081,
+      "cash": 0,
+      "position_value": 9150.75184237458,
+      "total_value": 9150.75184237458,
+      "prediction": "涨",
+      "probability_up": 0.5059458017349243
+    },
+    {
+      "date": "2025-02-13",
+      "action": "卖出",
+      "price": 7940.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4871821403503418
+    },
+    {
+      "date": "2025-02-14",
+      "action": "空仓",
+      "price": 8254.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4736928343772888
+    },
+    {
+      "date": "2025-02-17",
+      "action": "空仓",
+      "price": 8016.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4917103350162506
+    },
+    {
+      "date": "2025-02-18",
+      "action": "空仓",
+      "price": 8077.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.48851925134658813
+    },
+    {
+      "date": "2025-02-19",
+      "action": "空仓",
+      "price": 8132.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4787968397140503
+    },
+    {
+      "date": "2025-02-20",
+      "action": "空仓",
+      "price": 8147.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.47577664256095886
+    },
+    {
+      "date": "2025-02-21",
+      "action": "空仓",
+      "price": 8102.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.47859707474708557
+    },
+    {
+      "date": "2025-02-24",
+      "action": "空仓",
+      "price": 8087.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4803414046764374
+    },
+    {
+      "date": "2025-02-25",
+      "action": "空仓",
+      "price": 8017.0,
+      "shares": 0,
+      "cash": 9119.74013159962,
+      "position_value": 0,
+      "total_value": 9119.74013159962,
+      "prediction": "跌",
+      "probability_up": 0.4902956485748291
+    },
+    {
+      "date": "2025-02-26",
+      "action": "买入",
+      "price": 7950.0,
+      "shares": 1.1471371234716503,
+      "cash": 0,
+      "position_value": 9066.971823919925,
+      "total_value": 9066.971823919925,
+      "prediction": "涨",
+      "probability_up": 0.5095765590667725
+    },
+    {
+      "date": "2025-02-27",
+      "action": "持有",
+      "price": 7900.0,
+      "shares": 1.1471371234716503,
+      "cash": 0,
+      "position_value": 9062.383275426037,
+      "total_value": 9062.383275426037,
+      "prediction": "涨",
+      "probability_up": 0.5106561183929443
+    },
+    {
+      "date": "2025-02-28",
+      "action": "持有",
+      "price": 7869.0,
+      "shares": 1.1471371234716503,
+      "cash": 0,
+      "position_value": 9026.822024598416,
+      "total_value": 9026.822024598416,
+      "prediction": "涨",
+      "probability_up": 0.509878933429718
+    },
+    {
+      "date": "2025-03-03",
+      "action": "持有",
+      "price": 7907.0,
+      "shares": 1.1471371234716503,
+      "cash": 0,
+      "position_value": 9070.41323529034,
+      "total_value": 9070.41323529034,
+      "prediction": "涨",
+      "probability_up": 0.5000396966934204
+    },
+    {
+      "date": "2025-03-04",
+      "action": "卖出",
+      "price": 7978.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.49096858501434326
+    },
+    {
+      "date": "2025-03-05",
+      "action": "空仓",
+      "price": 8006.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.48683997988700867
+    },
+    {
+      "date": "2025-03-06",
+      "action": "空仓",
+      "price": 8076.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4848274886608124
+    },
+    {
+      "date": "2025-03-07",
+      "action": "空仓",
+      "price": 8069.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4837401211261749
+    },
+    {
+      "date": "2025-03-10",
+      "action": "空仓",
+      "price": 8076.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.48405784368515015
+    },
+    {
+      "date": "2025-03-11",
+      "action": "空仓",
+      "price": 8012.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.495492547750473
+    },
+    {
+      "date": "2025-03-12",
+      "action": "空仓",
+      "price": 8087.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4850740432739258
+    },
+    {
+      "date": "2025-03-13",
+      "action": "空仓",
+      "price": 8152.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4794624447822571
+    },
+    {
+      "date": "2025-03-14",
+      "action": "空仓",
+      "price": 8380.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4672599732875824
+    },
+    {
+      "date": "2025-03-17",
+      "action": "空仓",
+      "price": 8355.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4619743525981903
+    },
+    {
+      "date": "2025-03-18",
+      "action": "空仓",
+      "price": 8369.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.46411439776420593
+    },
+    {
+      "date": "2025-03-19",
+      "action": "空仓",
+      "price": 8378.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.46974071860313416
+    },
+    {
+      "date": "2025-03-20",
+      "action": "空仓",
+      "price": 8356.0,
+      "shares": 0,
+      "cash": 9151.859971056827,
+      "position_value": 0,
+      "total_value": 9151.859971056827,
+      "prediction": "跌",
+      "probability_up": 0.4810669422149658
+    },
+    {
+      "date": "2025-03-21",
+      "action": "买入",
+      "price": 8300.0,
+      "shares": 1.1026337314526298,
+      "cash": 0,
+      "position_value": 9049.315034031733,
+      "total_value": 9049.315034031733,
+      "prediction": "涨",
+      "probability_up": 0.5115224123001099
+    },
+    {
+      "date": "2025-03-24",
+      "action": "持有",
+      "price": 8248.0,
+      "shares": 1.1026337314526298,
+      "cash": 0,
+      "position_value": 9094.52301702129,
+      "total_value": 9094.52301702129,
+      "prediction": "涨",
+      "probability_up": 0.5014087557792664
+    },
+    {
+      "date": "2025-03-25",
+      "action": "卖出",
+      "price": 8233.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.4889317750930786
+    },
+    {
+      "date": "2025-03-26",
+      "action": "空仓",
+      "price": 8366.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.4758458137512207
+    },
+    {
+      "date": "2025-03-27",
+      "action": "空仓",
+      "price": 8372.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.4733264744281769
+    },
+    {
+      "date": "2025-03-28",
+      "action": "空仓",
+      "price": 8512.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.46707573533058167
+    },
+    {
+      "date": "2025-03-31",
+      "action": "空仓",
+      "price": 8506.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.4652283787727356
+    },
+    {
+      "date": "2025-04-01",
+      "action": "空仓",
+      "price": 8432.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.47793668508529663
+    },
+    {
+      "date": "2025-04-02",
+      "action": "空仓",
+      "price": 8401.0,
+      "shares": 0,
+      "cash": 9077.9835110495,
+      "position_value": 0,
+      "total_value": 9077.9835110495,
+      "prediction": "跌",
+      "probability_up": 0.4914534091949463
+    },
+    {
+      "date": "2025-04-03",
+      "action": "买入",
+      "price": 8418.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8935.63451800382,
+      "total_value": 8935.63451800382,
+      "prediction": "涨",
+      "probability_up": 0.5098457932472229
+    },
+    {
+      "date": "2025-04-07",
+      "action": "持有",
+      "price": 7617.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8214.183939613216,
+      "total_value": 8214.183939613216,
+      "prediction": "涨",
+      "probability_up": 0.5549130439758301
+    },
+    {
+      "date": "2025-04-08",
+      "action": "持有",
+      "price": 7683.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8285.358436136055,
+      "total_value": 8285.358436136055,
+      "prediction": "涨",
+      "probability_up": 0.5638909935951233
+    },
+    {
+      "date": "2025-04-09",
+      "action": "持有",
+      "price": 7755.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8363.0033414337,
+      "total_value": 8363.0033414337,
+      "prediction": "涨",
+      "probability_up": 0.566564679145813
+    },
+    {
+      "date": "2025-04-10",
+      "action": "持有",
+      "price": 7974.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8599.173261714031,
+      "total_value": 8599.173261714031,
+      "prediction": "涨",
+      "probability_up": 0.5598857998847961
+    },
+    {
+      "date": "2025-04-11",
+      "action": "持有",
+      "price": 7970.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8594.859655864162,
+      "total_value": 8594.859655864162,
+      "prediction": "涨",
+      "probability_up": 0.5576651096343994
+    },
+    {
+      "date": "2025-04-14",
+      "action": "持有",
+      "price": 8091.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8725.346232822703,
+      "total_value": 8725.346232822703,
+      "prediction": "涨",
+      "probability_up": 0.5500522255897522
+    },
+    {
+      "date": "2025-04-15",
+      "action": "持有",
+      "price": 8158.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8797.59913080801,
+      "total_value": 8797.59913080801,
+      "prediction": "涨",
+      "probability_up": 0.5414660573005676
+    },
+    {
+      "date": "2025-04-16",
+      "action": "持有",
+      "price": 8233.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8878.479240493056,
+      "total_value": 8878.479240493056,
+      "prediction": "涨",
+      "probability_up": 0.5238128304481506
+    },
+    {
+      "date": "2025-04-17",
+      "action": "持有",
+      "price": 8161.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8800.834335195412,
+      "total_value": 8800.834335195412,
+      "prediction": "涨",
+      "probability_up": 0.531520426273346
+    },
+    {
+      "date": "2025-04-18",
+      "action": "持有",
+      "price": 8160.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8799.755933732944,
+      "total_value": 8799.755933732944,
+      "prediction": "涨",
+      "probability_up": 0.5340743660926819
+    },
+    {
+      "date": "2025-04-21",
+      "action": "持有",
+      "price": 8247.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8893.576860967598,
+      "total_value": 8893.576860967598,
+      "prediction": "涨",
+      "probability_up": 0.5131012201309204
+    },
+    {
+      "date": "2025-04-22",
+      "action": "持有",
+      "price": 8174.0,
+      "shares": 1.0784014624672726,
+      "cash": 0,
+      "position_value": 8814.853554207486,
+      "total_value": 8814.853554207486,
+      "prediction": "涨",
+      "probability_up": 0.5121503472328186
+    },
+    {
+      "date": "2025-04-23",
+      "action": "卖出",
+      "price": 8175.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4999484121799469
+    },
+    {
+      "date": "2025-04-24",
+      "action": "空仓",
+      "price": 8296.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.48236948251724243
+    },
+    {
+      "date": "2025-04-25",
+      "action": "空仓",
+      "price": 8280.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4786565601825714
+    },
+    {
+      "date": "2025-04-28",
+      "action": "空仓",
+      "price": 8168.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.49134060740470886
+    },
+    {
+      "date": "2025-04-29",
+      "action": "空仓",
+      "price": 8215.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4848020076751709
+    },
+    {
+      "date": "2025-04-30",
+      "action": "空仓",
+      "price": 8182.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4834033250808716
+    },
+    {
+      "date": "2025-05-06",
+      "action": "空仓",
+      "price": 8235.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.47792717814445496
+    },
+    {
+      "date": "2025-05-07",
+      "action": "空仓",
+      "price": 8252.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.47591525316238403
+    },
+    {
+      "date": "2025-05-08",
+      "action": "空仓",
+      "price": 8094.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4916563034057617
+    },
+    {
+      "date": "2025-05-09",
+      "action": "空仓",
+      "price": 8190.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4835019111633301
+    },
+    {
+      "date": "2025-05-12",
+      "action": "空仓",
+      "price": 8255.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.47861847281455994
+    },
+    {
+      "date": "2025-05-13",
+      "action": "空仓",
+      "price": 8245.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.4783707559108734
+    },
+    {
+      "date": "2025-05-14",
+      "action": "空仓",
+      "price": 8195.0,
+      "shares": 0,
+      "cash": 8815.931955669954,
+      "position_value": 0,
+      "total_value": 8815.931955669954,
+      "prediction": "跌",
+      "probability_up": 0.48246681690216064
+    },
+    {
+      "date": "2025-05-15",
+      "action": "买入",
+      "price": 8090.0,
+      "shares": 1.0897320093535172,
+      "cash": 0,
+      "position_value": 8726.573930902965,
+      "total_value": 8726.573930902965,
+      "prediction": "涨",
+      "probability_up": 0.51284259557724
+    },
+    {
+      "date": "2025-05-16",
+      "action": "持有",
+      "price": 8101.0,
+      "shares": 1.0897320093535172,
+      "cash": 0,
+      "position_value": 8827.919007772844,
+      "total_value": 8827.919007772844,
+      "prediction": "涨",
+      "probability_up": 0.5025043487548828
+    },
+    {
+      "date": "2025-05-19",
+      "action": "卖出",
+      "price": 8020.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.49023810029029846
+    },
+    {
+      "date": "2025-05-20",
+      "action": "空仓",
+      "price": 8074.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4923141896724701
+    },
+    {
+      "date": "2025-05-21",
+      "action": "空仓",
+      "price": 8272.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.48434680700302124
+    },
+    {
+      "date": "2025-05-22",
+      "action": "空仓",
+      "price": 8301.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.48184651136398315
+    },
+    {
+      "date": "2025-05-23",
+      "action": "空仓",
+      "price": 8263.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4832003712654114
+    },
+    {
+      "date": "2025-05-26",
+      "action": "空仓",
+      "price": 8280.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4843795597553253
+    },
+    {
+      "date": "2025-05-27",
+      "action": "空仓",
+      "price": 8217.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4951353669166565
+    },
+    {
+      "date": "2025-05-28",
+      "action": "空仓",
+      "price": 8225.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4922105073928833
+    },
+    {
+      "date": "2025-05-29",
+      "action": "空仓",
+      "price": 8224.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.48638659715652466
+    },
+    {
+      "date": "2025-05-30",
+      "action": "空仓",
+      "price": 8218.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.48229438066482544
+    },
+    {
+      "date": "2025-06-03",
+      "action": "空仓",
+      "price": 8456.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.47645944356918335
+    },
+    {
+      "date": "2025-06-04",
+      "action": "空仓",
+      "price": 8463.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.4698254466056824
+    },
+    {
+      "date": "2025-06-05",
+      "action": "空仓",
+      "price": 8473.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.46877050399780273
+    },
+    {
+      "date": "2025-06-06",
+      "action": "空仓",
+      "price": 8850.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.45557674765586853
+    },
+    {
+      "date": "2025-06-09",
+      "action": "空仓",
+      "price": 8909.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.44349151849746704
+    },
+    {
+      "date": "2025-06-10",
+      "action": "空仓",
+      "price": 8887.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.44587209820747375
+    },
+    {
+      "date": "2025-06-11",
+      "action": "空仓",
+      "price": 8902.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.46255749464035034
+    },
+    {
+      "date": "2025-06-12",
+      "action": "空仓",
+      "price": 8819.0,
+      "shares": 0,
+      "cash": 8739.650715015208,
+      "position_value": 0,
+      "total_value": 8739.650715015208,
+      "prediction": "跌",
+      "probability_up": 0.49946486949920654
+    },
+    {
+      "date": "2025-06-13",
+      "action": "买入",
+      "price": 8818.0,
+      "shares": 0.9911148463387626,
+      "cash": 0,
+      "position_value": 8712.890614164062,
+      "total_value": 8712.890614164062,
+      "prediction": "涨",
+      "probability_up": 0.5138269662857056
+    },
+    {
+      "date": "2025-06-16",
+      "action": "卖出",
+      "price": 8801.0,
+      "shares": 0,
+      "cash": 8722.801762627449,
+      "position_value": 0,
+      "total_value": 8722.801762627449,
+      "prediction": "跌",
+      "probability_up": 0.4935854971408844
+    },
+    {
+      "date": "2025-06-17",
+      "action": "空仓",
+      "price": 8864.0,
+      "shares": 0,
+      "cash": 8722.801762627449,
+      "position_value": 0,
+      "total_value": 8722.801762627449,
+      "prediction": "跌",
+      "probability_up": 0.478931188583374
+    },
+    {
+      "date": "2025-06-18",
+      "action": "空仓",
+      "price": 9045.0,
+      "shares": 0,
+      "cash": 8722.801762627449,
+      "position_value": 0,
+      "total_value": 8722.801762627449,
+      "prediction": "跌",
+      "probability_up": 0.46804749965667725
+    },
+    {
+      "date": "2025-06-19",
+      "action": "空仓",
+      "price": 8819.0,
+      "shares": 0,
+      "cash": 8722.801762627449,
+      "position_value": 0,
+      "total_value": 8722.801762627449,
+      "prediction": "跌",
+      "probability_up": 0.48375213146209717
+    },
+    {
+      "date": "2025-06-20",
+      "action": "买入",
+      "price": 8811.0,
+      "shares": 0.9899899855439165,
+      "cash": 0,
+      "position_value": 8577.273234752492,
+      "total_value": 8577.273234752492,
+      "prediction": "涨",
+      "probability_up": 0.5154727101325989
+    },
+    {
+      "date": "2025-06-23",
+      "action": "卖出",
+      "price": 8712.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4999541938304901
+    },
+    {
+      "date": "2025-06-24",
+      "action": "空仓",
+      "price": 8739.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4928818345069885
+    },
+    {
+      "date": "2025-06-25",
+      "action": "空仓",
+      "price": 8726.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48937246203422546
+    },
+    {
+      "date": "2025-06-26",
+      "action": "空仓",
+      "price": 8796.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4823312759399414
+    },
+    {
+      "date": "2025-06-27",
+      "action": "空仓",
+      "price": 8792.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48136070370674133
+    },
+    {
+      "date": "2025-06-30",
+      "action": "空仓",
+      "price": 8762.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48348861932754517
+    },
+    {
+      "date": "2025-07-01",
+      "action": "空仓",
+      "price": 8810.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48187559843063354
+    },
+    {
+      "date": "2025-07-02",
+      "action": "空仓",
+      "price": 8747.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48517143726348877
+    },
+    {
+      "date": "2025-07-03",
+      "action": "空仓",
+      "price": 8944.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4803638756275177
+    },
+    {
+      "date": "2025-07-04",
+      "action": "空仓",
+      "price": 8948.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4770638942718506
+    },
+    {
+      "date": "2025-07-07",
+      "action": "空仓",
+      "price": 8897.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4817185699939728
+    },
+    {
+      "date": "2025-07-08",
+      "action": "空仓",
+      "price": 8953.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4800030291080475
+    },
+    {
+      "date": "2025-07-09",
+      "action": "空仓",
+      "price": 8899.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.48393678665161133
+    },
+    {
+      "date": "2025-07-10",
+      "action": "空仓",
+      "price": 8919.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4814252555370331
+    },
+    {
+      "date": "2025-07-11",
+      "action": "空仓",
+      "price": 9040.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4759587347507477
+    },
+    {
+      "date": "2025-07-14",
+      "action": "空仓",
+      "price": 9207.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.465634286403656
+    },
+    {
+      "date": "2025-07-15",
+      "action": "空仓",
+      "price": 9225.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.46005353331565857
+    },
+    {
+      "date": "2025-07-16",
+      "action": "空仓",
+      "price": 9152.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4712878167629242
+    },
+    {
+      "date": "2025-07-17",
+      "action": "空仓",
+      "price": 9166.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4793524742126465
+    },
+    {
+      "date": "2025-07-18",
+      "action": "空仓",
+      "price": 9273.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.47186940908432007
+    },
+    {
+      "date": "2025-07-21",
+      "action": "空仓",
+      "price": 9271.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4708212614059448
+    },
+    {
+      "date": "2025-07-22",
+      "action": "空仓",
+      "price": 9393.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4648939073085785
+    },
+    {
+      "date": "2025-07-23",
+      "action": "空仓",
+      "price": 9492.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4581635892391205
+    },
+    {
+      "date": "2025-07-24",
+      "action": "空仓",
+      "price": 9386.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.4683491885662079
+    },
+    {
+      "date": "2025-07-25",
+      "action": "空仓",
+      "price": 9392.0,
+      "shares": 0,
+      "cash": 8624.7927540586,
+      "position_value": 0,
+      "total_value": 8624.7927540586,
+      "prediction": "跌",
+      "probability_up": 0.47686541080474854
+    },
+    {
+      "date": "2025-07-28",
+      "action": "买入",
+      "price": 9350.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8497.496347635062,
+      "total_value": 8497.496347635062,
+      "prediction": "涨",
+      "probability_up": 0.5062507390975952
+    },
+    {
+      "date": "2025-07-29",
+      "action": "持有",
+      "price": 9195.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8481.814906264046,
+      "total_value": 8481.814906264046,
+      "prediction": "涨",
+      "probability_up": 0.5097407698631287
+    },
+    {
+      "date": "2025-07-30",
+      "action": "持有",
+      "price": 9192.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8479.047593080926,
+      "total_value": 8479.047593080926,
+      "prediction": "涨",
+      "probability_up": 0.5015949010848999
+    },
+    {
+      "date": "2025-07-31",
+      "action": "持有",
+      "price": 9008.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8309.319051182874,
+      "total_value": 8309.319051182874,
+      "prediction": "涨",
+      "probability_up": 0.5208283066749573
+    },
+    {
+      "date": "2025-08-01",
+      "action": "持有",
+      "price": 8918.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8226.299655689261,
+      "total_value": 8226.299655689261,
+      "prediction": "涨",
+      "probability_up": 0.5341703295707703
+    },
+    {
+      "date": "2025-08-04",
+      "action": "持有",
+      "price": 9039.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8337.914620741785,
+      "total_value": 8337.914620741785,
+      "prediction": "涨",
+      "probability_up": 0.5188277959823608
+    },
+    {
+      "date": "2025-08-05",
+      "action": "持有",
+      "price": 9075.0,
+      "shares": 0.9224377277068022,
+      "cash": 0,
+      "position_value": 8371.12237893923,
+      "total_value": 8371.12237893923,
+      "prediction": "涨",
+      "probability_up": 0.5067499279975891
+    },
+    {
+      "date": "2025-08-06",
+      "action": "卖出",
+      "price": 9104.0,
+      "shares": 0,
+      "cash": 8397.873073042727,
+      "position_value": 0,
+      "total_value": 8397.873073042727,
+      "prediction": "跌",
+      "probability_up": 0.4952636659145355
+    },
+    {
+      "date": "2025-08-07",
+      "action": "空仓",
+      "price": 9258.0,
+      "shares": 0,
+      "cash": 8397.873073042727,
+      "position_value": 0,
+      "total_value": 8397.873073042727,
+      "prediction": "跌",
+      "probability_up": 0.49166351556777954
+    },
+    {
+      "date": "2025-08-08",
+      "action": "空仓",
+      "price": 9278.0,
+      "shares": 0,
+      "cash": 8397.873073042727,
+      "position_value": 0,
+      "total_value": 8397.873073042727,
+      "prediction": "跌",
+      "probability_up": 0.4873424768447876
+    },
+    {
+      "date": "2025-08-11",
+      "action": "空仓",
+      "price": 9210.0,
+      "shares": 0,
+      "cash": 8397.873073042727,
+      "position_value": 0,
+      "total_value": 8397.873073042727,
+      "prediction": "跌",
+      "probability_up": 0.4998635947704315
+    },
+    {
+      "date": "2025-08-12",
+      "action": "买入",
+      "price": 9180.0,
+      "shares": 0.9148009883488809,
+      "cash": 0,
+      "position_value": 8404.276679961169,
+      "total_value": 8404.276679961169,
+      "prediction": "涨",
+      "probability_up": 0.5057265758514404
+    },
+    {
+      "date": "2025-08-13",
+      "action": "卖出",
+      "price": 9182.0,
+      "shares": 0,
+      "cash": 8399.702675019424,
+      "position_value": 0,
+      "total_value": 8399.702675019424,
+      "prediction": "跌",
+      "probability_up": 0.4894297122955322
+    },
+    {
+      "date": "2025-08-14",
+      "action": "空仓",
+      "price": 9286.0,
+      "shares": 0,
+      "cash": 8399.702675019424,
+      "position_value": 0,
+      "total_value": 8399.702675019424,
+      "prediction": "跌",
+      "probability_up": 0.4839951694011688
+    },
+    {
+      "date": "2025-08-15",
+      "action": "空仓",
+      "price": 9204.0,
+      "shares": 0,
+      "cash": 8399.702675019424,
+      "position_value": 0,
+      "total_value": 8399.702675019424,
+      "prediction": "跌",
+      "probability_up": 0.49090299010276794
+    },
+    {
+      "date": "2025-08-18",
+      "action": "空仓",
+      "price": 9258.0,
+      "shares": 0,
+      "cash": 8399.702675019424,
+      "position_value": 0,
+      "total_value": 8399.702675019424,
+      "prediction": "跌",
+      "probability_up": 0.48315638303756714
+    },
+    {
+      "date": "2025-08-19",
+      "action": "空仓",
+      "price": 9187.0,
+      "shares": 0,
+      "cash": 8399.702675019424,
+      "position_value": 0,
+      "total_value": 8399.702675019424,
+      "prediction": "跌",
+      "probability_up": 0.48685571551322937
+    },
+    {
+      "date": "2025-08-20",
+      "action": "买入",
+      "price": 9208.0,
+      "shares": 0.9122179273478958,
+      "cash": 0,
+      "position_value": 8248.274499079673,
+      "total_value": 8248.274499079673,
+      "prediction": "涨",
+      "probability_up": 0.5068185329437256
+    },
+    {
+      "date": "2025-08-21",
+      "action": "卖出",
+      "price": 9133.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4916006326675415
+    },
+    {
+      "date": "2025-08-22",
+      "action": "空仓",
+      "price": 9192.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.48285505175590515
+    },
+    {
+      "date": "2025-08-25",
+      "action": "空仓",
+      "price": 9394.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4788125455379486
+    },
+    {
+      "date": "2025-08-26",
+      "action": "空仓",
+      "price": 9354.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4774291217327118
+    },
+    {
+      "date": "2025-08-27",
+      "action": "空仓",
+      "price": 9305.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4843169152736664
+    },
+    {
+      "date": "2025-08-28",
+      "action": "空仓",
+      "price": 9377.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4817141890525818
+    },
+    {
+      "date": "2025-08-29",
+      "action": "空仓",
+      "price": 9386.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4800068438053131
+    },
+    {
+      "date": "2025-09-01",
+      "action": "空仓",
+      "price": 9798.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4682060480117798
+    },
+    {
+      "date": "2025-09-02",
+      "action": "空仓",
+      "price": 9845.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.45444416999816895
+    },
+    {
+      "date": "2025-09-03",
+      "action": "空仓",
+      "price": 9844.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4533955454826355
+    },
+    {
+      "date": "2025-09-04",
+      "action": "空仓",
+      "price": 9793.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4758898913860321
+    },
+    {
+      "date": "2025-09-05",
+      "action": "空仓",
+      "price": 9834.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.48366478085517883
+    },
+    {
+      "date": "2025-09-08",
+      "action": "空仓",
+      "price": 9835.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.48550260066986084
+    },
+    {
+      "date": "2025-09-09",
+      "action": "空仓",
+      "price": 9867.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4790879189968109
+    },
+    {
+      "date": "2025-09-10",
+      "action": "空仓",
+      "price": 9816.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.48216715455055237
+    },
+    {
+      "date": "2025-09-11",
+      "action": "空仓",
+      "price": 9821.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4781842529773712
+    },
+    {
+      "date": "2025-09-12",
+      "action": "空仓",
+      "price": 10061.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.47017136216163635
+    },
+    {
+      "date": "2025-09-15",
+      "action": "空仓",
+      "price": 10045.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4657963514328003
+    },
+    {
+      "date": "2025-09-16",
+      "action": "空仓",
+      "price": 10134.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4616614580154419
+    },
+    {
+      "date": "2025-09-17",
+      "action": "空仓",
+      "price": 9933.0,
+      "shares": 0,
+      "cash": 8331.286330468332,
+      "position_value": 0,
+      "total_value": 8331.286330468332,
+      "prediction": "跌",
+      "probability_up": 0.4852302074432373
+    },
+    {
+      "date": "2025-09-18",
+      "action": "买入",
+      "price": 9924.0,
+      "shares": 0.8395089006920932,
+      "cash": 0,
+      "position_value": 8256.570038306736,
+      "total_value": 8256.570038306736,
+      "prediction": "涨",
+      "probability_up": 0.5088464617729187
+    },
+    {
+      "date": "2025-09-19",
+      "action": "卖出",
+      "price": 9910.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4884548783302307
+    },
+    {
+      "date": "2025-09-22",
+      "action": "空仓",
+      "price": 10317.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.47565293312072754
+    },
+    {
+      "date": "2025-09-23",
+      "action": "空仓",
+      "price": 10349.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.46483084559440613
+    },
+    {
+      "date": "2025-09-24",
+      "action": "空仓",
+      "price": 10397.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4590471684932709
+    },
+    {
+      "date": "2025-09-25",
+      "action": "空仓",
+      "price": 10411.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4619379937648773
+    },
+    {
+      "date": "2025-09-26",
+      "action": "空仓",
+      "price": 10632.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4536260664463043
+    },
+    {
+      "date": "2025-09-29",
+      "action": "空仓",
+      "price": 10939.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4406355321407318
+    },
+    {
+      "date": "2025-09-30",
+      "action": "空仓",
+      "price": 10918.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.43733811378479004
+    },
+    {
+      "date": "2025-10-09",
+      "action": "空仓",
+      "price": 11169.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4308116137981415
+    },
+    {
+      "date": "2025-10-10",
+      "action": "空仓",
+      "price": 11082.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4447665810585022
+    },
+    {
+      "date": "2025-10-13",
+      "action": "空仓",
+      "price": 11531.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.43469271063804626
+    },
+    {
+      "date": "2025-10-14",
+      "action": "空仓",
+      "price": 11533.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4329730272293091
+    },
+    {
+      "date": "2025-10-15",
+      "action": "空仓",
+      "price": 11966.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.42464447021484375
+    },
+    {
+      "date": "2025-10-16",
+      "action": "空仓",
+      "price": 12017.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.4214688241481781
+    },
+    {
+      "date": "2025-10-17",
+      "action": "空仓",
+      "price": 12249.0,
+      "shares": 0,
+      "cash": 8319.533205858643,
+      "position_value": 0,
+      "total_value": 8319.533205858643,
+      "prediction": "跌",
+      "probability_up": 0.41845983266830444
+    },
+    {
+      "date": "2025-10-20",
+      "action": "买入",
+      "price": 12057.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 8102.177896922301,
+      "total_value": 8102.177896922301,
+      "prediction": "涨",
+      "probability_up": 0.503535807132721
+    },
+    {
+      "date": "2025-10-21",
+      "action": "持有",
+      "price": 11805.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 8145.648958709569,
+      "total_value": 8145.648958709569,
+      "prediction": "涨",
+      "probability_up": 0.532142162322998
+    },
+    {
+      "date": "2025-10-22",
+      "action": "持有",
+      "price": 11404.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7868.9522003493375,
+      "total_value": 7868.9522003493375,
+      "prediction": "涨",
+      "probability_up": 0.5689692497253418
+    },
+    {
+      "date": "2025-10-23",
+      "action": "持有",
+      "price": 11467.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7912.423262136605,
+      "total_value": 7912.423262136605,
+      "prediction": "涨",
+      "probability_up": 0.5550545454025269
+    },
+    {
+      "date": "2025-10-24",
+      "action": "持有",
+      "price": 11332.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7819.270986878174,
+      "total_value": 7819.270986878174,
+      "prediction": "涨",
+      "probability_up": 0.5518644452095032
+    },
+    {
+      "date": "2025-10-27",
+      "action": "持有",
+      "price": 11394.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7862.052031811676,
+      "total_value": 7862.052031811676,
+      "prediction": "涨",
+      "probability_up": 0.5335111618041992
+    },
+    {
+      "date": "2025-10-28",
+      "action": "持有",
+      "price": 11049.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7623.996217262349,
+      "total_value": 7623.996217262349,
+      "prediction": "涨",
+      "probability_up": 0.5544601082801819
+    },
+    {
+      "date": "2025-10-29",
+      "action": "持有",
+      "price": 11338.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7823.411088000771,
+      "total_value": 7823.411088000771,
+      "prediction": "涨",
+      "probability_up": 0.532702624797821
+    },
+    {
+      "date": "2025-10-30",
+      "action": "持有",
+      "price": 11253.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7764.7596554306465,
+      "total_value": 7764.7596554306465,
+      "prediction": "涨",
+      "probability_up": 0.5281723737716675
+    },
+    {
+      "date": "2025-10-31",
+      "action": "持有",
+      "price": 11441.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7894.482823938685,
+      "total_value": 7894.482823938685,
+      "prediction": "涨",
+      "probability_up": 0.513253390789032
+    },
+    {
+      "date": "2025-11-03",
+      "action": "持有",
+      "price": 11455.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7904.143059891412,
+      "total_value": 7904.143059891412,
+      "prediction": "涨",
+      "probability_up": 0.5072357058525085
+    },
+    {
+      "date": "2025-11-04",
+      "action": "持有",
+      "price": 11238.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7754.409402624155,
+      "total_value": 7754.409402624155,
+      "prediction": "涨",
+      "probability_up": 0.5257599949836731
+    },
+    {
+      "date": "2025-11-05",
+      "action": "持有",
+      "price": 11276.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7780.630043067268,
+      "total_value": 7780.630043067268,
+      "prediction": "涨",
+      "probability_up": 0.5217303037643433
+    },
+    {
+      "date": "2025-11-06",
+      "action": "持有",
+      "price": 11427.0,
+      "shares": 0.6900168537661643,
+      "cash": 0,
+      "position_value": 7884.822587985959,
+      "total_value": 7884.822587985959,
+      "prediction": "涨",
+      "probability_up": 0.5027258992195129
+    },
+    {
+      "date": "2025-11-07",
+      "action": "卖出",
+      "price": 11449.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.49059027433395386
+    },
+    {
+      "date": "2025-11-10",
+      "action": "空仓",
+      "price": 11719.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.4803689420223236
+    },
+    {
+      "date": "2025-11-11",
+      "action": "空仓",
+      "price": 11907.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.4644949734210968
+    },
+    {
+      "date": "2025-11-12",
+      "action": "空仓",
+      "price": 12098.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.4496622085571289
+    },
+    {
+      "date": "2025-11-13",
+      "action": "空仓",
+      "price": 12610.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.4340522289276123
+    },
+    {
+      "date": "2025-11-14",
+      "action": "空仓",
+      "price": 12375.0,
+      "shares": 0,
+      "cash": 7900.002958768815,
+      "position_value": 0,
+      "total_value": 7900.002958768815,
+      "prediction": "跌",
+      "probability_up": 0.44165652990341187
+    },
+    {
+      "date": "2025-11-17",
+      "action": "买入",
+      "price": 12220.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7714.462791079237,
+      "total_value": 7714.462791079237,
+      "prediction": "涨",
+      "probability_up": 0.5349576473236084
+    },
+    {
+      "date": "2025-11-18",
+      "action": "持有",
+      "price": 11699.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7563.186138677281,
+      "total_value": 7563.186138677281,
+      "prediction": "涨",
+      "probability_up": 0.5786095857620239
+    },
+    {
+      "date": "2025-11-19",
+      "action": "持有",
+      "price": 12148.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7853.45629649129,
+      "total_value": 7853.45629649129,
+      "prediction": "涨",
+      "probability_up": 0.5312765836715698
+    },
+    {
+      "date": "2025-11-20",
+      "action": "持有",
+      "price": 12050.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7790.101117280215,
+      "total_value": 7790.101117280215,
+      "prediction": "涨",
+      "probability_up": 0.510456919670105
+    },
+    {
+      "date": "2025-11-21",
+      "action": "持有",
+      "price": 11680.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7550.902991687378,
+      "total_value": 7550.902991687378,
+      "prediction": "涨",
+      "probability_up": 0.5356113314628601
+    },
+    {
+      "date": "2025-11-24",
+      "action": "持有",
+      "price": 11808.0,
+      "shares": 0.6464814205211796,
+      "cash": 0,
+      "position_value": 7633.652613514089,
+      "total_value": 7633.652613514089,
+      "prediction": "涨",
+      "probability_up": 0.5220088958740234
+    },
+    {
+      "date": "2025-11-25",
+      "action": "卖出",
+      "price": 11890.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.49686577916145325
+    },
+    {
+      "date": "2025-11-26",
+      "action": "空仓",
+      "price": 12227.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4859637916088104
+    },
+    {
+      "date": "2025-11-27",
+      "action": "空仓",
+      "price": 12525.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.47049465775489807
+    },
+    {
+      "date": "2025-11-28",
+      "action": "空仓",
+      "price": 12727.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4535708725452423
+    },
+    {
+      "date": "2025-12-01",
+      "action": "空仓",
+      "price": 13278.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.43674424290657043
+    },
+    {
+      "date": "2025-12-02",
+      "action": "空仓",
+      "price": 13423.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.42424944043159485
+    },
+    {
+      "date": "2025-12-03",
+      "action": "空仓",
+      "price": 13582.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.418485164642334
+    },
+    {
+      "date": "2025-12-04",
+      "action": "空仓",
+      "price": 13424.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4490198791027069
+    },
+    {
+      "date": "2025-12-05",
+      "action": "空仓",
+      "price": 13687.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.45106932520866394
+    },
+    {
+      "date": "2025-12-08",
+      "action": "空仓",
+      "price": 13706.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.46162959933280945
+    },
+    {
+      "date": "2025-12-09",
+      "action": "空仓",
+      "price": 13607.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4920652508735657
+    },
+    {
+      "date": "2025-12-10",
+      "action": "空仓",
+      "price": 14373.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4663124978542328
+    },
+    {
+      "date": "2025-12-11",
+      "action": "空仓",
+      "price": 14488.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.44478854537010193
+    },
+    {
+      "date": "2025-12-12",
+      "action": "空仓",
+      "price": 14892.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.43082568049430847
+    },
+    {
+      "date": "2025-12-15",
+      "action": "空仓",
+      "price": 14793.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4344136416912079
+    },
+    {
+      "date": "2025-12-16",
+      "action": "空仓",
+      "price": 14666.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.47947296500205994
+    },
+    {
+      "date": "2025-12-17",
+      "action": "空仓",
+      "price": 15512.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4579363167285919
+    },
+    {
+      "date": "2025-12-18",
+      "action": "空仓",
+      "price": 15521.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4453473687171936
+    },
+    {
+      "date": "2025-12-19",
+      "action": "空仓",
+      "price": 15376.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4725905656814575
+    },
+    {
+      "date": "2025-12-22",
+      "action": "空仓",
+      "price": 16210.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.451467365026474
+    },
+    {
+      "date": "2025-12-23",
+      "action": "空仓",
+      "price": 16441.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4331299364566803
+    },
+    {
+      "date": "2025-12-24",
+      "action": "空仓",
+      "price": 17609.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.42001160979270935
+    },
+    {
+      "date": "2025-12-25",
+      "action": "空仓",
+      "price": 17397.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.41627755761146545
+    },
+    {
+      "date": "2025-12-26",
+      "action": "空仓",
+      "price": 18319.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4090252220630646
+    },
+    {
+      "date": "2025-12-29",
+      "action": "空仓",
+      "price": 18205.0,
+      "shares": 0,
+      "cash": 7686.664089996826,
+      "position_value": 0,
+      "total_value": 7686.664089996826,
+      "prediction": "跌",
+      "probability_up": 0.4114810824394226
+    }
+  ],
+  "daily_data": [
+    {
+      "date": "2024-11-01",
+      "close_price": 7964.0,
+      "actual_change": null,
+      "price_change_pct": null
+    },
+    {
+      "date": "2024-11-04",
+      "close_price": 8006.0,
+      "actual_change": 1,
+      "price_change_pct": 0.527373179306881
+    },
+    {
+      "date": "2024-11-05",
+      "close_price": 7993.0,
+      "actual_change": 0,
+      "price_change_pct": -0.1623782163377467
+    },
+    {
+      "date": "2024-11-06",
+      "close_price": 7780.0,
+      "actual_change": 0,
+      "price_change_pct": -2.6648317277617917
+    },
+    {
+      "date": "2024-11-07",
+      "close_price": 7699.0,
+      "actual_change": 0,
+      "price_change_pct": -1.0411311053984575
+    },
+    {
+      "date": "2024-11-08",
+      "close_price": 7760.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7923106896999611
+    },
+    {
+      "date": "2024-11-11",
+      "close_price": 7800.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5154639175257731
+    },
+    {
+      "date": "2024-11-12",
+      "close_price": 7581.0,
+      "actual_change": 0,
+      "price_change_pct": -2.8076923076923075
+    },
+    {
+      "date": "2024-11-13",
+      "close_price": 7707.0,
+      "actual_change": 1,
+      "price_change_pct": 1.662049861495845
+    },
+    {
+      "date": "2024-11-14",
+      "close_price": 7504.0,
+      "actual_change": 0,
+      "price_change_pct": -2.633969118982743
+    },
+    {
+      "date": "2024-11-15",
+      "close_price": 7591.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1593816631130065
+    },
+    {
+      "date": "2024-11-18",
+      "close_price": 7688.0,
+      "actual_change": 1,
+      "price_change_pct": 1.2778290080358319
+    },
+    {
+      "date": "2024-11-19",
+      "close_price": 7817.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6779396462018732
+    },
+    {
+      "date": "2024-11-20",
+      "close_price": 7761.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7163873608801331
+    },
+    {
+      "date": "2024-11-21",
+      "close_price": 7840.0,
+      "actual_change": 1,
+      "price_change_pct": 1.017910063136194
+    },
+    {
+      "date": "2024-11-22",
+      "close_price": 7804.0,
+      "actual_change": 0,
+      "price_change_pct": -0.4591836734693878
+    },
+    {
+      "date": "2024-11-25",
+      "close_price": 7657.0,
+      "actual_change": 0,
+      "price_change_pct": -1.8836494105586878
+    },
+    {
+      "date": "2024-11-26",
+      "close_price": 7602.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7182969831526708
+    },
+    {
+      "date": "2024-11-27",
+      "close_price": 7674.0,
+      "actual_change": 1,
+      "price_change_pct": 0.9471191791633782
+    },
+    {
+      "date": "2024-11-28",
+      "close_price": 7532.0,
+      "actual_change": 0,
+      "price_change_pct": -1.850403961428199
+    },
+    {
+      "date": "2024-11-29",
+      "close_price": 7697.0,
+      "actual_change": 1,
+      "price_change_pct": 2.1906532129580456
+    },
+    {
+      "date": "2024-12-02",
+      "close_price": 7596.0,
+      "actual_change": 0,
+      "price_change_pct": -1.3121995582694557
+    },
+    {
+      "date": "2024-12-03",
+      "close_price": 7804.0,
+      "actual_change": 1,
+      "price_change_pct": 2.738283307003686
+    },
+    {
+      "date": "2024-12-04",
+      "close_price": 7814.0,
+      "actual_change": 1,
+      "price_change_pct": 0.12813941568426446
+    },
+    {
+      "date": "2024-12-05",
+      "close_price": 7832.0,
+      "actual_change": 1,
+      "price_change_pct": 0.2303557716918352
+    },
+    {
+      "date": "2024-12-06",
+      "close_price": 7823.0,
+      "actual_change": 0,
+      "price_change_pct": -0.11491317671092952
+    },
+    {
+      "date": "2024-12-09",
+      "close_price": 7795.0,
+      "actual_change": 0,
+      "price_change_pct": -0.35791895692189696
+    },
+    {
+      "date": "2024-12-10",
+      "close_price": 7924.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6549069916613213
+    },
+    {
+      "date": "2024-12-11",
+      "close_price": 7914.0,
+      "actual_change": 0,
+      "price_change_pct": -0.12619888944977284
+    },
+    {
+      "date": "2024-12-12",
+      "close_price": 8014.0,
+      "actual_change": 1,
+      "price_change_pct": 1.2635835228708618
+    },
+    {
+      "date": "2024-12-13",
+      "close_price": 7795.0,
+      "actual_change": 0,
+      "price_change_pct": -2.7327177439480907
+    },
+    {
+      "date": "2024-12-16",
+      "close_price": 7736.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7568954457985888
+    },
+    {
+      "date": "2024-12-17",
+      "close_price": 7717.0,
+      "actual_change": 0,
+      "price_change_pct": -0.24560496380558428
+    },
+    {
+      "date": "2024-12-18",
+      "close_price": 7701.0,
+      "actual_change": 0,
+      "price_change_pct": -0.20733445639497217
+    },
+    {
+      "date": "2024-12-19",
+      "close_price": 7505.0,
+      "actual_change": 0,
+      "price_change_pct": -2.545124009868848
+    },
+    {
+      "date": "2024-12-20",
+      "close_price": 7444.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8127914723517655
+    },
+    {
+      "date": "2024-12-23",
+      "close_price": 7583.0,
+      "actual_change": 1,
+      "price_change_pct": 1.8672756582482537
+    },
+    {
+      "date": "2024-12-24",
+      "close_price": 7580.0,
+      "actual_change": 0,
+      "price_change_pct": -0.039562178557299224
+    },
+    {
+      "date": "2024-12-25",
+      "close_price": 7582.0,
+      "actual_change": 1,
+      "price_change_pct": 0.02638522427440633
+    },
+    {
+      "date": "2024-12-26",
+      "close_price": 7583.0,
+      "actual_change": 1,
+      "price_change_pct": 0.013189132155104196
+    },
+    {
+      "date": "2024-12-27",
+      "close_price": 7601.0,
+      "actual_change": 1,
+      "price_change_pct": 0.23737307134379534
+    },
+    {
+      "date": "2024-12-30",
+      "close_price": 7560.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5394027101697145
+    },
+    {
+      "date": "2024-12-31",
+      "close_price": 7470.0,
+      "actual_change": 0,
+      "price_change_pct": -1.1904761904761905
+    },
+    {
+      "date": "2025-01-02",
+      "close_price": 7614.0,
+      "actual_change": 1,
+      "price_change_pct": 1.9277108433734942
+    },
+    {
+      "date": "2025-01-03",
+      "close_price": 7637.0,
+      "actual_change": 1,
+      "price_change_pct": 0.30207512477016024
+    },
+    {
+      "date": "2025-01-06",
+      "close_price": 7611.0,
+      "actual_change": 0,
+      "price_change_pct": -0.3404478198245384
+    },
+    {
+      "date": "2025-01-07",
+      "close_price": 7733.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6029431086585204
+    },
+    {
+      "date": "2025-01-08",
+      "close_price": 7759.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3362213888529678
+    },
+    {
+      "date": "2025-01-09",
+      "close_price": 7774.0,
+      "actual_change": 1,
+      "price_change_pct": 0.1933238819435494
+    },
+    {
+      "date": "2025-01-10",
+      "close_price": 7824.0,
+      "actual_change": 1,
+      "price_change_pct": 0.6431695394906097
+    },
+    {
+      "date": "2025-01-13",
+      "close_price": 7788.0,
+      "actual_change": 0,
+      "price_change_pct": -0.4601226993865031
+    },
+    {
+      "date": "2025-01-14",
+      "close_price": 7608.0,
+      "actual_change": 0,
+      "price_change_pct": -2.311248073959938
+    },
+    {
+      "date": "2025-01-15",
+      "close_price": 7689.0,
+      "actual_change": 1,
+      "price_change_pct": 1.0646687697160884
+    },
+    {
+      "date": "2025-01-16",
+      "close_price": 7872.0,
+      "actual_change": 1,
+      "price_change_pct": 2.380023410066329
+    },
+    {
+      "date": "2025-01-17",
+      "close_price": 7833.0,
+      "actual_change": 0,
+      "price_change_pct": -0.4954268292682927
+    },
+    {
+      "date": "2025-01-20",
+      "close_price": 7770.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8042895442359249
+    },
+    {
+      "date": "2025-01-21",
+      "close_price": 7783.0,
+      "actual_change": 1,
+      "price_change_pct": 0.16731016731016732
+    },
+    {
+      "date": "2025-01-22",
+      "close_price": 7812.0,
+      "actual_change": 1,
+      "price_change_pct": 0.37260696389567005
+    },
+    {
+      "date": "2025-01-23",
+      "close_price": 7720.0,
+      "actual_change": 0,
+      "price_change_pct": -1.1776753712237584
+    },
+    {
+      "date": "2025-01-24",
+      "close_price": 7778.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7512953367875648
+    },
+    {
+      "date": "2025-01-27",
+      "close_price": 7687.0,
+      "actual_change": 0,
+      "price_change_pct": -1.169966572383646
+    },
+    {
+      "date": "2025-02-05",
+      "close_price": 8107.0,
+      "actual_change": 1,
+      "price_change_pct": 5.463770001300897
+    },
+    {
+      "date": "2025-02-06",
+      "close_price": 8042.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8017762427531763
+    },
+    {
+      "date": "2025-02-07",
+      "close_price": 8055.0,
+      "actual_change": 1,
+      "price_change_pct": 0.1616513305147973
+    },
+    {
+      "date": "2025-02-10",
+      "close_price": 8062.0,
+      "actual_change": 1,
+      "price_change_pct": 0.08690254500310365
+    },
+    {
+      "date": "2025-02-11",
+      "close_price": 7972.0,
+      "actual_change": 0,
+      "price_change_pct": -1.116348300669809
+    },
+    {
+      "date": "2025-02-12",
+      "close_price": 7967.0,
+      "actual_change": 0,
+      "price_change_pct": -0.06271951831409935
+    },
+    {
+      "date": "2025-02-13",
+      "close_price": 8028.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7656583406552027
+    },
+    {
+      "date": "2025-02-14",
+      "close_price": 8254.0,
+      "actual_change": 1,
+      "price_change_pct": 2.815146985550573
+    },
+    {
+      "date": "2025-02-17",
+      "close_price": 8016.0,
+      "actual_change": 0,
+      "price_change_pct": -2.8834504482675065
+    },
+    {
+      "date": "2025-02-18",
+      "close_price": 8077.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7609780439121756
+    },
+    {
+      "date": "2025-02-19",
+      "close_price": 8132.0,
+      "actual_change": 1,
+      "price_change_pct": 0.6809458957533738
+    },
+    {
+      "date": "2025-02-20",
+      "close_price": 8147.0,
+      "actual_change": 1,
+      "price_change_pct": 0.18445646827348747
+    },
+    {
+      "date": "2025-02-21",
+      "close_price": 8102.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5523505584877869
+    },
+    {
+      "date": "2025-02-24",
+      "close_price": 8087.0,
+      "actual_change": 0,
+      "price_change_pct": -0.18513947173537398
+    },
+    {
+      "date": "2025-02-25",
+      "close_price": 8017.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8655867441572894
+    },
+    {
+      "date": "2025-02-26",
+      "close_price": 7904.0,
+      "actual_change": 0,
+      "price_change_pct": -1.4095048022951229
+    },
+    {
+      "date": "2025-02-27",
+      "close_price": 7900.0,
+      "actual_change": 0,
+      "price_change_pct": -0.05060728744939271
+    },
+    {
+      "date": "2025-02-28",
+      "close_price": 7869.0,
+      "actual_change": 0,
+      "price_change_pct": -0.3924050632911393
+    },
+    {
+      "date": "2025-03-03",
+      "close_price": 7907.0,
+      "actual_change": 1,
+      "price_change_pct": 0.48290761214893885
+    },
+    {
+      "date": "2025-03-04",
+      "close_price": 7956.0,
+      "actual_change": 1,
+      "price_change_pct": 0.619704059693942
+    },
+    {
+      "date": "2025-03-05",
+      "close_price": 8006.0,
+      "actual_change": 1,
+      "price_change_pct": 0.628456510809452
+    },
+    {
+      "date": "2025-03-06",
+      "close_price": 8076.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8743442418186359
+    },
+    {
+      "date": "2025-03-07",
+      "close_price": 8069.0,
+      "actual_change": 0,
+      "price_change_pct": -0.0866765725606736
+    },
+    {
+      "date": "2025-03-10",
+      "close_price": 8076.0,
+      "actual_change": 1,
+      "price_change_pct": 0.08675176601809394
+    },
+    {
+      "date": "2025-03-11",
+      "close_price": 8012.0,
+      "actual_change": 0,
+      "price_change_pct": -0.79247152055473
+    },
+    {
+      "date": "2025-03-12",
+      "close_price": 8087.0,
+      "actual_change": 1,
+      "price_change_pct": 0.9360958562156765
+    },
+    {
+      "date": "2025-03-13",
+      "close_price": 8152.0,
+      "actual_change": 1,
+      "price_change_pct": 0.803759119574626
+    },
+    {
+      "date": "2025-03-14",
+      "close_price": 8380.0,
+      "actual_change": 1,
+      "price_change_pct": 2.7968596663395484
+    },
+    {
+      "date": "2025-03-17",
+      "close_price": 8355.0,
+      "actual_change": 0,
+      "price_change_pct": -0.29832935560859186
+    },
+    {
+      "date": "2025-03-18",
+      "close_price": 8369.0,
+      "actual_change": 1,
+      "price_change_pct": 0.1675643327348893
+    },
+    {
+      "date": "2025-03-19",
+      "close_price": 8378.0,
+      "actual_change": 1,
+      "price_change_pct": 0.10753972995578923
+    },
+    {
+      "date": "2025-03-20",
+      "close_price": 8356.0,
+      "actual_change": 0,
+      "price_change_pct": -0.26259250417760804
+    },
+    {
+      "date": "2025-03-21",
+      "close_price": 8207.0,
+      "actual_change": 0,
+      "price_change_pct": -1.7831498324557205
+    },
+    {
+      "date": "2025-03-24",
+      "close_price": 8248.0,
+      "actual_change": 1,
+      "price_change_pct": 0.49957353478737665
+    },
+    {
+      "date": "2025-03-25",
+      "close_price": 8249.0,
+      "actual_change": 1,
+      "price_change_pct": 0.012124151309408342
+    },
+    {
+      "date": "2025-03-26",
+      "close_price": 8366.0,
+      "actual_change": 1,
+      "price_change_pct": 1.4183537398472543
+    },
+    {
+      "date": "2025-03-27",
+      "close_price": 8372.0,
+      "actual_change": 1,
+      "price_change_pct": 0.07171886206072196
+    },
+    {
+      "date": "2025-03-28",
+      "close_price": 8512.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6722408026755853
+    },
+    {
+      "date": "2025-03-31",
+      "close_price": 8506.0,
+      "actual_change": 0,
+      "price_change_pct": -0.07048872180451127
+    },
+    {
+      "date": "2025-04-01",
+      "close_price": 8432.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8699741359040678
+    },
+    {
+      "date": "2025-04-02",
+      "close_price": 8401.0,
+      "actual_change": 0,
+      "price_change_pct": -0.3676470588235294
+    },
+    {
+      "date": "2025-04-03",
+      "close_price": 8286.0,
+      "actual_change": 0,
+      "price_change_pct": -1.3688846565885013
+    },
+    {
+      "date": "2025-04-07",
+      "close_price": 7617.0,
+      "actual_change": 0,
+      "price_change_pct": -8.073859522085446
+    },
+    {
+      "date": "2025-04-08",
+      "close_price": 7683.0,
+      "actual_change": 1,
+      "price_change_pct": 0.866482867270579
+    },
+    {
+      "date": "2025-04-09",
+      "close_price": 7755.0,
+      "actual_change": 1,
+      "price_change_pct": 0.9371339320577898
+    },
+    {
+      "date": "2025-04-10",
+      "close_price": 7974.0,
+      "actual_change": 1,
+      "price_change_pct": 2.8239845261121856
+    },
+    {
+      "date": "2025-04-11",
+      "close_price": 7970.0,
+      "actual_change": 0,
+      "price_change_pct": -0.05016302984700275
+    },
+    {
+      "date": "2025-04-14",
+      "close_price": 8091.0,
+      "actual_change": 1,
+      "price_change_pct": 1.518193224592221
+    },
+    {
+      "date": "2025-04-15",
+      "close_price": 8158.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8280805833642318
+    },
+    {
+      "date": "2025-04-16",
+      "close_price": 8233.0,
+      "actual_change": 1,
+      "price_change_pct": 0.9193429762196617
+    },
+    {
+      "date": "2025-04-17",
+      "close_price": 8161.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8745293331713835
+    },
+    {
+      "date": "2025-04-18",
+      "close_price": 8160.0,
+      "actual_change": 0,
+      "price_change_pct": -0.012253400318588408
+    },
+    {
+      "date": "2025-04-21",
+      "close_price": 8247.0,
+      "actual_change": 1,
+      "price_change_pct": 1.0661764705882353
+    },
+    {
+      "date": "2025-04-22",
+      "close_price": 8174.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8851703649812052
+    },
+    {
+      "date": "2025-04-23",
+      "close_price": 8199.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3058478101296795
+    },
+    {
+      "date": "2025-04-24",
+      "close_price": 8296.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1830711062324675
+    },
+    {
+      "date": "2025-04-25",
+      "close_price": 8280.0,
+      "actual_change": 0,
+      "price_change_pct": -0.19286403085824494
+    },
+    {
+      "date": "2025-04-28",
+      "close_price": 8168.0,
+      "actual_change": 0,
+      "price_change_pct": -1.3526570048309179
+    },
+    {
+      "date": "2025-04-29",
+      "close_price": 8215.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5754162585700294
+    },
+    {
+      "date": "2025-04-30",
+      "close_price": 8182.0,
+      "actual_change": 0,
+      "price_change_pct": -0.40170419963481435
+    },
+    {
+      "date": "2025-05-06",
+      "close_price": 8235.0,
+      "actual_change": 1,
+      "price_change_pct": 0.6477633830359325
+    },
+    {
+      "date": "2025-05-07",
+      "close_price": 8252.0,
+      "actual_change": 1,
+      "price_change_pct": 0.2064359441408622
+    },
+    {
+      "date": "2025-05-08",
+      "close_price": 8094.0,
+      "actual_change": 0,
+      "price_change_pct": -1.9146873485215705
+    },
+    {
+      "date": "2025-05-09",
+      "close_price": 8190.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1860637509266123
+    },
+    {
+      "date": "2025-05-12",
+      "close_price": 8255.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7936507936507936
+    },
+    {
+      "date": "2025-05-13",
+      "close_price": 8245.0,
+      "actual_change": 0,
+      "price_change_pct": -0.12113870381586916
+    },
+    {
+      "date": "2025-05-14",
+      "close_price": 8195.0,
+      "actual_change": 0,
+      "price_change_pct": -0.6064281382656156
+    },
+    {
+      "date": "2025-05-15",
+      "close_price": 8008.0,
+      "actual_change": 0,
+      "price_change_pct": -2.2818791946308723
+    },
+    {
+      "date": "2025-05-16",
+      "close_price": 8101.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1613386613386614
+    },
+    {
+      "date": "2025-05-19",
+      "close_price": 8133.0,
+      "actual_change": 1,
+      "price_change_pct": 0.39501296136279473
+    },
+    {
+      "date": "2025-05-20",
+      "close_price": 8074.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7254395671953769
+    },
+    {
+      "date": "2025-05-21",
+      "close_price": 8272.0,
+      "actual_change": 1,
+      "price_change_pct": 2.452316076294278
+    },
+    {
+      "date": "2025-05-22",
+      "close_price": 8301.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3505802707930368
+    },
+    {
+      "date": "2025-05-23",
+      "close_price": 8263.0,
+      "actual_change": 0,
+      "price_change_pct": -0.4577761715455969
+    },
+    {
+      "date": "2025-05-26",
+      "close_price": 8280.0,
+      "actual_change": 1,
+      "price_change_pct": 0.20573641534551618
+    },
+    {
+      "date": "2025-05-27",
+      "close_price": 8217.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7608695652173914
+    },
+    {
+      "date": "2025-05-28",
+      "close_price": 8225.0,
+      "actual_change": 1,
+      "price_change_pct": 0.09735913350371182
+    },
+    {
+      "date": "2025-05-29",
+      "close_price": 8224.0,
+      "actual_change": 0,
+      "price_change_pct": -0.0121580547112462
+    },
+    {
+      "date": "2025-05-30",
+      "close_price": 8218.0,
+      "actual_change": 0,
+      "price_change_pct": -0.07295719844357977
+    },
+    {
+      "date": "2025-06-03",
+      "close_price": 8456.0,
+      "actual_change": 1,
+      "price_change_pct": 2.8960817717206133
+    },
+    {
+      "date": "2025-06-04",
+      "close_price": 8463.0,
+      "actual_change": 1,
+      "price_change_pct": 0.08278145695364239
+    },
+    {
+      "date": "2025-06-05",
+      "close_price": 8473.0,
+      "actual_change": 1,
+      "price_change_pct": 0.11816140848398912
+    },
+    {
+      "date": "2025-06-06",
+      "close_price": 8850.0,
+      "actual_change": 1,
+      "price_change_pct": 4.4494275935323975
+    },
+    {
+      "date": "2025-06-09",
+      "close_price": 8909.0,
+      "actual_change": 1,
+      "price_change_pct": 0.6666666666666667
+    },
+    {
+      "date": "2025-06-10",
+      "close_price": 8887.0,
+      "actual_change": 0,
+      "price_change_pct": -0.24694129531934
+    },
+    {
+      "date": "2025-06-11",
+      "close_price": 8902.0,
+      "actual_change": 1,
+      "price_change_pct": 0.1687858669967368
+    },
+    {
+      "date": "2025-06-12",
+      "close_price": 8819.0,
+      "actual_change": 0,
+      "price_change_pct": -0.9323747472478096
+    },
+    {
+      "date": "2025-06-13",
+      "close_price": 8791.0,
+      "actual_change": 0,
+      "price_change_pct": -0.3174963147749178
+    },
+    {
+      "date": "2025-06-16",
+      "close_price": 8858.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7621431008986463
+    },
+    {
+      "date": "2025-06-17",
+      "close_price": 8864.0,
+      "actual_change": 1,
+      "price_change_pct": 0.06773538044705352
+    },
+    {
+      "date": "2025-06-18",
+      "close_price": 9045.0,
+      "actual_change": 1,
+      "price_change_pct": 2.0419675090252705
+    },
+    {
+      "date": "2025-06-19",
+      "close_price": 8819.0,
+      "actual_change": 0,
+      "price_change_pct": -2.4986180210060804
+    },
+    {
+      "date": "2025-06-20",
+      "close_price": 8664.0,
+      "actual_change": 0,
+      "price_change_pct": -1.757568885361152
+    },
+    {
+      "date": "2025-06-23",
+      "close_price": 8770.0,
+      "actual_change": 1,
+      "price_change_pct": 1.2234533702677746
+    },
+    {
+      "date": "2025-06-24",
+      "close_price": 8739.0,
+      "actual_change": 0,
+      "price_change_pct": -0.35347776510832385
+    },
+    {
+      "date": "2025-06-25",
+      "close_price": 8726.0,
+      "actual_change": 0,
+      "price_change_pct": -0.1487584391806843
+    },
+    {
+      "date": "2025-06-26",
+      "close_price": 8796.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8022003208801284
+    },
+    {
+      "date": "2025-06-27",
+      "close_price": 8792.0,
+      "actual_change": 0,
+      "price_change_pct": -0.04547521600727603
+    },
+    {
+      "date": "2025-06-30",
+      "close_price": 8762.0,
+      "actual_change": 0,
+      "price_change_pct": -0.34121929026387626
+    },
+    {
+      "date": "2025-07-01",
+      "close_price": 8810.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5478201323898653
+    },
+    {
+      "date": "2025-07-02",
+      "close_price": 8747.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7150964812712826
+    },
+    {
+      "date": "2025-07-03",
+      "close_price": 8944.0,
+      "actual_change": 1,
+      "price_change_pct": 2.252200754544415
+    },
+    {
+      "date": "2025-07-04",
+      "close_price": 8948.0,
+      "actual_change": 1,
+      "price_change_pct": 0.044722719141323794
+    },
+    {
+      "date": "2025-07-07",
+      "close_price": 8897.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5699597675458203
+    },
+    {
+      "date": "2025-07-08",
+      "close_price": 8953.0,
+      "actual_change": 1,
+      "price_change_pct": 0.6294256490952006
+    },
+    {
+      "date": "2025-07-09",
+      "close_price": 8899.0,
+      "actual_change": 0,
+      "price_change_pct": -0.603149782195912
+    },
+    {
+      "date": "2025-07-10",
+      "close_price": 8919.0,
+      "actual_change": 1,
+      "price_change_pct": 0.22474435329812337
+    },
+    {
+      "date": "2025-07-11",
+      "close_price": 9040.0,
+      "actual_change": 1,
+      "price_change_pct": 1.3566543334454535
+    },
+    {
+      "date": "2025-07-14",
+      "close_price": 9207.0,
+      "actual_change": 1,
+      "price_change_pct": 1.8473451327433628
+    },
+    {
+      "date": "2025-07-15",
+      "close_price": 9225.0,
+      "actual_change": 1,
+      "price_change_pct": 0.19550342130987292
+    },
+    {
+      "date": "2025-07-16",
+      "close_price": 9152.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7913279132791329
+    },
+    {
+      "date": "2025-07-17",
+      "close_price": 9166.0,
+      "actual_change": 1,
+      "price_change_pct": 0.15297202797202797
+    },
+    {
+      "date": "2025-07-18",
+      "close_price": 9273.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1673576260091643
+    },
+    {
+      "date": "2025-07-21",
+      "close_price": 9271.0,
+      "actual_change": 0,
+      "price_change_pct": -0.021567993098242207
+    },
+    {
+      "date": "2025-07-22",
+      "close_price": 9393.0,
+      "actual_change": 1,
+      "price_change_pct": 1.3159313989860857
+    },
+    {
+      "date": "2025-07-23",
+      "close_price": 9492.0,
+      "actual_change": 1,
+      "price_change_pct": 1.0539763653784733
+    },
+    {
+      "date": "2025-07-24",
+      "close_price": 9386.0,
+      "actual_change": 0,
+      "price_change_pct": -1.1167298777918246
+    },
+    {
+      "date": "2025-07-25",
+      "close_price": 9392.0,
+      "actual_change": 1,
+      "price_change_pct": 0.06392499467291711
+    },
+    {
+      "date": "2025-07-28",
+      "close_price": 9212.0,
+      "actual_change": 0,
+      "price_change_pct": -1.9165247018739353
+    },
+    {
+      "date": "2025-07-29",
+      "close_price": 9195.0,
+      "actual_change": 0,
+      "price_change_pct": -0.18454190186712982
+    },
+    {
+      "date": "2025-07-30",
+      "close_price": 9192.0,
+      "actual_change": 0,
+      "price_change_pct": -0.03262642740619902
+    },
+    {
+      "date": "2025-07-31",
+      "close_price": 9008.0,
+      "actual_change": 0,
+      "price_change_pct": -2.0017406440382945
+    },
+    {
+      "date": "2025-08-01",
+      "close_price": 8918.0,
+      "actual_change": 0,
+      "price_change_pct": -0.9991119005328597
+    },
+    {
+      "date": "2025-08-04",
+      "close_price": 9039.0,
+      "actual_change": 1,
+      "price_change_pct": 1.356806458847275
+    },
+    {
+      "date": "2025-08-05",
+      "close_price": 9075.0,
+      "actual_change": 1,
+      "price_change_pct": 0.39827414537006306
+    },
+    {
+      "date": "2025-08-06",
+      "close_price": 9182.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1790633608815426
+    },
+    {
+      "date": "2025-08-07",
+      "close_price": 9258.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8277063820518407
+    },
+    {
+      "date": "2025-08-08",
+      "close_price": 9278.0,
+      "actual_change": 1,
+      "price_change_pct": 0.21602937999567942
+    },
+    {
+      "date": "2025-08-11",
+      "close_price": 9210.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7329165768484587
+    },
+    {
+      "date": "2025-08-12",
+      "close_price": 9187.0,
+      "actual_change": 0,
+      "price_change_pct": -0.249728555917481
+    },
+    {
+      "date": "2025-08-13",
+      "close_price": 9300.0,
+      "actual_change": 1,
+      "price_change_pct": 1.229998911505388
+    },
+    {
+      "date": "2025-08-14",
+      "close_price": 9286.0,
+      "actual_change": 0,
+      "price_change_pct": -0.15053763440860216
+    },
+    {
+      "date": "2025-08-15",
+      "close_price": 9204.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8830497523153134
+    },
+    {
+      "date": "2025-08-18",
+      "close_price": 9258.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5867014341590613
+    },
+    {
+      "date": "2025-08-19",
+      "close_price": 9187.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7669042989846618
+    },
+    {
+      "date": "2025-08-20",
+      "close_price": 9042.0,
+      "actual_change": 0,
+      "price_change_pct": -1.5783171873299227
+    },
+    {
+      "date": "2025-08-21",
+      "close_price": 9162.0,
+      "actual_change": 1,
+      "price_change_pct": 1.3271400132714002
+    },
+    {
+      "date": "2025-08-22",
+      "close_price": 9192.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3274394237066143
+    },
+    {
+      "date": "2025-08-25",
+      "close_price": 9394.0,
+      "actual_change": 1,
+      "price_change_pct": 2.197563098346388
+    },
+    {
+      "date": "2025-08-26",
+      "close_price": 9354.0,
+      "actual_change": 0,
+      "price_change_pct": -0.4258037044922291
+    },
+    {
+      "date": "2025-08-27",
+      "close_price": 9305.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5238400684199274
+    },
+    {
+      "date": "2025-08-28",
+      "close_price": 9377.0,
+      "actual_change": 1,
+      "price_change_pct": 0.7737775389575497
+    },
+    {
+      "date": "2025-08-29",
+      "close_price": 9386.0,
+      "actual_change": 1,
+      "price_change_pct": 0.0959795243681348
+    },
+    {
+      "date": "2025-09-01",
+      "close_price": 9798.0,
+      "actual_change": 1,
+      "price_change_pct": 4.389516300873641
+    },
+    {
+      "date": "2025-09-02",
+      "close_price": 9845.0,
+      "actual_change": 1,
+      "price_change_pct": 0.4796897325984895
+    },
+    {
+      "date": "2025-09-03",
+      "close_price": 9844.0,
+      "actual_change": 0,
+      "price_change_pct": -0.01015744032503809
+    },
+    {
+      "date": "2025-09-04",
+      "close_price": 9793.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5180820804550995
+    },
+    {
+      "date": "2025-09-05",
+      "close_price": 9834.0,
+      "actual_change": 1,
+      "price_change_pct": 0.41866639436332076
+    },
+    {
+      "date": "2025-09-08",
+      "close_price": 9835.0,
+      "actual_change": 1,
+      "price_change_pct": 0.01016880211511084
+    },
+    {
+      "date": "2025-09-09",
+      "close_price": 9867.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3253685815963396
+    },
+    {
+      "date": "2025-09-10",
+      "close_price": 9816.0,
+      "actual_change": 0,
+      "price_change_pct": -0.5168744299179082
+    },
+    {
+      "date": "2025-09-11",
+      "close_price": 9821.0,
+      "actual_change": 1,
+      "price_change_pct": 0.05093724531377343
+    },
+    {
+      "date": "2025-09-12",
+      "close_price": 10061.0,
+      "actual_change": 1,
+      "price_change_pct": 2.4437429996945323
+    },
+    {
+      "date": "2025-09-15",
+      "close_price": 10045.0,
+      "actual_change": 0,
+      "price_change_pct": -0.1590299175032303
+    },
+    {
+      "date": "2025-09-16",
+      "close_price": 10134.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8860129417620707
+    },
+    {
+      "date": "2025-09-17",
+      "close_price": 9933.0,
+      "actual_change": 0,
+      "price_change_pct": -1.9834221432800474
+    },
+    {
+      "date": "2025-09-18",
+      "close_price": 9835.0,
+      "actual_change": 0,
+      "price_change_pct": -0.9866102889358703
+    },
+    {
+      "date": "2025-09-19",
+      "close_price": 9971.0,
+      "actual_change": 1,
+      "price_change_pct": 1.3828164717844433
+    },
+    {
+      "date": "2025-09-22",
+      "close_price": 10317.0,
+      "actual_change": 1,
+      "price_change_pct": 3.4700631832313706
+    },
+    {
+      "date": "2025-09-23",
+      "close_price": 10349.0,
+      "actual_change": 1,
+      "price_change_pct": 0.31016768440438114
+    },
+    {
+      "date": "2025-09-24",
+      "close_price": 10397.0,
+      "actual_change": 1,
+      "price_change_pct": 0.46381292878538993
+    },
+    {
+      "date": "2025-09-25",
+      "close_price": 10411.0,
+      "actual_change": 1,
+      "price_change_pct": 0.13465422718091757
+    },
+    {
+      "date": "2025-09-26",
+      "close_price": 10632.0,
+      "actual_change": 1,
+      "price_change_pct": 2.122754778599558
+    },
+    {
+      "date": "2025-09-29",
+      "close_price": 10939.0,
+      "actual_change": 1,
+      "price_change_pct": 2.8875094055680965
+    },
+    {
+      "date": "2025-09-30",
+      "close_price": 10918.0,
+      "actual_change": 0,
+      "price_change_pct": -0.19197367218210076
+    },
+    {
+      "date": "2025-10-09",
+      "close_price": 11169.0,
+      "actual_change": 1,
+      "price_change_pct": 2.2989558527202787
+    },
+    {
+      "date": "2025-10-10",
+      "close_price": 11082.0,
+      "actual_change": 0,
+      "price_change_pct": -0.77894171367177
+    },
+    {
+      "date": "2025-10-13",
+      "close_price": 11531.0,
+      "actual_change": 1,
+      "price_change_pct": 4.051615231907598
+    },
+    {
+      "date": "2025-10-14",
+      "close_price": 11533.0,
+      "actual_change": 1,
+      "price_change_pct": 0.01734454947532738
+    },
+    {
+      "date": "2025-10-15",
+      "close_price": 11966.0,
+      "actual_change": 1,
+      "price_change_pct": 3.7544437700511573
+    },
+    {
+      "date": "2025-10-16",
+      "close_price": 12017.0,
+      "actual_change": 1,
+      "price_change_pct": 0.42620758816647164
+    },
+    {
+      "date": "2025-10-17",
+      "close_price": 12249.0,
+      "actual_change": 1,
+      "price_change_pct": 1.9305983190480154
+    },
+    {
+      "date": "2025-10-20",
+      "close_price": 11742.0,
+      "actual_change": 0,
+      "price_change_pct": -4.139113397012001
+    },
+    {
+      "date": "2025-10-21",
+      "close_price": 11805.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5365355135411344
+    },
+    {
+      "date": "2025-10-22",
+      "close_price": 11404.0,
+      "actual_change": 0,
+      "price_change_pct": -3.396865734858111
+    },
+    {
+      "date": "2025-10-23",
+      "close_price": 11467.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5524377411434584
+    },
+    {
+      "date": "2025-10-24",
+      "close_price": 11332.0,
+      "actual_change": 0,
+      "price_change_pct": -1.177291357809366
+    },
+    {
+      "date": "2025-10-27",
+      "close_price": 11394.0,
+      "actual_change": 1,
+      "price_change_pct": 0.5471231909636428
+    },
+    {
+      "date": "2025-10-28",
+      "close_price": 11049.0,
+      "actual_change": 0,
+      "price_change_pct": -3.0279094260136916
+    },
+    {
+      "date": "2025-10-29",
+      "close_price": 11338.0,
+      "actual_change": 1,
+      "price_change_pct": 2.6156213231966694
+    },
+    {
+      "date": "2025-10-30",
+      "close_price": 11253.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7496913035808784
+    },
+    {
+      "date": "2025-10-31",
+      "close_price": 11441.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6706656002843687
+    },
+    {
+      "date": "2025-11-03",
+      "close_price": 11455.0,
+      "actual_change": 1,
+      "price_change_pct": 0.12236692596800978
+    },
+    {
+      "date": "2025-11-04",
+      "close_price": 11238.0,
+      "actual_change": 0,
+      "price_change_pct": -1.894369271060672
+    },
+    {
+      "date": "2025-11-05",
+      "close_price": 11276.0,
+      "actual_change": 1,
+      "price_change_pct": 0.3381384588004983
+    },
+    {
+      "date": "2025-11-06",
+      "close_price": 11427.0,
+      "actual_change": 1,
+      "price_change_pct": 1.3391273501241574
+    },
+    {
+      "date": "2025-11-07",
+      "close_price": 11484.0,
+      "actual_change": 1,
+      "price_change_pct": 0.4988185875557889
+    },
+    {
+      "date": "2025-11-10",
+      "close_price": 11719.0,
+      "actual_change": 1,
+      "price_change_pct": 2.0463253221873914
+    },
+    {
+      "date": "2025-11-11",
+      "close_price": 11907.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6042324430412152
+    },
+    {
+      "date": "2025-11-12",
+      "close_price": 12098.0,
+      "actual_change": 1,
+      "price_change_pct": 1.604098429495255
+    },
+    {
+      "date": "2025-11-13",
+      "close_price": 12610.0,
+      "actual_change": 1,
+      "price_change_pct": 4.232104480079352
+    },
+    {
+      "date": "2025-11-14",
+      "close_price": 12375.0,
+      "actual_change": 0,
+      "price_change_pct": -1.8636003172085647
+    },
+    {
+      "date": "2025-11-17",
+      "close_price": 11933.0,
+      "actual_change": 0,
+      "price_change_pct": -3.5717171717171716
+    },
+    {
+      "date": "2025-11-18",
+      "close_price": 11699.0,
+      "actual_change": 0,
+      "price_change_pct": -1.960948629849996
+    },
+    {
+      "date": "2025-11-19",
+      "close_price": 12148.0,
+      "actual_change": 1,
+      "price_change_pct": 3.837934866227883
+    },
+    {
+      "date": "2025-11-20",
+      "close_price": 12050.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8067171550872572
+    },
+    {
+      "date": "2025-11-21",
+      "close_price": 11680.0,
+      "actual_change": 0,
+      "price_change_pct": -3.0705394190871367
+    },
+    {
+      "date": "2025-11-24",
+      "close_price": 11808.0,
+      "actual_change": 1,
+      "price_change_pct": 1.095890410958904
+    },
+    {
+      "date": "2025-11-25",
+      "close_price": 12127.0,
+      "actual_change": 1,
+      "price_change_pct": 2.7015582655826558
+    },
+    {
+      "date": "2025-11-26",
+      "close_price": 12227.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8246062505153788
+    },
+    {
+      "date": "2025-11-27",
+      "close_price": 12525.0,
+      "actual_change": 1,
+      "price_change_pct": 2.4372290831765766
+    },
+    {
+      "date": "2025-11-28",
+      "close_price": 12727.0,
+      "actual_change": 1,
+      "price_change_pct": 1.6127744510978044
+    },
+    {
+      "date": "2025-12-01",
+      "close_price": 13278.0,
+      "actual_change": 1,
+      "price_change_pct": 4.329378486681858
+    },
+    {
+      "date": "2025-12-02",
+      "close_price": 13423.0,
+      "actual_change": 1,
+      "price_change_pct": 1.092031932519958
+    },
+    {
+      "date": "2025-12-03",
+      "close_price": 13582.0,
+      "actual_change": 1,
+      "price_change_pct": 1.1845340087908813
+    },
+    {
+      "date": "2025-12-04",
+      "close_price": 13424.0,
+      "actual_change": 0,
+      "price_change_pct": -1.1633043734354291
+    },
+    {
+      "date": "2025-12-05",
+      "close_price": 13687.0,
+      "actual_change": 1,
+      "price_change_pct": 1.959177592371871
+    },
+    {
+      "date": "2025-12-08",
+      "close_price": 13706.0,
+      "actual_change": 1,
+      "price_change_pct": 0.1388178563600497
+    },
+    {
+      "date": "2025-12-09",
+      "close_price": 13607.0,
+      "actual_change": 0,
+      "price_change_pct": -0.7223113964686998
+    },
+    {
+      "date": "2025-12-10",
+      "close_price": 14373.0,
+      "actual_change": 1,
+      "price_change_pct": 5.629455427353568
+    },
+    {
+      "date": "2025-12-11",
+      "close_price": 14488.0,
+      "actual_change": 1,
+      "price_change_pct": 0.8001113198358032
+    },
+    {
+      "date": "2025-12-12",
+      "close_price": 14892.0,
+      "actual_change": 1,
+      "price_change_pct": 2.7885146327995582
+    },
+    {
+      "date": "2025-12-15",
+      "close_price": 14793.0,
+      "actual_change": 0,
+      "price_change_pct": -0.6647864625302176
+    },
+    {
+      "date": "2025-12-16",
+      "close_price": 14666.0,
+      "actual_change": 0,
+      "price_change_pct": -0.8585141621036976
+    },
+    {
+      "date": "2025-12-17",
+      "close_price": 15512.0,
+      "actual_change": 1,
+      "price_change_pct": 5.768444020182736
+    },
+    {
+      "date": "2025-12-18",
+      "close_price": 15521.0,
+      "actual_change": 1,
+      "price_change_pct": 0.05801959773078907
+    },
+    {
+      "date": "2025-12-19",
+      "close_price": 15376.0,
+      "actual_change": 0,
+      "price_change_pct": -0.9342181560466465
+    },
+    {
+      "date": "2025-12-22",
+      "close_price": 16210.0,
+      "actual_change": 1,
+      "price_change_pct": 5.424037460978147
+    },
+    {
+      "date": "2025-12-23",
+      "close_price": 16441.0,
+      "actual_change": 1,
+      "price_change_pct": 1.4250462677359654
+    },
+    {
+      "date": "2025-12-24",
+      "close_price": 17609.0,
+      "actual_change": 1,
+      "price_change_pct": 7.104190742655556
+    },
+    {
+      "date": "2025-12-25",
+      "close_price": 17397.0,
+      "actual_change": 0,
+      "price_change_pct": -1.2039298086205918
+    },
+    {
+      "date": "2025-12-26",
+      "close_price": 18319.0,
+      "actual_change": 1,
+      "price_change_pct": 5.299764327182848
+    },
+    {
+      "date": "2025-12-29",
+      "close_price": 18205.0,
+      "actual_change": 0,
+      "price_change_pct": -0.6223047109558382
+    }
+  ]
+}
