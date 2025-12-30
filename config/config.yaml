@@ -1,6 +1,6 @@
 mode: train
 stock:
-  stock_code: 'NI0'
+  stock_code: 'AU0'
   end_date: null
 data:
   raw_data_dir: data/raw
@@ -11,7 +11,7 @@ data:
   auto_fetch_data: true
 training:
   batch_size: 512
-  num_epochs: 3000
+  num_epochs: 8000
   learning_rate: 0.001
   hidden_size: 128
   early_stopping_patience: 10000

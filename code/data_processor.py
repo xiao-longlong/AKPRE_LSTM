@@ -51,7 +51,7 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     # 滤除成交量小于平均值30%的天数
     volumes_raw = df[volume_col].astype(float)
     volume_mean = volumes_raw.mean()
-    volume_threshold = volume_mean * 0.3
+    volume_threshold = volume_mean * 0.1
     df = df[volumes_raw >= volume_threshold].copy()
     print(f"过滤成交量小于平均值30%的数据后: {len(df)} 条记录 (平均值: {volume_mean:.2f}, 阈值: {volume_threshold:.2f})")
     
@@ -99,13 +99,34 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     else:
         volume_normalized = volume_pct_change
     
-    # 计算后一天相对于当前行的涨跌情况（涨为1，跌为0）
+    # 计算后一天相对于当前行的涨跌标签（基于涨跌幅的线性映射）
+    # 规则：
+    # - 涨跌幅 > 3%：标签 = 1
+    # - 涨跌幅 < -3%：标签 = 0
+    # - 涨跌幅在 -3% 到 3% 之间：线性映射到 0~1，不涨不跌(0%) = 0.5
     up_down = []
+    threshold = 0.03  # 3%阈值
+    
     for i in range(len(close_prices) - 1):
-        if close_prices[i+1] > close_prices[i]:
-            up_down.append(1)
+        pct_change = price_pct_change[i]  # 已经计算好的涨跌幅
+        
+        if pct_change > threshold:
+            # 涨跌幅 > 3%，标签 = 1
+            label = 1.0
+        elif pct_change < -threshold:
+            # 涨跌幅 < -3%，标签 = 0
+            label = 0.0
         else:
-            up_down.append(0)
+            # 涨跌幅在 -3% 到 3% 之间，线性映射到 0~1
+            # 公式：label = 0.5 + (pct_change / threshold) * 0.5
+            # 当 pct_change = 0 时，label = 0.5
+            # 当 pct_change = threshold 时，label = 1.0
+            # 当 pct_change = -threshold 时，label = 0.0
+            label = 0.5 + (pct_change / threshold) * 0.5
+            # 确保在 [0, 1] 范围内
+            label = max(0.0, min(1.0, label))
+        
+        up_down.append(label)
     
     # 最后一行没有后一天，用NaN填充
     up_down.append(np.nan)
@@ -127,7 +148,7 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     dates_clean = processed_df['日期'].values
     close_prices_norm = processed_df['收盘价归一化'].values
     volumes_norm = processed_df['成交量归一化'].values
-    up_down_clean = processed_df['涨跌'].values.astype(int)
+    up_down_clean = processed_df['涨跌'].values.astype(float)  # 改为float，因为标签现在是0~1之间的连续值
     
     # 创建序列数据
     sequences_close = []
@@ -158,34 +179,37 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     
     print(f"共创建 {len(sequences_close)} 个序列")
     print(f"每个序列长度: {sequence_length}")
-    print(f"标签分布: 涨(1): {np.sum(labels == 1)} ({np.sum(labels == 1)/len(labels)*100:.2f}%), "
-          f"跌(0): {np.sum(labels == 0)} ({np.sum(labels == 0)/len(labels)*100:.2f}%)")
     
-    # 数据平衡：将涨跌数据调整成各50%
+    # 统计标签分布（基于阈值分类）
+    labels_binary = (labels > 0.5).astype(int)  # 用于统计，>0.5视为涨
+    up_count = np.sum(labels_binary == 1)
+    down_count = np.sum(labels_binary == 0)
+    print(f"标签分布统计: 涨(>0.5): {up_count} ({up_count/len(labels)*100:.2f}%), "
+          f"跌(<=0.5): {down_count} ({down_count/len(labels)*100:.2f}%)")
+    print(f"标签范围: [{labels.min():.4f}, {labels.max():.4f}], 平均值: {labels.mean():.4f}")
+    
+    # 数据平衡：将涨跌数据调整成各50%（基于>0.5和<=0.5的分类）
     print("\n进行数据平衡处理...")
-    up_indices = np.where(labels == 1)[0]
-    down_indices = np.where(labels == 0)[0]
+    up_indices = np.where(labels_binary == 1)[0]
+    down_indices = np.where(labels_binary == 0)[0]
     
-    up_count = len(up_indices)
-    down_count = len(down_indices)
-    
-    print(f"平衡前 - 涨(1): {up_count}, 跌(0): {down_count}")
+    print(f"平衡前 - 涨(>0.5): {len(up_indices)}, 跌(<=0.5): {len(down_indices)}")
     
     # 确定目标数量（取两者中的较小值，使两类数量相等）
-    target_count = min(up_count, down_count)
+    target_count = min(len(up_indices), len(down_indices))
     
-    if up_count > down_count:
+    if len(up_indices) > len(down_indices):
         # 涨的多，随机下采样涨的样本
         np.random.seed(42)
         selected_up_indices = np.random.choice(up_indices, size=target_count, replace=False)
         balanced_indices = np.concatenate([selected_up_indices, down_indices])
-        print(f"下采样涨的样本: {up_count} -> {target_count}")
-    elif down_count > up_count:
+        print(f"下采样涨的样本: {len(up_indices)} -> {target_count}")
+    elif len(down_indices) > len(up_indices):
         # 跌的多，随机下采样跌的样本
         np.random.seed(42)
         selected_down_indices = np.random.choice(down_indices, size=target_count, replace=False)
         balanced_indices = np.concatenate([up_indices, selected_down_indices])
-        print(f"下采样跌的样本: {down_count} -> {target_count}")
+        print(f"下采样跌的样本: {len(down_indices)} -> {target_count}")
     else:
         # 已经平衡
         balanced_indices = np.concatenate([up_indices, down_indices])
@@ -201,8 +225,13 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     labels = labels[balanced_indices]
     sequence_dates = [sequence_dates[i] for i in balanced_indices]
     
-    print(f"平衡后 - 涨(1): {np.sum(labels == 1)} ({np.sum(labels == 1)/len(labels)*100:.2f}%), "
-          f"跌(0): {np.sum(labels == 0)} ({np.sum(labels == 0)/len(labels)*100:.2f}%)")
+    # 重新计算统计信息
+    labels_binary_balanced = (labels > 0.5).astype(int)
+    up_count_balanced = np.sum(labels_binary_balanced == 1)
+    down_count_balanced = np.sum(labels_binary_balanced == 0)
+    print(f"平衡后 - 涨(>0.5): {up_count_balanced} ({up_count_balanced/len(labels)*100:.2f}%), "
+          f"跌(<=0.5): {down_count_balanced} ({down_count_balanced/len(labels)*100:.2f}%)")
+    print(f"平衡后标签范围: [{labels.min():.4f}, {labels.max():.4f}], 平均值: {labels.mean():.4f}")
     print(f"平衡后总样本数: {len(sequences_close)}")
     
     # 划分训练集和验证集
@@ -215,23 +244,26 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     # 创建索引数组
     indices = np.arange(len(sequences_close))
     
+    # 为了分层采样，基于标签的二分类（>0.5 vs <=0.5）
+    labels_binary_stratify = (labels > 0.5).astype(int)
+    
     if test_ratio > 0:
         # 先分出测试集
         indices_temp, indices_test = train_test_split(
             indices,
-            test_size=test_ratio, random_state=42, shuffle=True, stratify=labels
+            test_size=test_ratio, random_state=42, shuffle=True, stratify=labels_binary_stratify
         )
         # 再从剩余数据中分出训练集和验证集
         val_size = val_ratio / (train_ratio + val_ratio)
         train_indices, val_indices = train_test_split(
             indices_temp,
-            test_size=val_size, random_state=42, shuffle=True, stratify=labels[indices_temp]
+            test_size=val_size, random_state=42, shuffle=True, stratify=labels_binary_stratify[indices_temp]
         )
     else:
         # 直接划分训练集和验证集
         train_indices, val_indices = train_test_split(
             indices,
-            test_size=val_ratio, random_state=42, shuffle=True, stratify=labels
+            test_size=val_ratio, random_state=42, shuffle=True, stratify=labels_binary_stratify
         )
         indices_test = np.array([])
     

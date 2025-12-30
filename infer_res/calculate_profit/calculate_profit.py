@@ -376,7 +376,7 @@ def calculate_profit(log_folder_path, num_trading_days=30, start_date=None, init
         if volume_col is not None:
             volumes_raw = stock_df[volume_col].astype(float)
             volume_mean = volumes_raw.mean()
-            volume_threshold = volume_mean * 0.3
+            volume_threshold = volume_mean * 0.1
             stock_df = stock_df[volumes_raw >= volume_threshold].copy()
             print(f"过滤成交量小于平均值30%的数据后: {len(stock_df)} 条记录 (平均值: {volume_mean:.2f}, 阈值: {volume_threshold:.2f})")
         else:

@@ -37,7 +37,7 @@ def process_stock_data(df):
     # 滤除成交量小于平均值30%的天数
     volumes_raw = df[volume_col].astype(float)
     volume_mean = volumes_raw.mean()
-    volume_threshold = volume_mean * 0.3
+    volume_threshold = volume_mean * 0.1
     df = df[volumes_raw >= volume_threshold].copy()
     print(f"过滤成交量小于平均值30%的数据后: {len(df)} 条记录 (平均值: {volume_mean:.2f}, 阈值: {volume_threshold:.2f})")
     

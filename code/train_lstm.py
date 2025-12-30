@@ -59,7 +59,8 @@ class GoldPriceDataset(Dataset):
     """自定义数据集类"""
     def __init__(self, sequences, labels):
         self.sequences = torch.FloatTensor(sequences)
-        self.labels = torch.LongTensor(labels)
+        # 标签现在是0~1之间的连续值，使用FloatTensor
+        self.labels = torch.FloatTensor(labels)
     
     def __len__(self):
         return len(self.sequences)
@@ -92,8 +93,9 @@ class LSTMModel(nn.Module):
         self.relu = nn.ReLU()
         self.dropout4 = nn.Dropout(0.2)
         
-        # Layer 5: Dense(2)
-        self.fc2 = nn.Linear(32, num_classes)
+        # Layer 5: Dense(1) - 输出单个值（0~1之间的连续标签）
+        self.fc2 = nn.Linear(32, 1)
+        self.sigmoid = nn.Sigmoid()  # 确保输出在0~1之间
         
     def forward(self, x):
         # x shape: (batch_size, seq_len, input_size)
@@ -121,10 +123,10 @@ class LSTMModel(nn.Module):
         out = self.relu(out)
         out = self.dropout4(out)
         
-        # Layer 5
+        # Layer 5 - 输出单个值，使用sigmoid确保在0~1之间
         out = self.fc2(out)
-        
-        return out
+        out = self.sigmoid(out)
+        return out.squeeze(-1)  # 移除最后一个维度，输出形状为 (batch_size,)
 
 
 class EarlyStopping:
@@ -232,7 +234,8 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
             
             price_sequences.append(price_seq)
             volume_sequences.append(volume_seq)
-            labels.append(int(row['标签']))
+            # 标签现在是0~1之间的连续值，使用float
+            labels.append(float(row['标签']))
         
         return np.array(price_sequences), np.array(volume_sequences), np.array(labels)
     
@@ -241,8 +244,11 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     
     logger.info(f"训练集: {len(train_price)} 个样本")
     logger.info(f"验证集: {len(val_price)} 个样本")
-    logger.info(f"标签分布 - 训练集: {np.bincount(train_labels)}")
-    logger.info(f"标签分布 - 验证集: {np.bincount(val_labels)}")
+    # 标签现在是连续值，统计分布信息
+    logger.info(f"标签统计 - 训练集: 范围[{train_labels.min():.4f}, {train_labels.max():.4f}], "
+                f"均值={train_labels.mean():.4f}, 标准差={train_labels.std():.4f}")
+    logger.info(f"标签统计 - 验证集: 范围[{val_labels.min():.4f}, {val_labels.max():.4f}], "
+                f"均值={val_labels.mean():.4f}, 标准差={val_labels.std():.4f}")
     
     # 数据标准化
     logger.info("数据标准化...")
@@ -277,14 +283,16 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
     
     # 创建模型
     hidden_size = config.get('hidden_size', 128)
-    model = LSTMModel(input_size=2, hidden_size=hidden_size, num_classes=2)
+    # 标签现在是0~1之间的连续值，使用回归模型
+    model = LSTMModel(input_size=2, hidden_size=hidden_size, num_classes=1)
     model = model.to(device)
     
     logger.info(f"模型参数总数: {sum(p.numel() for p in model.parameters()):,}")
     
     # 损失函数和优化器
     logger.info("创建损失函数和优化器...")
-    criterion = nn.CrossEntropyLoss()
+    # 使用BCE损失函数，因为标签是0~1之间的连续值
+    criterion = nn.BCELoss()
     learning_rate = config.get('learning_rate', 0.001)
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     logger.info(f"优化器创建完成，学习率: {learning_rate}")
@@ -344,9 +352,11 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
             optimizer.step()
             
             train_loss += loss.item()
-            _, predicted = torch.max(outputs.data, 1)
+            # 对于回归任务，准确率计算：预测值>0.5视为涨(1)，<=0.5视为跌(0)
+            predicted = (outputs > 0.5).float()
+            labels_binary = (labels > 0.5).float()
             total_train += labels.size(0)
-            correct_train += (predicted == labels).sum().item()
+            correct_train += (predicted == labels_binary).sum().item()
         
         train_accuracy = 100 * correct_train / total_train
         avg_train_loss = train_loss / len(train_loader)
@@ -366,9 +376,11 @@ def train_lstm_model(data_folder, stock_code, end_date, config, log_dir=None):
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
                 
-                _, predicted = torch.max(outputs.data, 1)
+                # 对于回归任务，准确率计算：预测值>0.5视为涨(1)，<=0.5视为跌(0)
+                predicted = (outputs > 0.5).float()
+                labels_binary = (labels > 0.5).float()
                 total_val += labels.size(0)
-                correct_val += (predicted == labels).sum().item()
+                correct_val += (predicted == labels_binary).sum().item()
         
         val_accuracy = 100 * correct_val / total_val
         avg_val_loss = val_loss / len(val_loader)
