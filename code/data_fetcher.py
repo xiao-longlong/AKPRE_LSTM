@@ -21,36 +21,67 @@ def fetch_stock_data(stock_code, end_date=None, save_dir=None):
         DataFrame: 股票数据
     """
     try:
-        # 判断是ETF还是股票
+        # 判断是ETF、股票还是期货
         # ETF通常使用 fund_etf_hist_em
         # 股票使用 stock_zh_a_hist
+        # 期货使用 futures_zh_daily_sina 或 futures_main_sina
+        
+        df = None
         
         # 尝试ETF方式
         try:
             df = ak.fund_etf_hist_em(symbol=stock_code)
-            print(f"成功获取ETF数据: {stock_code}")
-        except:
-            # 如果不是ETF，尝试股票方式
-            # 需要添加市场前缀，如 "000001" -> "000001.SZ" 或 "600000" -> "600000.SH"
-            if stock_code.startswith('0') or stock_code.startswith('3'):
-                ts_code = f"{stock_code}.SZ"
-            elif stock_code.startswith('6'):
-                ts_code = f"{stock_code}.SH"
+            if not df.empty:
+                print(f"成功获取ETF数据: {stock_code}")
             else:
-                ts_code = stock_code
-            
-            # 获取股票历史数据
-            # 注意：akshare的股票接口可能需要调整
-            try:
-                df = ak.stock_zh_a_hist(symbol=stock_code, period="daily", adjust="")
-                print(f"成功获取股票数据: {stock_code}")
-            except Exception as e:
-                print(f"尝试其他方式获取数据: {e}")
-                # 如果还是失败，尝试使用通用接口
-                df = ak.stock_zh_a_hist(symbol=stock_code, period="daily", adjust="qfq")
+                df = None  # 如果为空，继续尝试其他方式
+        except:
+            df = None  # 如果异常，继续尝试其他方式
         
-        if df.empty:
-            raise ValueError(f"获取到的数据为空: {stock_code}")
+        # 如果ETF方式失败或返回空数据，尝试股票方式
+        if df is None or df.empty:
+            try:
+                # 需要添加市场前缀，如 "000001" -> "000001.SZ" 或 "600000" -> "600000.SH"
+                if stock_code.startswith('0') or stock_code.startswith('3'):
+                    ts_code = f"{stock_code}.SZ"
+                elif stock_code.startswith('6'):
+                    ts_code = f"{stock_code}.SH"
+                else:
+                    ts_code = stock_code
+                
+                # 获取股票历史数据
+                df = ak.stock_zh_a_hist(symbol=stock_code, period="daily", adjust="")
+                if not df.empty:
+                    print(f"成功获取股票数据: {stock_code}")
+                else:
+                    df = None  # 如果为空，继续尝试其他方式
+            except Exception as e:
+                df = None  # 如果异常，继续尝试其他方式
+        
+        # 如果股票方式也失败，尝试期货方式
+        if df is None or df.empty:
+            try:
+                # 尝试获取期货主连数据
+                # NI0 等期货代码需要使用 futures_main_sina 或 futures_zh_daily_sina
+                df = ak.futures_zh_daily_sina(symbol=stock_code)
+                if not df.empty:
+                    print(f"成功获取期货数据: {stock_code}")
+                else:
+                    df = None
+            except Exception as e:
+                try:
+                    # 尝试另一种期货接口
+                    df = ak.futures_main_sina(symbol=stock_code)
+                    if not df.empty:
+                        print(f"成功获取期货主连数据: {stock_code}")
+                    else:
+                        df = None
+                except:
+                    df = None
+        
+        # 如果所有方式都失败，抛出异常
+        if df is None or df.empty:
+            raise ValueError(f"获取到的数据为空: {stock_code}，请检查代码是否正确（ETF/股票/期货）")
         
         # 确保日期列存在
         if '日期' not in df.columns and 'date' in df.columns:

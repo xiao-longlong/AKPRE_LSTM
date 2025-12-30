@@ -131,6 +131,9 @@ training.log
 futures_list.txt
 
 # 推理结果文件
+# 忽略所有计算结果目录（包含日期范围的目录）
+infer_res/calculate_profit/*_*_*/
+# 忽略结果文件
 infer_res/calculate_profit/*/profit_result_*.json
 infer_res/calculate_profit/*/trade_records_*.csv
 

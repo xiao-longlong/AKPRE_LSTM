@@ -1,6 +1,6 @@
 mode: train
 stock:
-  stock_code: '300905'
+  stock_code: 'NI0'
   end_date: null
 data:
   raw_data_dir: data/raw
