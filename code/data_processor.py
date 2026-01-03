@@ -77,25 +77,76 @@ def process_stock_data(raw_data_path, stock_code, end_date, sequence_length=60,
     price_pct_change = np.array(price_pct_change)
     volume_pct_change = np.array(volume_pct_change)
     
-    # 列归一化（使用min-max归一化）
+    # 归一化处理
+    # 收盘价：使用分位数归一化（避免极端值影响，使分布更分散）
+    # 成交量：使用Z-score标准化后映射到[0,1]，使均值更接近0.5
     price_valid = price_pct_change[~np.isnan(price_pct_change)]
     volume_valid = volume_pct_change[~np.isnan(volume_pct_change)]
     
     if len(price_valid) > 0:
-        price_min, price_max = price_valid.min(), price_valid.max()
-        if price_max != price_min:
-            price_normalized = (price_pct_change - price_min) / (price_max - price_min)
+        # 收盘价：使用5%和95%分位数作为边界，避免极端值影响
+        price_q5 = np.percentile(price_valid, 5)
+        price_q95 = np.percentile(price_valid, 95)
+        price_range = price_q95 - price_q5
+        
+        if price_range > 1e-10:  # 避免除零
+            # 使用分位数边界进行归一化，超出边界的值会被裁剪
+            price_normalized = (price_pct_change - price_q5) / price_range
+            # 裁剪到[0, 1]范围
+            price_normalized = np.clip(price_normalized, 0, 1)
         else:
-            price_normalized = np.zeros_like(price_pct_change)
+            # 如果范围太小，使用均值中心化
+            price_mean = price_valid.mean()
+            price_std = price_valid.std()
+            if price_std > 1e-10:
+                price_normalized = (price_pct_change - price_mean) / (price_std * 3) + 0.5
+                price_normalized = np.clip(price_normalized, 0, 1)
+            else:
+                price_normalized = np.full_like(price_pct_change, 0.5)
+        
+        # 处理NaN值
+        price_normalized = np.where(np.isnan(price_pct_change), np.nan, price_normalized)
+        
+        # 输出统计信息
+        price_norm_valid = price_normalized[~np.isnan(price_normalized)]
+        if len(price_norm_valid) > 0:
+            print(f"收盘价归一化统计: 均值={price_norm_valid.mean():.4f}, "
+                  f"中位数={np.median(price_norm_valid):.4f}, "
+                  f"范围=[{price_norm_valid.min():.4f}, {price_norm_valid.max():.4f}]")
     else:
         price_normalized = price_pct_change
     
     if len(volume_valid) > 0:
-        volume_min, volume_max = volume_valid.min(), volume_valid.max()
-        if volume_max != volume_min:
-            volume_normalized = (volume_pct_change - volume_min) / (volume_max - volume_min)
+        # 成交量：使用Z-score标准化，然后映射到[0,1]，使均值接近0.5
+        volume_mean = volume_valid.mean()
+        volume_std = volume_valid.std()
+        
+        if volume_std > 1e-10:
+            # Z-score标准化
+            volume_zscore = (volume_pct_change - volume_mean) / volume_std
+            
+            # 使用3倍标准差作为边界，映射到[0,1]
+            # 这样均值会接近0.5（因为Z-score的均值是0）
+            volume_zscore_clipped = np.clip(volume_zscore, -3, 3)
+            volume_normalized = (volume_zscore_clipped + 3) / 6  # 映射到[0,1]
+            
+            # 处理NaN值
+            volume_normalized = np.where(np.isnan(volume_pct_change), np.nan, volume_normalized)
+            
+            # 输出统计信息
+            volume_norm_valid = volume_normalized[~np.isnan(volume_normalized)]
+            if len(volume_norm_valid) > 0:
+                print(f"成交量归一化统计: 均值={volume_norm_valid.mean():.4f}, "
+                      f"中位数={np.median(volume_norm_valid):.4f}, "
+                      f"范围=[{volume_norm_valid.min():.4f}, {volume_norm_valid.max():.4f}]")
         else:
-            volume_normalized = np.zeros_like(volume_pct_change)
+            # 如果标准差太小，使用min-max归一化
+            volume_min, volume_max = volume_valid.min(), volume_valid.max()
+            if volume_max != volume_min:
+                volume_normalized = (volume_pct_change - volume_min) / (volume_max - volume_min)
+            else:
+                volume_normalized = np.full_like(volume_pct_change, 0.5)
+            volume_normalized = np.where(np.isnan(volume_pct_change), np.nan, volume_normalized)
     else:
         volume_normalized = volume_pct_change
     
